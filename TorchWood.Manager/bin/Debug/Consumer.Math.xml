@@ -1,0 +1,231 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Consumer.Math
+</name>
+</assembly>
+<members>
+<member name="M:Consumer.Math.Stats.Probabilidade.CalculoProbabilidade(System.Double,System.Double)">
+	<summary>
+ Calcula a probabilidade de uma amostragem.
+ </summary>
+	<param name="dblEvento">Quantidade de Itens ocorridos</param>
+	<param name="dblUniversoAmostral">Quantidade Total de Eventos</param>
+	<returns>Probabilidade, em decimal.</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Stats.Probabilidade.CalculoProbabilidadePerc(System.Double,System.Double)">
+	<summary>
+ Calcula a probabilidade de uma amostragem. Retorna o valor em percentual.
+ </summary>
+	<param name="dblEvento">Quantidade de Itens ocorridos</param>
+	<param name="dblUniversoAmostral">Quantidade Total de Eventos</param>
+	<returns>Probabilidade, em decimal.</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Fatorial(System.Double)">
+	<summary>
+ Cálculo de Fatorial n!
+ </summary>
+	<param name="Number">Número a ser calculado o fatorial</param>
+	<returns>O resultado do fatorial</returns>
+	<remarks>
+ Atenção: n! = 1 X 2 X 3 X 4 ... X n
+ </remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples.Sem repetições de itens.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<returns>Quantidade de Permutações</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com um item repetido.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com dois itens repetidos.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<param name="intItemB">Qtde de Repetições do segundo item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com três itens repetidos.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<param name="intItemB">Qtde de Repetições do segundo item</param>
+	<param name="intItemC">Qtde de Repetições do terceiro item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Arranjos(System.Double,System.Double)">
+	<summary>
+ função de calculo de arranjos
+ </summary>
+	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
+	<param name="intTaxaK">Qtde de Itens a combinar</param>
+	<returns>Qtde de Arranjos possiveis</returns>
+	<remarks>
+ Fórmula de A(n,k) = n!/(n-k)!
+ </remarks>
+</member><member name="M:Consumer.Math.Basic.Combinacao(System.Double,System.Double)">
+	<summary>
+ Calcula as combinações
+ </summary>
+	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
+	<param name="intTaxaK">Qtde de Itens a combinar</param>
+	<returns>Combinações totais</returns>
+	<remarks>
+ Fórmula de C(n,k) = n!/k!(n-k)!
+ </remarks>
+</member><member name="M:Consumer.Math.Basic.VerificaFatorial(System.Double)">
+	<summary>
+ Verificação de fatorial. Ou seja verifica se o número é negativo ou não.
+ </summary>
+	<param name="intNumber">Número a ser calculado o fatorial</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Equacao2G(System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+	<summary>
+ Resolvendo uma equação do segundo grau
+ </summary>
+	<param name="aNumber">coeficiente a, que na equação aparece multiplicando a variável x de segundo grau</param>
+	<param name="bNumber">coeficiente a, que na equação aparece multiplicando a variável x de primeiro grau</param>
+	<param name="cNumber">coeficiente a, que na equação aparece independente</param>
+	<param name="x1Number">Primeira Raiz</param>
+	<param name="x2Number">Segunda Raiz</param>
+	<returns>Verdadeiro ou Falso</returns>
+	<remarks></remarks>
+</member><member name="T:Consumer.Math.Basic">
+	<summary>
+ Classe de cálculos Matemáticos Básicos.
+ </summary>
+	<remarks>
+ Contas simples como dados de equações do segundo grau, probabilidades, fatoriais, e outrros  
+ </remarks>
+</member><member name="P:Consumer.Math.Juros.Mensagem">
+	<summary>
+ Retorna a mensagem de algum método. 
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.Fatorial(System.Double)">
+	<summary>
+ Cálculo de Fatorial n!
+ </summary>
+	<param name="Number">Número a ser calculado o fatorial</param>
+	<returns>O resultado do fatorial</returns>
+	<remarks>
+ Atenção: n! = 1 X 2 X 3 X 4 ... X n
+ </remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.CalculaPermutacao(System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples.Sem repetições de itens.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<returns>Quantidade de Permutações</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.CalculaPermutacao(System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com um item repetido.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.CalculaPermutacao(System.Double,System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com dois itens repetidos.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<param name="intItemB">Qtde de Repetições do segundo item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.CalculaPermutacao(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com três itens repetidos.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<param name="intItemB">Qtde de Repetições do segundo item</param>
+	<param name="intItemC">Qtde de Repetições do terceiro item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.CalculaArranjos(System.Double,System.Double)">
+	<summary>
+ função de calculo de arranjos
+ </summary>
+	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
+	<param name="intTaxaK">Qtde de Itens a combinar</param>
+	<returns>Qtde de Arranjos possiveis</returns>
+	<remarks>
+ Fórmula de A(n,k) = n!/(n-k)!
+ </remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.CalculaCombinacao(System.Double,System.Double)">
+	<summary>
+ Calcula as combinações
+ </summary>
+	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
+	<param name="intTaxaK">Qtde de Itens a combinar</param>
+	<returns>Combinações totais</returns>
+	<remarks>
+ Fórmula de C(n,k) = n!/k!(n-k)!
+ </remarks>
+</member><member name="M:Consumer.Math.Stats.Combinatory.VerificaFatorial(System.Double)">
+	<summary>
+ Verificação de fatorial. Ou seja verifica se o número é negativo ou não.
+ </summary>
+	<param name="intNumber">Número a ser calculado o fatorial</param>
+	<remarks></remarks>
+</member><member name="T:Consumer.Math.JurosCalc">
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe de Juros.
+ Classe que Calcula os Financiamentos Desejados
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[halmeida]	21/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Math.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.Math.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.Math.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Consumer.Math.Numbers.Numeros.DeterminaTriangulares(System.Int32)">
+	<summary>
+ Determina os números triangulares, até a faixa desejada
+ </summary>
+	<param name="intMaxValue">Número triangular Máximo.</param>
+	<returns>Lista dos Números.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

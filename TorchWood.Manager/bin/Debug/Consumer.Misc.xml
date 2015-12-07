@@ -1,0 +1,139 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Consumer.Misc
+</name>
+</assembly>
+<members>
+<member name="M:Consumer.Misc.htmlClass.TrataAcentos(System.String)">
+	<summary>
+ tratativa de Acentos para HTML
+ </summary>
+	<param name="strTexto">STRING</param>
+	<returns>STRING</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Misc.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.Misc.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.Misc.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Consumer.Misc.Util.ComparacaoHoras">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerardor de Horas
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+ 
+
+</member><member name="M:Consumer.Misc.Util.ValidaMes(System.Int16,System.Int16,System.Int16)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que faz a validação do Mês
+ </summary>
+	<param name="intmes">mês a ser validado</param>
+	<param name="intdia">dia a ser validado</param>
+	<param name="intano">ano a ser validado</param>
+	<returns>Retorna um booleano indicando a veracidade da Data. True=Data válida, False=Data Inválida.</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Misc.Util.VerificaHora(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Efetua a verficação da hora.
+ </summary>
+	<param name="inthora">String, contendo a Hora</param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Misc.Util.ValidaCPF(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Validador de CPF. Efetua os cálculos validando de acordo com o mósulo 11.
+ </summary>
+	<param name="strCPF">String Contendo o CPF</param>
+	<returns>Verdadeiro ou falso de acordo com a validade do valor</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Misc.Util.ValidaCNPJ(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Validador de CNPJ. Efetua os cálculos validando de acordo com o mósulo 11.
+ </summary>
+	<param name="strCGC">String Contendo o CNPJ</param>
+	<returns>Verdadeiro ou falso de acordo com a validade do valor</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+ 
+
+</member><member name="M:Consumer.Misc.Util.GravaArquivo(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função específica para gravação de arquivos. Os arquvos estão em formato texto.
+ </summary>
+	<param name="nomeArq">Nome do Arquivo</param>
+	<param name="conteudo">Conteudo do Arquivo Texto</param>
+	<returns>Verdadeiro ou falso de acordo com o sucesso da operação.</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+ 
+
+</member><member name="M:Consumer.Misc.Util.GeraInStrings(System.Collections.Generic.List{System.String})">
+	<summary>
+ Função geradora de Strings de "IN" para SQL
+ </summary>
+	<param name="strValues">Lista de Strings</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Misc.Util.GeraInStrings(System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Função geradora de Strings de "IN" para SQL
+ </summary>
+	<param name="intValues">Lista de Números, inteiros</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Misc.Util.GetGuid">
+	<summary>
+ Cria um guid.
+ </summary>
+	<returns>string, formato guid</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

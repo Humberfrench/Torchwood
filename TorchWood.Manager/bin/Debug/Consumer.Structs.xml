@@ -1,0 +1,122 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Consumer.Structs
+</name>
+</assembly>
+<members>
+<member name="P:Consumer.Structs.Juros.Codigo">
+	<summary>
+ Código do Calculo Gravado em tabela.
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Juros.Nome">
+	<summary>
+ Descrição do Calculo - Nome do Calculo gravado na tabela.
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Juros.Principal">
+	<summary>
+ Valor Principal da Dívida
+ </summary>
+	<value>Double</value>
+	<returns>Double</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.Structs.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.Structs.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:Consumer.Structs.ObjectType.XML">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Representante para o XML Texto
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Structs.ObjectType.XMLDocument">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Representante para o System.XML.XMLDocument
+ <seealso cref="System.XML.XMLDocument"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Structs.ObjectType.DataTable">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Reprentativo do Datatable
+ <seealso cref="System.Data.Datatable"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Structs.ObjectType.DataSet">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Reprentativo do DataSet
+ <seealso cref="System.Data.DataSet"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Structs.ObjectType.DataView">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Reprentativo do DataView
+ <seealso cref="System.Data.DataView"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Structs.ObjectType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dados que representará a forma do objeto que está sendo cacheado.
+ Existe uma propriedade que deve ser setada antes de guardar em cache o objeto.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member>
+</members>
+</doc>

@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13C98A93-3F87-4604-8AEF-6CA8225757FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Torchwood.Presentation.My.MyApplication</StartupObject>
+    <RootNamespace>Torchwood.Presentation</RootNamespace>
+    <AssemblyName>Torchwood.Presentation</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>emd.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Torchwood.Presentation.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Torchwood.Presentation.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Flowsight, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Componentes\Controls.WinForms\Flowsight.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid">
+      <HintPath>..\..\..\Lib\Componentes\SourceGrid_4_40\SourceGrid\Release\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Steepvalley.Windows.Forms, Version=2.0.0.1, Culture=neutral, PublicKeyToken=825f5955c0dc55e8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\steepvalley.net\XPCC 2.0\bin\Steepvalley.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Steepvalley.Windows.Forms.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\steepvalley.net\XPCC 2.0\bin\Steepvalley.Windows.Forms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxTorchwood.Designer.vb">
+      <DependentUpon>AboutBoxTorchwood.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBoxTorchwood.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAtrasos.Designer.vb">
+      <DependentUpon>FormAtrasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAtrasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBestDezenasAtrasos.Designer.vb">
+      <DependentUpon>FormBestDezenasAtrasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBestDezenasAtrasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroResultados.Designer.vb">
+      <DependentUpon>FormCadastroResultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroResultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportacao.Designer.vb">
+      <DependentUpon>FormImportacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMelhoresDezenas.Designer.vb">
+      <DependentUpon>FormMelhoresDezenas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMelhoresDezenas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerformance.Designer.vb">
+      <DependentUpon>FormPerformance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerformance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaliseLotoFacil.Designer.vb">
+      <DependentUpon>frmAnaliseLotoFacil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaliseLotoFacil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaliseMegaSena.Designer.vb">
+      <DependentUpon>frmAnaliseMegaSena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaliseMegaSena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadResultados.Designer.vb">
+      <DependentUpon>frmCadResultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadResultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerateAllLoteries.Designer.vb">
+      <DependentUpon>frmGenerateAllLoteries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerateAllLoteries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerformanceStatists.Designer.vb">
+      <DependentUpon>frmPerformanceStatists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerformanceStatists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetPesquisaHistorico.Designer.vb">
+      <DependentUpon>frmSetPesquisaHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetPesquisaHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCombinar.Designer.vb">
+      <DependentUpon>FrmCombinar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCombinar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErro.Designer.vb">
+      <DependentUpon>frmErro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmErro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoterias.Designer.vb">
+      <DependentUpon>frmLoterias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoterias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaster.Designer.vb">
+      <DependentUpon>frmMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCockPit.Designer.vb">
+      <DependentUpon>frmCockPit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCockPit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImporter.Designer.vb">
+      <DependentUpon>FrmImporter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImporter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResultados.Designer.vb">
+      <DependentUpon>FrmResultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreenTorchwood.Designer.vb">
+      <DependentUpon>SplashScreenTorchwood.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenTorchwood.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teste.Designer.vb">
+      <DependentUpon>Teste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBoxTorchwood.resx">
+      <DependentUpon>AboutBoxTorchwood.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAtrasos.resx">
+      <DependentUpon>FormAtrasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBestDezenasAtrasos.resx">
+      <DependentUpon>FormBestDezenasAtrasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroResultados.resx">
+      <DependentUpon>FormCadastroResultados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportacao.resx">
+      <DependentUpon>FormImportacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMelhoresDezenas.resx">
+      <DependentUpon>FormMelhoresDezenas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerformance.resx">
+      <DependentUpon>FormPerformance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaliseLotoFacil.resx">
+      <DependentUpon>frmAnaliseLotoFacil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaliseMegaSena.resx">
+      <DependentUpon>frmAnaliseMegaSena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadResultados.resx">
+      <DependentUpon>frmCadResultados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerateAllLoteries.resx">
+      <DependentUpon>frmGenerateAllLoteries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerformanceStatists.resx">
+      <DependentUpon>frmPerformanceStatists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetPesquisaHistorico.resx">
+      <DependentUpon>frmSetPesquisaHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCombinar.resx">
+      <DependentUpon>FrmCombinar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErro.resx">
+      <DependentUpon>frmErro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoterias.resx">
+      <DependentUpon>frmLoterias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaster.resx">
+      <DependentUpon>frmMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCockPit.resx">
+      <DependentUpon>frmCockPit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImporter.resx">
+      <DependentUpon>FrmImporter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResultados.resx">
+      <DependentUpon>FrmResultados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenTorchwood.resx">
+      <DependentUpon>SplashScreenTorchwood.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teste.resx">
+      <DependentUpon>Teste.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj">
+      <Project>{E37AB709-F639-4E14-B5C9-3D569DA9098A}</Project>
+      <Name>Consumer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Torchwood.Core\Torchwood.Core.vbproj">
+      <Project>{88011B30-285D-4E13-8112-BB32E57AA60D}</Project>
+      <Name>Torchwood.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Torchwood.Struct\Torchwood.Struct.vbproj">
+      <Project>{A21285E7-BFBD-46C2-97D2-07B754B97C45}</Project>
+      <Name>Torchwood.Struct</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="emd.ico" />
+    <Content Include="Images\1.GIF" />
+    <Content Include="Images\2.GIF" />
+    <Content Include="Images\3.GIF" />
+    <Content Include="Images\4.GIF" />
+    <Content Include="Images\5.GIF" />
+    <Content Include="Images\6.GIF" />
+    <None Include="Images\Torchwood01.jpg" />
+    <None Include="Resources\vector.png" />
+    <None Include="Resources\chart_pie.png" />
+    <None Include="Resources\databases.png" />
+    <None Include="Resources\page_lightning.png" />
+    <None Include="Resources\color_swatch_2.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\chart_bar.png" />
+    <None Include="Resources\alarm.png" />
+    <None Include="Resources\arrow_refresh.png" />
+    <None Include="Resources\control_play.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\SaveAllHS.png" />
+    <None Include="Resources\bin_closed.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\lightbulb.png" />
+    <None Include="Resources\lightbulb_off.png" />
+    <None Include="Resources\computer.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\rosette.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\door_in.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\textfield_rename.png" />
+    <None Include="Resources\buildings.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\doc_excel_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,407 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Torchwood.Core
+</name>
+</assembly>
+<members>
+<member name="P:Torchwood.Core.Data.Statics.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericActions.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericActions.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericActions.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericActions.Loteria">
+	<summary>
+ Código da Loteria
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Repetitions.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Repetitions.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Business.Repetitions.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericQueries.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericQueries.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericQueries.CheckConcoursAndLotery(System.Int32,System.Int32)">
+	<summary>
+ importante para verificação da planilha excel se existe ou não o concurso para a loteria
+ </summary>
+	<param name="intLoteria">nuemro da loteria</param>
+	<param name="intConcurso">numero do concurso desejado</param>
+	<returns>boolean de acordo com o resultado</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericQueries.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericQueries.Loteria">
+	<summary>
+ Código da Loteria
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.ListaAtraso">
+	<summary>
+ Lista as Dezenas, e a quantidades de concursos em atraso
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenas">
+	<summary>
+Pega as melhores Dezenas
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenasByRol">
+	<summary>
+Pega as melhores Dezenas - Dentro das Faixas de um ROL estatístico
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenasTop">
+	<summary>
+Pega as melhores Dezenas - By Top - Top seria o número do multiplo
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenasTopImpar">
+	<summary>
+Pega as melhores de uma loteria, para com o qual seria 
+ passado as dezena anteriormente na tabela temporaria com o guid
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestResults(System.String)">
+	<summary>
+Pega as melhores Dezenas
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetLastConcurso">
+	<summary>
+Pega as Dezenas do ultimo concurso
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetResults">
+	<summary>
+ obtem resultados de concursos,
+ </summary>
+	<returns>Datatable</returns>
+	<remarks>
+ param name="intLoteria" -&gt; código da loteria
+ </remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetResultsByRange">
+	<summary>
+ obtem resultados estatisticos de concursos, baseados numa faixa
+ </summary>
+	<returns>Datatable</returns>
+	<remarks>
+ param name="intLoteria" -&gt; código da loteria
+ param name="intConcursoIni" -&gt; numero inicial da faixa
+ param name="intConcursoFim" -&gt; numero final da faixa
+ </remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetResultsByDistribute">
+	<summary>
+ Retorna resultados da distribuição
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.Loteria">
+	<summary>
+ Código da Loteria
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.ConcursoIni">
+	<summary>
+ Número do Concurso inicial da Faixa
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.ConcursoFim">
+	<summary>
+ Número do Concurso final da Faixa
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Repetitions.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Repetitions.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Repetitions.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarMegaSena(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarDuplaSenaS1(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarDuplaSenaS2(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarQuina(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarLotoFacil(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarLotoMania(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Business.Excel.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="T:Torchwood.Core.Business.Excel">
+	<summary>
+ Classe válida apenas para Excel até 2007
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacilRegras.AnalisaRepeticoes78(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 7 e 8 itens
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacilRegras.AnalisaRepeticoes77(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 7 e 7 itens 
+ Duas sequencias de 7 e uma ddezena qualquer
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacilRegras.AnalisaRepeticoes555(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 5 e 5 e 5 de novo.
+ Três sequencias de 5. Tal sequencia já ocorreu uma vez no concurso 419 do lotofacil
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacilRegras.AnalisaRepeticoes86(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 8 e 6 itens 
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacilRegras.AnalisaRepeticoesMaiorQue9(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 9 itens 
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Loterias.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.GravarSena">
+	<summary>
+ Grava Loteria do Tipo Sena
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.GravarMegaSena">
+	<summary>
+ Grava Loteria do Tipo Mega-Sena
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.GravarDuplaSenaS2">
+	<summary>
+ Grava Loteria do Tipo Dupla-Sena Sorteio 1
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.GravarDuplaSenaS1">
+	<summary>
+ Grava Loteria do Tipo Dupla-Sena Sorteio 1
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.GravarLotoFacil">
+	<summary>
+ Grava Loteria do Tipo LotoFácil
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.GravarQuina">
+	<summary>
+ Grava Loteria do Tipo Quina
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.GravarLotoMania">
+	<summary>
+ Grava Loteria do Tipo LotoMania
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Resultados.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Torchwood.Core.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Torchwood.Core.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Torchwood.Core.Data.Excel.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Excel.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

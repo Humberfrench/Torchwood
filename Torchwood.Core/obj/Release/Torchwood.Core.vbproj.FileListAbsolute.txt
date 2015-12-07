@@ -1,0 +1,191 @@
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\ResolveAssemblyReference.cache
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\ResolveAssemblyReference.cache
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+E:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\ResolveAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbprojResolveAssemblyReference.cache
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbprojResolveAssemblyReference.cache
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbprojResolveAssemblyReference.cache
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbprojResolveAssemblyReference.cache
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbprojResolveAssemblyReference.cache
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.dll
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.pdb
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Core.xml
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.dll
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.dll
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.dll
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.pdb
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Consumer.xml
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.pdb
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\bin\Release\Torchwood.Struct.xml
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbprojResolveAssemblyReference.cache
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.Resources.resources
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.vbproj.GenerateResource.Cache
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.dll
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.xml
+C:\Users\Humberto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Release\Torchwood.Core.pdb

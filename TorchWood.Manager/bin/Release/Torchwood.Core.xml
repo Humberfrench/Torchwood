@@ -1,0 +1,1311 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Torchwood.Core
+</name>
+</assembly>
+<members>
+<member name="M:Torchwood.Core.Business.Combinacoes.MegaSena.AnalisarRegras(System.String)">
+	<summary>
+ Aqui Analisa todas as MiniRegras
+ </summary>
+	<returns>Boolean - &gt; True = sequencia pode ir pra lista</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.MegaSena.AnalisaSenas(System.String)">
+	<summary>
+ Analisa as Senas desta sequencia
+ </summary>
+	<param name="strSequence"></param>
+	<returns>True, se existe algo já dado na sequencia. O que diminui as chances</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.MegaSena.AnalisaQuinas(System.String)">
+	<summary>
+ Analisa as Quinas desta sequencia
+ </summary>
+	<param name="strSequence"></param>
+	<returns>True, se existe algo já dado na sequencia. O que diminui as chances</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.MegaSena.AnalisaQuadras(System.String)">
+	<summary>
+ Analisa as Quadras desta sequencia
+ </summary>
+	<param name="strSequence"></param>
+	<returns>True, se existe algo já dado na sequencia. O que diminui as chances</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.MegaSena.CombinarValoresSena">
+	<summary>
+ Gera n milhares de combinações da Mega-Sena. Excluindo sequencias
+ repetidas e dados de concursos.
+ Inicialmente vamos remover apenas dados que existam exatamente em concursos,
+ Apos isto remover os que tem "quina coincidentes"
+ </summary>
+	<returns>List(Of String) das Dezenas</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.ListaAtraso">
+	<summary>
+ Lista as Dezenas, e a quantidades de concursos em atraso
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.ListaAtrasoImpar">
+	<summary>
+ Lista as Dezenas, e a quantidades de concursos impares em atraso
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.ListaAtrasoTop(System.Int32)">
+	<summary>
+ Lista as Dezenas, e a quantidades de concursos top n em atraso
+ </summary>
+	<param name="intOcorrencias">N o multiplo desejado do concurso</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.LoadDataForStructAtrasos(System.Data.DataTable)">
+	<summary>
+ Carrega a Estrutura - Compartilhada, para melhor economia de codigo e reaproveitamento
+ </summary>
+	<param name="dtDados">DataTable</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.LoadDataForStruct(System.Data.DataTable)">
+	<summary>
+ Carrega a Estrutura - Compartilhada, para melhor economia de codigo e reaproveitamento
+ </summary>
+	<param name="dtDados">DataTable</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenas">
+	<summary>
+Pega as melhores Dezenas
+ </summary>
+	<returns>Lista dos dados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenasTop(System.Int32)">
+	<summary>
+ Pega as melhores Dezenas - By Top - Top seria o número do multiplo
+ </summary>
+	<param name="intOcorrencias">Qtde de Ocorrencias</param>
+	<returns>Lista dos dados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenasTopImpar">
+	<summary>
+Pega as melhores de uma loteria, para com o qual seria 
+ passado as dezena anteriormente na tabela temporaria com o guid
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestDezenasByRol">
+	<summary>
+Pega as melhores Dezenas - Dentro das Faixas de um ROL estatístico
+ </summary>
+	<returns>Lista dos dados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestResults(System.String,System.Int32,System.Int32)">
+	<summary>
+Pega as melhores Dezenas, com limite de ocorrencias mínimas pela loteria.
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetBestResultsAll(System.String,System.Int32,System.Int32)">
+	<summary>
+Pega as melhores Dezenas. Todas sem limite de ocorrencia mínima.
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Statistics.GameStats.GetResultsByDistribute">
+	<summary>
+ Retorna resultados da distribuição
+ </summary>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.Loteria">
+	<summary>
+ Código da Loteria
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.ConcursoIni">
+	<summary>
+ Número do Concurso inicial da Faixa
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Statistics.GameStats.ConcursoFim">
+	<summary>
+ Número do Concurso final da Faixa
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Calculation.CombineMegaSena(System.String)">
+	<summary>
+ Combinar n dezenas para jogos da megasena
+ </summary>
+	<param name="strDezenas">dezenas preferivelmenteseparadas por ;</param>
+	<returns>Estrutura dos jogos</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Calculation.CombineDuplaSena(System.String)">
+	<summary>
+ Combinar n dezenas para jogos da duplasena
+ </summary>
+	<param name="strDezenas">dezenas preferivelmenteseparadas por ;</param>
+	<returns>Estrutura dos jogos</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Calculation.CombineQuina(System.String)">
+	<summary>
+ Combinar n dezenas para jogos da quina
+ </summary>
+	<param name="strDezenas">dezenas preferivelmenteseparadas por ;</param>
+	<returns>Estrutura dos jogos</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacil.AnalisarRegras(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analise sintética de todas as regras da Lotofácil
+ </summary>
+	<param name="oList">Lista de dados das sequencias já obtidas</param>
+	<returns>booleano, onde true é permitido o uso</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacil.AnalisaRepeticoes78(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 7 e 8 itens
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacil.AnalisaRepeticoes77(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 7 e 7 itens 
+ Duas sequencias de 7 e uma ddezena qualquer
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacil.AnalisaRepeticoes555(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 5 e 5 e 5 de novo.
+ Três sequencias de 5. Tal sequencia já ocorreu uma vez no concurso 419 do lotofacil
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacil.AnalisaRepeticoes86(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 8 e 6 itens 
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacil.AnalisaRepeticoes96(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 9 e 6 itens 
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.LotoFacil.AnalisaRepeticoesMaiorQue9(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 9 itens 
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Torchwood.Core.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Torchwood.Core.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Torchwood.Core.Data.Dezenas.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarSena">
+	<summary>
+ Grava Loteria do Tipo Sena
+ </summary>
+	<returns>Boolean</returns>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarMegaSena">
+	<summary>
+ Grava Loteria do Tipo Mega-Sena
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarDuplaSenaS2">
+	<summary>
+ Grava Loteria do Tipo Dupla-Sena Sorteio 1
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarDuplaSenaS1">
+	<summary>
+ Grava Loteria do Tipo Dupla-Sena Sorteio 1
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarLotoFacil">
+	<summary>
+ Grava Loteria do Tipo LotoFácil
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarQuina">
+	<summary>
+ Grava Loteria do Tipo Quina
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarLotoMania">
+	<summary>
+ Grava Loteria do Tipo LotoMania
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Dezenas.GravarTimeMania">
+	<summary>
+ Grava Loteria do Tipo TimeMania
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.Senas.AnalisarRegrasUnitarias(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa Todas as Regras impostas. 
+ Para a Lista de Dezenas poder Passar, deve ser todas negados, 
+ ou seja retornar false em todas as análises
+ </summary>
+	<param name="oList">Lista das Dezenas para analisar</param>
+	<returns>Booleano</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.Senas.AnalisaRepeticoes6(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com 6 itens
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleano caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.Senas.AnalisaRepeticoes5(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias de quinas na Sena
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleano caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.Senas.AnalisaRepeticoes4(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias de quadras na Sena
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleano caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.Senas.AnalisaRepeticoes3(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Analisa regra de repeticoes para dezenas de triplas, dois ternos separados
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.Senas.AnalisaRepeticoesUnitarias(System.Collections.Generic.IList{System.Int32},System.Int32)">
+	<summary>
+ Analisa regra de repeticoes para dezenas de sequencias com unidades ou seja 10, 20, 30, 40, 11,21,31,...
+ </summary>
+	<param name="oList">Lista das ocorrencias</param>
+	<returns>Booleando caso aconteça</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Regras.Senas.AnalisaRegrasNbyN(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Análise geral de todas as regras duo a duo
+ </summary>
+	<param name="oList">lista das sequencias ja analisadas</param>
+	<returns>Boolean se o set de dezena está ok</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarMegaSena(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarDuplaSenaS1(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarDuplaSenaS2(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarQuina(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarLotoFacil(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarLotoMania(System.String,System.Int32)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Excel.ImportarTimeMania(System.String,System.Int32,System.String@)">
+	<summary>
+ Executa a leitura da planilha, e carrega dados para a estrutura para um objeto
+ </summary>
+	<param name="strNomeArquivo">Nome do Arquivo do Excel</param>
+	<returns>Lista Generics, com lista da estrutura da loteria com os dados importados</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Business.Excel.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="T:Torchwood.Core.Business.Excel">
+	<summary>
+ Classe válida apenas para Excel até 2007
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Loterias.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.Add(Torchwood.Struct.Loteria)">
+	<summary>
+ adiciona nova loteria na tabela
+ </summary>
+	<param name="objLoteria">objeto contendo dados da loteria</param>
+	<returns>true, se ocorreu tudo certo</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.Delete(System.Int32)">
+	<summary>
+ remove loteria na tabela
+ </summary>
+	<param name="intLoteria">codigo da loteria</param>
+	<returns>true, se ocorreu tudo certo. false se der errado.</returns>
+	<remarks>Caso HAJA Dezenas, Ele fará Atualização de Status para Inativo</remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.Update(Torchwood.Struct.Loteria)">
+	<summary>
+ atualiza dados da loteria na tabela
+ </summary>
+	<param name="objLoteria">objeto contendo dados da loteria</param>
+	<returns>true, se ocorreu tudo certo</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.Get(System.Int32)">
+	<summary>
+ Obtem um item da tabela de Loterias
+ </summary>
+	<param name="intLoteria">Código da Loteria</param>
+	<returns>Estrutura da Loteria</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.List">
+	<summary>
+ Lista Todas as Loterias Ativas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.ListAll">
+	<summary>
+ Lista Todos os registros de Loteria, seja ativos e ou inativos
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.AtualizaStatus(System.Int32,System.String)">
+	<summary>
+ Efetua a atualização do Status da Loteria
+ </summary>
+	<param name="intLoteria">Código da Loteria</param>
+	<param name="strStatus">Novo Status da Loteria</param>
+	<returns>True, se ocorreu tudo OK</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Loterias.VerificaLoteria(System.Int32)">
+	<summary>
+ Verifica se existe Dezenas na loteria. 
+ Método Importante para conferencia de Deleção do Status.
+ </summary>
+	<param name="intLoteria">Código da Loteria</param>
+	<returns>True, se sim, tem dezenas Depentes. False, não tem.</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Timemania.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Timemania.List">
+	<summary>
+ Lista Todas Os Times Ativas
+ </summary>
+	<returns>Lista dos Times</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Timemania.ObterTime(System.String,System.String)">
+	<summary>
+ Obtem o Código do Time, de acordo com o nome e a UF. Para Loteria de Time Mania
+ </summary>
+	<param name="strTime">Nome do Time</param>
+	<param name="strUF">Nome da UF</param>
+	<returns>Estrutura com os dados Completos</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericActions.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericActions.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericActions.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericActions.Loteria">
+	<summary>
+ Código da Loteria
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.AddCenario">
+	<summary>
+ Adiciona um novo cenário
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.AddCenarioItem">
+	<summary>
+ Adiciona um Item do Cenário
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.GetCenario">
+	<summary>
+ Obtem dados do Cenario
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.GetCenarioItem">
+	<summary>
+ Obtem os itens do Cenario
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.ListaCenario">
+	<summary>
+ List todos os dados dos Cenarios.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.DelCenarioItem(System.Int32)">
+	<summary>
+ Exclui um item do cenário
+ </summary>
+	<param name="intItem">Número do Item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.DelCenarioItem">
+	<summary>
+ Exclui os items item do cenário
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Cenario.CalculaCenario">
+	<summary>
+ Processa os cálculos do cenário e atualiza-o
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Cenario.GetAll">
+	<summary>
+ Se traz todos os itens ou não.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Cenario.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Cenario.Item">
+	<summary>
+ Dados do Cenário
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.VerificaSequencias(System.Collections.Generic.IList{System.Int32}@,System.Int32@)">
+	<summary>
+ Faz a verificaçãodas sequencias de dados. Dentro do método verifica
+ as seuqencias e grava os tipos se são de 2, 3, 4, etc numeros sequenciais
+ </summary>
+	<param name="lstNumber">Dezenas para serem anlalisadas</param>
+	<param name="indiceNumber">Posição da Sequencia, de onde começa</param>
+	<returns>Tipo ReturnData</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.GetSequences(System.Collections.Generic.IList{System.Int32})">
+	<summary>
+ Obtem todas as sequencias, trabalha em conjunto com o método VerificaSequencias
+ que faz verificações unitárias, e devolve a este, que organiza a informação e segue
+ analisando as dezenas seguintes até finalizar a lista
+ </summary>
+	<param name="lstSequencia">Lista de Dezenas</param>
+	<returns>Lista contendo objetos do tipo inteiro mostrando a forma de sequencias
+ Exemplo 3,4,1,1,1,1,2 onde temos uma sequencia de 3, depois de 4, várias dezenas
+ independentes e depois uma sequencia de dois</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.VerificaSequenciasNbyN(System.Collections.Generic.IList{System.Int32}@,System.Int32@,System.Int32@)">
+	<summary>
+ Faz a mesma tarefa do método VerificaSequencias, mas com intervalos n a n de números.
+ </summary>
+	<param name="lstNumber">Dezenas para serem anlalisadas</param>
+	<param name="indiceNumber">Posição da Sequencia, de onde começa</param>
+	<param name="intIntervalo">Intervalo a somar na sequencia para verificar</param>
+	<returns>Tipo ReturnData</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.GetSequencesNbyN(System.Collections.Generic.IList{System.Int32},System.Int32)">
+	<summary>
+ Faz a mesma tarefa do método GetSequences, mas com intervalos n a n de números.
+ </summary>
+	<param name="lstSequencia">Lista de Dezenas</param>
+	<param name="intIntervalo">Intervalo a somar na sequencia para verificar</param>
+	<returns>Lista contendo objetos do tipo inteiro mostrando a forma de sequencias
+ Exemplo 3,4,1,1,1,1,2 onde temos uma sequencia de 3, depois de 4, várias dezenas
+ independentes e depois uma sequencia de dois</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.Convert(System.String)">
+	<summary>
+ Converte uma string separada por algum separador como "," ou ";" para um tipo IList(Integer)
+ </summary>
+	<param name="strValor">string separada por algum separador como "," ou ";"</param>
+	<returns>IList(Integer)</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.Convert(Torchwood.Struct.Combinacoes.MegaSena)">
+	<summary>
+ Converte dados de um objeto de Mega Sena para IList(Integer)
+ </summary>
+	<param name="oSena"></param>
+	<returns>IList(Integer)</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.Convert(Torchwood.Struct.Combinacoes.DuplaSena)">
+	<summary>
+ Converte dados de um objeto de Dupla Sena para IList(Integer)
+ </summary>
+	<param name="oSena"></param>
+	<returns>IList(Integer)</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.Convert(Torchwood.Struct.Combinacoes.LotoFacil)">
+	<summary>
+ Converte dados de um objeto de LotoFácil para IList(Integer)
+ </summary>
+	<param name="oLoto"></param>
+	<returns>IList(Integer)</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.Convert(Torchwood.Struct.Combinacoes.LotoMania)">
+	<summary>
+ Converte dados de um objeto de LotoMania para IList(Integer)
+ </summary>
+	<param name="oLoto"></param>
+	<returns>IList(Integer)</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Sequences.Convert(Torchwood.Struct.Combinacoes.Quina)">
+	<summary>
+ Converte dados de um objeto de Quina para IList(Integer)
+ </summary>
+	<param name="oQuina"></param>
+	<returns>IList(Integer)</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericQueries.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericQueries.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.GenericQueries.CheckConcoursAndLotery(System.Int32,System.Int32)">
+	<summary>
+ importante para verificação da planilha excel se existe ou não o concurso para a loteria
+ </summary>
+	<param name="intLoteria">nuemro da loteria</param>
+	<param name="intConcurso">numero do concurso desejado</param>
+	<returns>boolean de acordo com o resultado</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericQueries.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.GenericQueries.Loteria">
+	<summary>
+ Código da Loteria
+ </summary>
+	<value>Inteiro</value>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Resultados.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetMegaSenaResults">
+	<summary>
+ Obtem os Resultados da MegaSena
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetQuinaResults">
+	<summary>
+ Obtem os Resultados da Quina
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetDuplaSenaS1Results">
+	<summary>
+ Obtem os Resultados da DuplaSena Sorteio 1
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetDuplaSenaS2Results">
+	<summary>
+ Obtem os Resultados da DuplaSena Sorteio 2
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetLotoManiaResults">
+	<summary>
+ Obtem os Resultados da LotoMania
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetLotoFacilResults">
+	<summary>
+ Obtem os Resultados da LotoFácil
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetTimeManiaResults">
+	<summary>
+ Obtem os Resultados da TimeMania
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetLastConcursNumber(System.Int32)">
+	<summary>
+ Obtem o Ultimo número de Concurso da Loteria Selecionada
+ </summary>
+	<param name="intLoteria">Código da Loteria</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetLastConcursNumber">
+	<summary>
+ Obtem o Ultimo número de Concurso de Cada Loteria
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetLastConcurs(System.Int32)">
+	<summary>
+Pega as Dezenas do ultimo concurso
+ </summary>
+	<param name="intLoteria">Código da Loteria</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetLastResult(System.Int32)">
+	<summary>
+ Obter o Resultado dos Concursos de Todas as Loterias. Apenas o Ultimo Concurso
+ </summary>
+	<param name="intLoteria">Código da Loteria</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Resultados.GetLastResult">
+	<summary>
+ Obter o Resultado dos Concursos de Todas as Loterias. Apenas o Ultimo Concurso
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorDois(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Dois
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorTres(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Três
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorQuatro(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Quatro
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorCinco(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Cinco
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorSeis(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Seis
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorSete(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Sete
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorOito(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Oito
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorNove(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Nove
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorDez(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Dez
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorOnze(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Onze
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorDoze(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Doze
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorTreze(System.Int32)">
+	<summary>
+ Verifica se o número é divisível por Treze
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Divisibilidade.DivisivelPorN(System.Int32,System.Int32)">
+	<summary>
+ Verifica se o número é divisível por um número qualquer Chamado N
+ </summary>
+	<param name="intNumber">Número para verificar</param>
+	<param name="intDivisor">Divisor para ser efetuado a Divisão</param>
+	<returns>True: É divisivel
+ False: Não é divisível</returns>
+	<remarks></remarks>
+</member><member name="T:Torchwood.Core.Business.Divisibilidade">
+	<summary>
+ Verificação de Divisibilidades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.LotoFacil.AnalisarRegras(System.String)">
+	<summary>
+ Aqui Analisa todas as MiniRegras
+ </summary>
+	<returns>Boolean - &gt; True = sequencia pode ir pra lista</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.LotoFacil.Analisa12Dezenas(System.String)">
+	<summary>
+ Analisa se tem historico de concursos com 12 ocorrencias das 15 setadas.
+ </summary>
+	<param name="strSequence"></param>
+	<returns>True Se ocorrer alguma</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.LotoFacil.Analisa13Dezenas(System.String)">
+	<summary>
+ Analisa se tem historico de concursos com 13 ocorrencias das 15 setadas.
+ </summary>
+	<param name="strSequence"></param>
+	<returns>True Se ocorrer alguma</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.LotoFacil.Analisa14Dezenas(System.String)">
+	<summary>
+ Analisa se tem historico de concursos com 14 ocorrencias das 15 setadas.
+ </summary>
+	<param name="strSequence"></param>
+	<returns>True Se ocorrer alguma</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.LotoFacil.Analisa15Dezenas(System.String)">
+	<summary>
+ Analisa se tem historico de concursos com 15 ocorrencias das 15 setadas.
+ </summary>
+	<param name="strSequence"></param>
+	<returns>True Se ocorrer alguma</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Combinacoes.LotoFacil.CombinarValoresLotoFacil">
+	<summary>
+ Gera n milhares de combinações da Lotofácil. Excluindo sequencias
+ repetidas e dados de concursos.
+ Inicialmente vamos remover apenas dados que existam exatamente em concursos,
+ </summary>
+	<returns>List(Of String) das Dezenas</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.#ctor">
+	<summary>
+ Construtor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.#ctor(System.String)">
+	<summary>
+ Construtor
+ </summary>
+	<param name="pstrKey">Chave de conexão com o Banco de Dados</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.#ctor(System.Int32,System.Int32,System.String,System.DateTime,System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Construtor
+ </summary>
+	<param name="pIntCodigoSet">Código do Set</param>
+	<param name="pIntLoteria">Código da Loteria</param>
+	<param name="pStrNome">Nome do Set de Consulta</param>
+	<param name="pDatConsulta">Data da Consulta</param>
+	<param name="pLstDezenas">Lista de Dezenas</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.#ctor(System.String,System.Int32,System.Int32,System.String,System.DateTime,System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Construtor
+ </summary>
+	<param name="pstrKey">Chave de conexão com o Banco de Dados</param>
+	<param name="pIntCodigoSet">Código do Set</param>
+	<param name="pIntLoteria">Código da Loteria</param>
+	<param name="pStrNome">Nome do Set de Consulta</param>
+	<param name="pDatConsulta">Data da Consulta</param>
+	<param name="pLstDezenas">Lista de Dezenas</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Construtor
+ </summary>
+	<param name="pstrKey">Chave de conexão com o Banco de Dados</param>
+	<param name="pIntCodigoSet">Código do Set</param>
+	<param name="pIntLoteria">Código da Loteria</param>
+	<param name="pIntConcursoInicial">Concurso Inicial</param>
+	<param name="pIntConcursoFinal">Concurso Final</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.SetPesquisas.Item">
+	<summary>
+ Valor do Set de Pesquisa
+ </summary>
+	<value>SetPesquisa</value>
+	<returns>SetPesquisa</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.SetPesquisas.Key">
+	<summary>
+ Chave de Conexão do Banco de Dados
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.SetPesquisas.LoadAll">
+	<summary>
+ Se true, carrega as Dezenas do Set na lista.
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.Add">
+	<summary>
+ Cria um Novo Set de Dados
+ </summary>
+	<returns>Integer, Código do Set</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.AddDezena">
+	<summary>
+ Adiciona todas as Dezenas da Lista
+ </summary>
+	<returns>Boolean, true se OK</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.AddDezena(System.Int32)">
+	<summary>
+ Adiciona uma Dezena no set
+ </summary>
+	<returns>Boolean, true se OK</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.Get">
+	<summary>
+ Obtem um registro do Set de Dados
+ </summary>
+	<returns>Boolean, true se ok</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.List">
+	<summary>
+ Lista todas as Pesquisas. 
+ Caso a propriedade LoadAll esteja setada para True, lista as dezenas e acopla na lista
+ </summary>
+	<returns>List(Of SetPesquisa)</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.GetDezenas">
+	<summary>
+ Obtem as dezenas do Set de Pesquisa
+ </summary>
+	<returns>Lista com as Dezenas</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.Del">
+	<summary>
+ Exclui um Set de Pesquisas, incluindo as dezenas
+ </summary>
+	<returns>True, se OK</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.DelDezenas">
+	<summary>
+ Exclui as dezenas de um Set de Pesquisas
+ </summary>
+	<returns>True se OK</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.DelDezenas(System.Int32)">
+	<summary>
+ Exclui as dezenas de um Set de Pesquisas
+ </summary>
+	<param name="intDezena">Dezena a ser excluida</param>
+	<returns>True se OK</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.Update">
+	<summary>
+ Atualiza o Set de Dados e as Dezenas.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.GetDezenaSet">
+	<summary>
+ Método que pegaas dezenas de um set considerando a quantidade mínima de ocorrências
+ </summary>
+	<returns>Lista de Resultados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.GetDezenasSets(System.String)">
+	<summary>
+ Método de Apoio do GetDezenaSet e GetDezenaSetAll, como são os mesmos, chamam os 
+ mesmos resultados apenas por procs diferetes, unifica-se o método para reaproveitamento melhor
+ do Código
+ </summary>
+	<param name="strProcedure">Nome da procedure</param>
+	<returns>Lista de Resultados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.GetDezenasSetAll">
+	<summary>
+ Método que pega todas as dezenas de um set NÃO considerando a quantidade mínima de ocorrências
+ </summary>
+	<returns>Lista de Resultados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.SetPesquisas.LoadDezenas(System.Data.DataTable@)">
+	<summary>
+ Método de Apoio dos Gets de Dezenas para carregar os dados centralizados de forma única.
+ </summary>
+	<param name="dtResults">DataSet</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Repetitions.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Business.Repetitions.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Business.Repetitions.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.ImportsMegaSena(System.String,System.Int32)">
+	<summary>
+ Executa a leiruta do excel chamando componete Business, 
+ e grava as dezenas importadas
+ </summary>
+	<param name="strFileName">Caminho do Arquivo</param>
+	<param name="intPlanilha">Número da Planilha</param>
+	<returns>Quantodade de concursos Importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.ImportsDuplaSenaS1(System.String,System.Int32)">
+	<summary>
+ Executa a leiruta do excel chamando componete Business, 
+ e grava as dezenas importadas
+ </summary>
+	<param name="strFileName">Caminho do Arquivo</param>
+	<param name="intPlanilha">Número da Planilha</param>
+	<returns>Quantodade de concursos Importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.ImportsDuplaSenaS2(System.String,System.Int32)">
+	<summary>
+ Executa a leiruta do excel chamando componete Business, 
+ e grava as dezenas importadas
+ </summary>
+	<param name="strFileName">Caminho do Arquivo</param>
+	<param name="intPlanilha">Número da Planilha</param>
+	<returns>Quantodade de concursos Importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.ImportsQuina(System.String,System.Int32)">
+	<summary>
+ Executa a leiruta do excel chamando componete Business, 
+ e grava as dezenas importadas
+ </summary>
+	<param name="strFileName">Caminho do Arquivo</param>
+	<param name="intPlanilha">Número da Planilha</param>
+	<returns>Quantodade de concursos Importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.ImportsLotoFacil(System.String,System.Int32)">
+	<summary>
+ Executa a leiruta do excel chamando componete Business, 
+ e grava as dezenas importadas
+ </summary>
+	<param name="strFileName">Caminho do Arquivo</param>
+	<param name="intPlanilha">Número da Planilha</param>
+	<returns>Quantodade de concursos Importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.ImportsLotoMania(System.String,System.Int32)">
+	<summary>
+ Executa a leiruta do excel chamando componete Business, 
+ e grava as dezenas importadas
+ </summary>
+	<param name="strFileName">Caminho do Arquivo</param>
+	<param name="intPlanilha">Número da Planilha</param>
+	<returns>Quantodade de concursos Importados</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Excel.ImportsTimeMania(System.String,System.Int32,System.String@)">
+	<summary>
+ Executa a leiruta do excel chamando componete Business, 
+ e grava as dezenas importadas
+ </summary>
+	<param name="strFileName">Caminho do Arquivo</param>
+	<param name="intPlanilha">Número da Planilha</param>
+	<returns>Quantodade de concursos Importados</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Excel.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Statics.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Analise.Lotofacil.AnalisaRegras(System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Analise das Regras 
+ Selecione as que tem no TOP 5 de Best Dezenas
+ Top 5 das Que tem nos Atrasos
+ Top 5 das que não dão
+ </summary>
+	<param name="lstDados"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Combinacoes.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Combinacoes.VerificaSenasNaMega(Torchwood.Struct.Combinacoes.MegaSena)">
+	<summary>
+ Verifica a existencia de senas no historico com as dezenas selecionadas
+ Desta forma elimina se das analises os jogos já sorteados
+ </summary>
+	<param name="oMegaSena">Dezenas para serem analisadas</param>
+	<returns>True se houver uma ocorrencia</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Combinacoes.VerificaQuinasNaMega(Torchwood.Struct.Combinacoes.MegaSena)">
+	<summary>
+ Verifica a existencia de quinas no historico com as dezenas selecionadas
+ </summary>
+	<param name="oMegaSena">Dezenas para serem analisadas</param>
+	<returns>True se houver uma ocorrencia</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Combinacoes.VerificaQuadrasNaMega(Torchwood.Struct.Combinacoes.MegaSena)">
+	<summary>
+ Verifica a existencia de quadras no historico com as dezenas selecionadas
+ </summary>
+	<param name="oMegaSena">Dezenas para serem analisadas</param>
+	<returns>True se houver uma ocorrencia</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Combinacoes.Verifica15NaLotoFacil(Torchwood.Struct.Combinacoes.LotoFacil)">
+	<summary>
+ Verifica a existencia de senas no historico com as dezenas selecionadas
+ Desta forma elimina se das analises os jogos já sorteados
+ </summary>
+	<param name="oLotoFacil">Dezenas para serem analisadas</param>
+	<returns>True se houver uma ocorrencia</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Combinacoes.Verifica14NaLotoFacil(Torchwood.Struct.Combinacoes.LotoFacil)">
+	<summary>
+ Verifica a existencia de 14 dezenas no historico com as dezenas selecionadas
+ Desta forma elimina se das analises os jogos já sorteados
+ </summary>
+	<param name="oLotoFacil">Dezenas para serem analisadas</param>
+	<returns>True se houver uma ocorrencia</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Combinacoes.Verifica13NaLotoFacil(Torchwood.Struct.Combinacoes.LotoFacil)">
+	<summary>
+ Verifica a existencia de 13 dezenas no historico com as dezenas selecionadas
+ Desta forma elimina se das analises os jogos já sorteados
+ </summary>
+	<param name="oLotoFacil">Dezenas para serem analisadas</param>
+	<returns>True se houver uma ocorrencia</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Combinacoes.Verifica12NaLotoFacil(Torchwood.Struct.Combinacoes.LotoFacil)">
+	<summary>
+ Verifica a existencia de 12 dezenas no historico com as dezenas selecionadas
+ Desta forma elimina se das analises os jogos já sorteados
+ </summary>
+	<param name="oLotoFacil">Dezenas para serem analisadas</param>
+	<returns>True se houver uma ocorrencia</returns>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Repetitions.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Torchwood.Core.Data.Repetitions.#ctor(System.String)">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<param name="pstrKey">Chave do Banco</param>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Core.Data.Repetitions.Key">
+	<summary>
+ Chave para a conexão com o banco
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

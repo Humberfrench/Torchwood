@@ -1,0 +1,856 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Consumer.Mail
+</name>
+</assembly>
+<members>
+<member name="F:Consumer.Mail.Structs.JMensagem.arrDe">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com que renderiza o endereço de envio da mensagem
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.arrPara">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com conjunto de endereços.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.arrCopia">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com conjunto de endereços. Para Cópia da Mensagem.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.arrBCC">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com conjunto de endereços. Para Cópia Oculta da Mensagem.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.intMailType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Tipo do formato do E-mail
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.intPrioridade">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Prioridade da mensagem
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.strSubject">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Assunto da mensagem.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.strMessage">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Conteudo da mensagem
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Structs.JMensagem.#ctor(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor.
+ Nesta Classe, não existe forma de overloads para este construtor, é obrigatório
+ a presenlça do email e do nome de quem vai mandar a mensagem
+ </summary>
+	<param name="strMail">Email de envio</param>
+	<param name="strName">Nome do Email</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Prioridade">
+ -----------------------------------------------------------------------------
+ <summary>
+ Prioridade da mensagem
+ </summary>
+	<value>PriorType. Integer</value>
+	<remarks>
+		<seealso cref="PriorType"/>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Type">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Email. Tipo do formato
+ </summary>
+	<value>MailType. Integer</value>
+	<remarks>
+		<seealso cref="MailType"/>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.De">
+ -----------------------------------------------------------------------------
+ <summary>
+ E-Mail de Pessoa que está enviando a mensagem.
+ </summary>
+	<value>Objeto do Tipo Adress</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Para">
+ -----------------------------------------------------------------------------
+ <summary>
+ Conjunto de objetos do Tipo Adress, para renderizar para quem vai a mensagem.
+ </summary>
+	<value>Objeto Tipo AddressList</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Copia">
+ -----------------------------------------------------------------------------
+ <summary>
+ Conjunto de objetos do Tipo Adress, para renderizar para quem vai a mensagem.
+ </summary>
+	<value>Objeto Tipo AddressList</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.BCC">
+ -----------------------------------------------------------------------------
+ <summary>
+ Destinatários de Cópia Oculta
+ </summary>
+	<value>Objeto Tipo Adress List</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Assunto">
+ -----------------------------------------------------------------------------
+ <summary>
+ Assunto da Mensagem
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Mensagem">
+ -----------------------------------------------------------------------------
+ <summary>
+ Mensagem . Conteudo da mensagem a ser enviada, em HTML ou Texto
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.Structs.JMensagem">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Mail.MessageJ
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Model Mensagem
+ Contém Propriedades para uso de envio de mensagens via JMail.
+ </summary>
+	<remarks>
+ Está sendo usada a versão free do JMail.
+ </remarks>
+	<history>
+ 	[humberto]	23/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.MailType.Text">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Email que será enviado em formato TEXTO
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.MailType.HTML">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Email que será enviado em formato HTML
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.MailType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador de Tipo de Email
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.PriorType.Highest">
+ -----------------------------------------------------------------------------
+ <summary>
+ Email sendo enviado em prioridade ALTISSIMA
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.PriorType.High">
+ -----------------------------------------------------------------------------
+ <summary>
+ Email Sendo enviado em prioridade ALTA
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.PriorType.Normal">
+ -----------------------------------------------------------------------------
+ <summary>
+ Email Sendo enviado em prioridade NORMAL
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.PriorType.Low">
+ -----------------------------------------------------------------------------
+ <summary>
+ Email Sendo enviado em prioridade BAIXA
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.PriorType.Lowest">
+ -----------------------------------------------------------------------------
+ <summary>
+ Email Sendo enviado em prioridade BAIXISSIMA
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.PriorType.None">
+ -----------------------------------------------------------------------------
+ <summary>
+ Email Sendo enviado em prioridade NONE. Ou seja Sem prioridades
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.PriorType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de prioridade do email
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.strDe">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dado que referencia a propriedade De
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.arrPara">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dado que referencia a propriedade Para
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.arrCopia">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dado que referencia a propriedade Copia
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.arrBCC">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dado que referencia a propriedade BCC
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.intMailType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dado que referencia a propriedade Type
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.intPrioridade">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dado que referencia a propriedade Prioridade
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.strSubject">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dado que referencia a propriedade Assunto
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.Mensagem.strMessage">
+ -----------------------------------------------------------------------------
+ <summary>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Structs.Mensagem.#ctor">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor de uma nova mensagem
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.Prioridade">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Prioridade de Mensagem, Baixa, alta, ou  Normal.
+ </summary>
+	<value>Inteiro</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.Type">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Mensagem. HTML ou Texto, colocados dentro de um enumerador
+ </summary>
+	<value>Inteiro</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.De">
+ -----------------------------------------------------------------------------
+ <summary>
+ Quem Manda o E-Mail (Campo From)
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.Para">
+ -----------------------------------------------------------------------------
+ <summary>
+ Lista de Destinatários das Mensagens
+ </summary>
+	<value>ArrayList.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.Copia">
+ -----------------------------------------------------------------------------
+ <summary>
+ Lista de Destinatários das Mensagens. Cópia
+ </summary>
+	<value>ArrayList.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.BCC">
+ -----------------------------------------------------------------------------
+ <summary>
+ Lista de Destinatários das Mensagens. Cópia Oculta
+ </summary>
+	<value>ArrayList.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.Assunto">
+ -----------------------------------------------------------------------------
+ <summary>
+ Campo Assunto da Mensagem
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.Mensagem.Mensagem">
+ -----------------------------------------------------------------------------
+ <summary>
+ Conteúdo da Mensagem, pode ser um texto, ou um texto contendo TAGS de HTML.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.Structs.Mensagem">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Mail.Message
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Model Mensagem
+ Contém Propriedades para uso de envio de mensagens via CDO.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	23/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.Mail.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.Mail.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Consumer.Mail.Engine.JEMail.#ctor">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe JEMail
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.JEMail.#ctor(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe JEMail
+ </summary>
+	<param name="strkey">Chave encontrada no web.config</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.JEMail.Send(Consumer.Mail.Structs.JMensagem)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que envia o email.
+ </summary>
+	<param name="objMensagem">Objeto do Tipo JMensagem. Formatada para enviar emails</param>
+	<returns>Booleano de acordo com o sucesso do envio</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.JEMail.Send(Consumer.Mail.Structs.JMensagem,System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que envia o email.
+ </summary>
+	<param name="objMensagem">Objeto do Tipo JMensagem. Formatada para enviar emails</param>
+	<param name="strLogin">Login do Usuário que enviará o e-mail.</param>
+	<param name="strSenha">Senha do Usuário que enviará o e-mail.</param>
+	<returns>Booleano de acordo com o sucesso do envio</returns>
+	<remarks>
+ É necessário neste overload, a passagem do login e senha. Alguns servidores pedem
+ que tenha login e senha, para evitar o envio de emails anonimos. Por exemplo o Exchange Server.
+ </remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Engine.JEMail.Key">
+ -----------------------------------------------------------------------------
+ <summary>
+ Esta propriedade é alimentada inidialmente pela string "MailServer".
+ Pode ser alterada a cada instancia da classe, para caso de haver basede dados
+ diferentes.
+ </summary>
+	<value>String contendo o key, do web.config para a conexao.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	10/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Engine.JEMail.Server">
+ -----------------------------------------------------------------------------
+ <summary>
+ Nome do Servidor de E-Mail
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Engine.JEMail.Domain">
+ -----------------------------------------------------------------------------
+ <summary>
+ Propriedade Domain - Guarda o nome do domínio da Rede, caso HAJA
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	20/1/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.Engine.JEMail">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Mail.JEMail
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe que envia e-mails usando a tecnologia do JMail.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	26/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Engine.EMail.strMailServer">
+ -----------------------------------------------------------------------------
+ <summary>
+ Identificador do nome do Servidor
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Engine.EMail.strKey">
+ -----------------------------------------------------------------------------
+ <summary>
+ Itentificador da Chave, no web.config/app.config contendo a chave que terá a string com os dados do servidor.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.EMail.#ctor">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor do objeto. Cria uma nova instancia para objeto de envio de mensagem.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.EMail.#ctor(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor do objeto. Cria uma nova instancia para objeto de envio de mensagem.
+ </summary>
+	<param name="strkey">Chave para a busca do nome do servidor.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.EMail.Send(Consumer.Mail.Structs.Mensagem,System.Boolean,System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Envia a mensagem de email, para os destinatários desejados.
+ </summary>
+	<param name="objMensagem">Objeto contendo uma mensagem para ser enviada</param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Engine.EMail.Key">
+ -----------------------------------------------------------------------------
+ <summary>
+ Esta propriedade é alimentada inidialmente pela string "MailServer".
+ Pode ser alterada a cada instancia da classe, para caso de haver basede dados
+ diferentes.
+ </summary>
+	<value>String contendo o key, do web.config para a conexao.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	10/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Engine.EMail.Server">
+ -----------------------------------------------------------------------------
+ <summary>
+ Nome do Servidor de E-Mails
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Engine.EMail.Domain">
+ -----------------------------------------------------------------------------
+ <summary>
+ Propriedade Domain - Guarda o nome do domínio da Rede, caso HAJA
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	20/1/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.EMail.ConvertToSenders(System.Collections.Generic.List{System.String})">
+ -----------------------------------------------------------------------------
+ <summary>
+ Conversor de ArrayList para Um string que contenha todos os destinatários separados por ";"
+ </summary>
+	<param name="arrSenders">Objeto Array List.</param>
+	<returns>String</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.Engine.EMail">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Mail.EMail
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe De Envio de mensagens com o uso do CDO.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member>
+</members>
+</doc>

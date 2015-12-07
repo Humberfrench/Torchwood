@@ -1,0 +1,1459 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Consumer.Data
+</name>
+</assembly>
+<members>
+<member name="M:Consumer.Data.Data.Collections.Commands.#ctor(Consumer.Data.Provider)">
+	<summary>
+ Construtor da classe Commandcollection
+ </summary>
+	<param name="intProvider">Tipo de provedor de Dados</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.#ctor(Consumer.Data.Provider,System.String)">
+	<summary>
+ Construtor da classe Commandcollection
+ </summary>
+	<param name="intProvider">Tipo de provedor de Dados</param>
+	<param name="strConnectionString">String de conexão</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.Run(System.String)">
+	<summary>
+ Executa um set e grava no componente. Por nome do command
+ </summary>
+	<param name="strCommandName">nome do command.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.Run(System.Int32)">
+	<summary>
+ Executa um set e grava no componente. Por indice da coleção
+ </summary>
+	<param name="intIndex">indice da colecao</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.Run">
+	<summary>
+ Executa um set e grava no componente. Por indice da coleção, ele roda o ultimo item
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.ReturnDataSet(System.String)">
+	<summary>
+ função sobreposta que retorna um dataset
+ </summary>
+	<param name="strCommandName">nome do comando</param>
+	<returns>dataset</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.ReturnDataTable(System.String)">
+	<summary>
+ função sobreposta que retorna um datatable
+ </summary>
+	<param name="strCommandName">nome do comando</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.Build">
+	<summary>
+ Refaz todos os comandos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.ReBuild">
+	<summary>
+ Refaz todos os comandos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.Execute">
+	<summary>
+ Executa uma query.
+ </summary>
+	<returns>Inteiro. quantidade de linhas</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.ExecuteQuery">
+	<summary>
+ Executa uma query.
+ </summary>
+	<returns>Inteiro. quantidade de linhas</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.ExecuteNonQuery">
+	<summary>
+ Executa uma query.
+ </summary>
+	<returns>Inteiro. quantidade de linhas</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.Commands.VerificaDuplicidade(System.String)">
+	<summary>
+ Verifica e evita a criação de nomes duplicados na coleção
+ </summary>
+	<param name="strKey">Nome que está sendo inserido</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Consumer.Data.Data.Collections.Commands">
+	<summary>
+ Classe container de N resultados de commands. Os resultados são em formato DataSet.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.ParameterCollection.Dispose">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função dispose, que destroi o objeto.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Dispose(System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função dispose, que destroi o objeto.
+ </summary>
+	<param name="Disposable">Se true, o objeto é destruido.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Finalize">
+ -----------------------------------------------------------------------------
+ <summary>
+ Destrutior do objeto. Chamada quando a instancia do mesmo é setada para True.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.#ctor">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria uma nova coleção de parametros.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.#ctor(Consumer.Data.Parameter)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria-se uma coleção de parametros, e já contendo um novo parâmetro dentro dela.
+ </summary>
+	<param name="Parametro">Parametro qual será adicionado na nova instância da classe</param>
+	<remarks>
+	</remarks>
+	<seealso cref="T:Consumer.Data.Parameter"/>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(Consumer.Data.Parameter)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="value">Objeto Parameter que será adicionado.</param>
+	<seealso cref="T:Consumer.Data.Parameter"/>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="value">Objeto Parameter que será adicionado.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.String,System.Data.DbType)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="Name">Nome do Parâmetro, tipo String</param>
+	<param name="DbType">Tipo de Dado do Parâmetro, tipo DbType</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.String,System.Data.DbType,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="Name">Nome do Parâmetro, tipo String</param>
+	<param name="DbType">Tipo de Dado do Parâmetro, tipo DbType</param>
+	<param name="value">Valor do Parâmetro a ser adicionado, tipo object</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.String,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="Name">Nome do Parâmetro, tipo String</param>
+	<param name="value">Valor do Parâmetro a ser adicionado, tipo object</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.String,System.Data.DbType,System.Int32,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="Name">Nome do Parâmetro, tipo String</param>
+	<param name="DbType">Tipo de Dado do Parâmetro, tipo DbType</param>
+	<param name="value">Valor do Parâmetro a ser adicionado, tipo object</param>
+	<param name="size">Tamanho do Parâmetro, tipo inteiro</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.String,System.Data.DbType,System.Int32,System.String,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="Name">Nome do Parâmetro, tipo String</param>
+	<param name="DbType">Tipo de Dado do Parâmetro, tipo DbType</param>
+	<param name="value">Valor do Parâmetro a ser adicionado, tipo object</param>
+	<param name="size">Tamanho do Parâmetro, tipo inteiro</param>
+	<param name="sourceColumn">Coluna Source da Tabela, Tipo String</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.String,System.Data.DbType,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="Name"></param>
+	<param name="DbType"></param>
+	<param name="size"></param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Add(System.String,System.Data.DbType,System.Int32,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adiciona um parâmetro a coleção de Parâmetros.
+ </summary>
+	<param name="Name"></param>
+	<param name="DbType"></param>
+	<param name="size"></param>
+	<param name="sourceColumn"></param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.ParameterCollection.Item(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna o Item corrente, parâmetro, de acordo com o indice da coleção de parâmetros
+ </summary>
+	<param name="index">Número do indice de Parâmetros, tipo inteiro</param>
+	<value>Parameter</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.ParameterCollection.Item(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna o parametro pelo Nome
+ </summary>
+	<param name="parameterName">Nome do Parâmetro</param>
+	<value>Parameter</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.ParameterCollection.Count">
+ -----------------------------------------------------------------------------
+ <summary>
+ Propriedade Herdada de uma coleção. Retorna a quantidade de itens (parâmetros) contida na coleção. <br/>
+ Vale lembrar que as coleções começam a serem contadas a partir do número <B><I>Zero</I></B> para o primeiro item.
+ </summary>
+	<value>Número de Itens. Inteiro</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Remove(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Remove o parametro da coleção pelo seu indice
+ </summary>
+	<param name="index">Indice do Parâmetro. Tipo Inteiro</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Remove(Consumer.Data.Parameter)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Remove o parâmetro sendo passado o parametro para ser removido
+ </summary>
+	<param name="objParameter">Tipo Parametro, a ser removido</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.Contains(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+	</summary>
+	<param name="parameterName"></param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection.IndexOf(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna o indice do
+ </summary>
+	<param name="parameterName">Nome do parâmetro a ser procurado</param>
+	<returns>O Valor do índice do parâmetro. Tipo Inteiro</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.ParameterCollection._cultureAwareCompare(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorno de comparação das Culturas
+ </summary>
+	<param name="strParamA">Nomes de Parâmetros a ser Comparados</param>
+	<param name="strParamB">Nomes de Parâmetros a ser Comparados</param>
+	<returns>Inteiro.</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Data.ParameterCollection">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Data.ParameterCollection
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Coleção de Parâmetros.<BR/>
+ Classe que renderiza Coleção de parametros para o command executar as procedures, ou queries parametrizadas.
+ </summary>
+	<remarks>
+		<seealso cref="T:Consumer.Data.Parameter"/>
+		<seealso cref="T:Consumer.Data.Command"/>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Data.Collections.ResultSet.#ctor">
+	<summary>
+ Construtor da Classe de Resultados
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.ResultSet.#ctor(System.String)">
+	<summary>
+ Construtor da Classe de Resultados
+ </summary>
+	<param name="strName">Nome do Comando a ser armazenado o resultado</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.ResultSet.#ctor(System.String,System.String)">
+	<summary>
+ Construtor da Classe de Resultados
+ </summary>
+	<param name="strName">Nome do Comando a ser armazenado o resultado</param>
+	<param name="strSQLCommand">Instrução de SQL</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.ResultSet.#ctor(System.String,System.String,System.Data.CommandType)">
+	<summary>
+ Construtor da Classe de Resultados
+ </summary>
+	<param name="strName">Nome do Comando a ser armazenado o resultado</param>
+	<param name="strSQLCommand">Instrução de SQL</param>
+	<param name="CmdType">Tipo de comando a ser executado</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.ResultSet.#ctor(System.String,System.String,System.Data.CommandType,System.Data.DataSet)">
+	<summary>
+ Construtor da Classe de Resultados
+ </summary>
+	<param name="strName">Nome do Comando a ser armazenado o resultado</param>
+	<param name="strSQLCommand">Instrução de SQL</param>
+	<param name="CmdType">Tipo de comando a ser executado</param>
+	<param name="DataResult">Objeto de DataSet a ser guardado</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Data.Collections.ResultSet.#ctor(System.String,System.String,System.Data.CommandType,System.Data.DataSet,Consumer.Data.ParameterCollection)">
+	<summary>
+	</summary>
+	<param name="strName">Nome do Comando a ser armazenado o resultado</param>
+	<param name="strSQLCommand">Instrução de SQL</param>
+	<param name="CmdType">Tipo de comando a ser executado</param>
+	<param name="DataResult">Objeto de DataSet a ser guardado</param>
+	<param name="Parameters">Colação de parametros do objeto a executar</param>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.Data.Collections.ResultSet.Nome">
+	<summary>
+ Propriedade Nome, que contem o nome do set de dados armazenados
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.Data.Collections.ResultSet.SQL">
+	<summary>
+ Instrução de SQL a ser Executada
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.Data.Collections.ResultSet.CommandType">
+	<summary>
+ Tipo de commando a ser executado. Cabe procedure, table ou intrução SQL em texto
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.Data.Collections.ResultSet.Data">
+	<summary>
+ Resultado de Set de Dados
+ </summary>
+	<value>DataSet</value>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.Data.Collections.ResultSet.Parametros">
+	<summary>
+ Coleção de Parâmetros para retorno do command
+ </summary>
+	<value>Objeto do Tipo Parameter Collection</value>
+	<returns>Objeto do Tipo Parameter Collection</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Parameter.Dispose(System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função dispose, que destroi o objeto.
+ </summary>
+	<param name="Disposable">Se true, o objeto é destruido.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.Finalize">
+ -----------------------------------------------------------------------------
+ <summary>
+ Destrutior do objeto. Chamada quando a instancia do mesmo é setada para True.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.intDbType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade dbType
+ <seealso cref="T:System.Data.DbType"/>
+		<seealso cref="P:Consumer.Data.Parameter.DbType"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.intDirection">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade Direction
+ <seealso cref="P:Consumer.Data.Parameter.Direction"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.strName">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade Name
+ <seealso cref="P:Consumer.Data.Parameter.Name"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.objValue">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade Value
+ <seealso cref="P:Consumer.Data.Parameter.Value"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.bytPrecision">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade Precision
+ <seealso cref="P:Consumer.Data.Parameter.Precision"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.bytScale">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade Scale
+ <seealso cref="P:Consumer.Data.Parameter.Scale"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.intSize">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade CommandTimeout
+ </summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.strSourceColumn">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade Size
+ <seealso cref="P:Consumer.Data.Parameter.Size"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.blnIsNullable">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável auxiliar do projeto.
+ Campo que Renderiza a propridedade IsNullable
+ <seealso cref="P:Consumer.Data.Parameter.IsNullable"/>
+	</summary>
+	<remarks>
+ Tipo de Dados declarado como <b><i>"Protected"</i></b>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Data.Parameter.blnIsKey">
+	<summary>
+ Variável que verifica se o campo é ou não chave. New in 4.0
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Consumer.Data.Parameter.blnIsCounter">
+	<summary>
+ Variável que indica que o campo é um contador - Propriedade específica para o class builder - New in 1.5
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Parameter.#ctor">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.#ctor(System.String,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.#ctor(System.String,System.Data.DbType,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.#ctor(System.String,System.Data.DbType,System.Int32,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.#ctor(System.String,System.Data.DbType,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.#ctor(System.String,System.Data.DbType,System.Int32,System.Object,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<param name="SourceColumn">Coluna de Origem do Parâmetro. Tipo String</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.#ctor(System.String,System.Data.DbType,System.Int32,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<param name="SourceColumn">Coluna de Origem do Parâmetro. Tipo String</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.IsNullable">
+ -----------------------------------------------------------------------------
+ <summary>
+ Propriedade Que contem o valor do tipo do parâmetro se é permitido nulo ou não.
+ </summary>
+	<value>Boolean</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.IsKey">
+	<summary>
+ Propriedade Verificadora se o campo é chave primaria ou não
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.Parameter.IsCounter">
+	<summary>
+ Propriedade que seta se o campo é ou não contador
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.Parameter.SourceColumn">
+ -----------------------------------------------------------------------------
+ <summary>
+ Propriedade Que contem o nome da coluna do parametro
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.DbType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo do Parametro, valor proveniente de um enumerador do banco de dados
+ </summary>
+	<value>Inteiro (dbType)</value>
+	<seealso cref="T:System.Data.DbType"/>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.Direction">
+ -----------------------------------------------------------------------------
+ <summary>
+ Parâmetro que indica a direção, pode ser parâmetro de entrada, de saída ou os dois.
+ </summary>
+	<value>ParameterDirection - Tipo Inteiro.</value>
+	<seealso cref="T:System.Data.ParameterDirection"/>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.ParameterName">
+ -----------------------------------------------------------------------------
+ <summary>
+ Nome do parâmetro.
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.Name">
+ -----------------------------------------------------------------------------
+ <summary>
+ Nome do parâmetro.
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.Value">
+ -----------------------------------------------------------------------------
+ <summary>
+ Valor do parâmetro
+ </summary>
+	<value>Object, mas pode ser qualquer tipo de dado primitivo.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.Precision">
+ -----------------------------------------------------------------------------
+ <summary>
+ Precisão numérica
+ </summary>
+	<value>Byte</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.Scale">
+ -----------------------------------------------------------------------------
+ <summary>
+ Valor da Escala numérica
+ </summary>
+	<value>Byte</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Parameter.Size">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tamanho da String.<br/>
+ Válido somente para tipos que conhenham strings como:
+ <list type="bullet">
+			<item>
+				<description>Char</description>
+			</item>
+			<item>
+				<description>VarChar</description>
+			</item>
+			<item>
+				<description>NVarChar</description>
+			</item>
+		</list>
+	</summary>
+	<value>Tamkanho da String. Tipo Inteiro.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Parameter.ToString">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna o Parametro convertido para String. Na verdade retorna o nome do parametro
+ </summary>
+	<returns>String</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Data.Parameter">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Data.Parameter
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe que renderiza um parametro para o command executar as procedures, ou queries parametrizadas.
+ </summary>
+	<remarks>
+		<seealso cref="T:Consumer.Data.ParameterCollection"/>
+		<seealso cref="T:Consumer.Data.Command"/>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.Data.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.Data.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Consumer.Data.Command.Provider">
+ -----------------------------------------------------------------------------
+ <summary>
+ Propriedade que retém o provedor de Dados.
+ Damos Suporte a SQL Server e Oracle, diretamente, e OleDb para qualquer outra base de dados.
+ </summary>
+	<value>Numerador Provider.</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	26/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Command.Key">
+ -----------------------------------------------------------------------------
+ <summary>
+ Key que ao ser preenchida permite buscar a string de conexão com o banco de dados.
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Command.CommandText">
+ -----------------------------------------------------------------------------
+ <summary>
+ Instrução de SQL para ser executada. <BR/>
+ Pode ser uma prodedure ou uma instrução normal de SQL
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Command.CommandTimeout">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tempo Limite de espera para execução de um comando. A unidade de tempo é em segundos.
+ </summary>
+	<value>Inteiro. Representa o tempo em segundos</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Command.CommandType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerado especificando o tipo de commando
+ Para melhor informação veja em <seealso cref="T:System.Data.CommandType">System.Data.CommandType</seealso>
+	</summary>
+	<value>Tipo Inteiro, para o numerador System.Data.CommandType</value>
+	<remarks>
+ Renderiza um enumerador vindo de System.Data.CommandType. Qualquer alteração na origem afeta
+ esta classe, de forma transparente, sem ocasionar quebras de compatibilidade internas.
+ </remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Command.Parameters">
+ -----------------------------------------------------------------------------
+ <summary>
+ Coleção de objetos Parameter. Serve para guardar parametros para execução de uma query.
+ </summary>
+	<value>Parameter</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.Command.HasTransact">
+	<summary>
+ Verifica se o comando executado é ou não transacionado.
+ </summary>
+	<value>Booleando, seta ou verifica a transação.</value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Command.CreateParameter">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro.
+ Pode se criar um parametro de duas formas conforme exemplo
+ <example>
+			<code>
+ 'Como criar parametro - forma 1:
+ Dim parData as new Parameter
+ <BR/>
+ 'Como criar parametro - forma 2, identico a forma 1:
+ Dim parData as Parameter
+ parData = new Parameter
+ <BR/>
+ 'Como criar parametro - forma 3:
+ dim parData as Parameter
+ dim cmdData as new Command
+ parData = cmdData.CreateParameter
+ </code>
+		</example>
+	</summary>
+	<returns>Um objeto do tipo Parameter</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	26/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	17/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Data.DbType,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	17/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Data.DbType,System.Int32,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	17/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Data.DbType,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	17/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Data.DbType,System.Int32,System.Object,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<param name="SourceColumn">Coluna de Origem do Parâmetro. Tipo String</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	17/04/2006	Created
+ </history>
+ CreateParameter
+
+</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Data.DbType,System.Int32,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe de Parâmetro. <BR/>
+ Cria um novo parametro para ser usado.
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<param name="SourceColumn">Coluna de Origem do Parâmetro. Tipo String</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	17/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.VerificaParametros">
+ -----------------------------------------------------------------------------
+ <summary>
+ Esta Sub executa a verificação dos parametros, se estão preenchidos<BR/>
+ Estes paramtros são preenchidos alimentando as propriedades abaixo.<BR/> 
+ Devem ser preenchidas TODAS:
+ <list type="bullet">
+			<item>
+				<description>Propriedade key</description>
+			</item>
+			<item>
+				<description>Propriedade ProviderName</description>
+			</item>
+			<item>
+				<description>Propriedade CommandText</description>
+			</item>
+			<item>
+				<description>Propriedade CommandTimeout</description>
+			</item>
+			<item>
+				<description>Propriedade CommandType</description>
+			</item>
+		</list>
+		<seealso cref="P:Consumer.Data.Command.Key"/>
+		<seealso cref="P:Consumer.Data.Command.Provider"/>
+		<seealso cref="P:Consumer.Data.Command.CommandText"/>
+		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
+		<seealso cref="P:Consumer.Data.Command.CommandType"/>
+		<seealso cref="M:Consumer.Data.Command.ReturnDataSet(System.String)"/>
+		<seealso cref="M:Consumer.Data.Command.ReturnDataTable(System.String)"/>
+	</summary>
+	<remarks>
+ Na verificação, caos não exista o dado preenchido é gerado um erro e este tratado nas funções
+ <list type="bullet">
+			<item>
+				<description>ReturnDataSet</description>
+			</item>
+			<item>
+				<description>ReturnDataTable</description>
+			</item>
+		</list>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.RenderParameter(Consumer.Data.Parameter,System.Object@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a renderização de um unico parametro. De Parameter para OleDbParameter
+ </summary>
+	<param name="parData">Objeto Parameter de entrada</param>
+	<param name="parOut">OleDbParameter de Saída</param>
+	<remarks>
+		<seealso cref="T:Consumer.Data.Parameter"/>
+		<seealso cref="T:Consumer.Data.ParameterCollection"/>
+	</remarks>
+	<history>
+ 	[humberto]	27/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.ReturnDataTable(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna um datatable.<BR/>
+ Para este Método funcionar correramente é preciso que alguns parametros estejam preenchidos corretamente.<BR/>
+ Estes paramtros são preenchidos alimentando as propriedades abaixo. <BR/>
+ Devem ser preenchidas TODAS:
+ <list type="bullet">
+			<item>
+				<term>Key</term>
+				<description>Propriedade da Chave do web.config/app.config setado para a string de conexão</description>
+			</item>
+			<item>
+				<term>ProviderName</term>
+				<description>Propriedade do nome do Provedor de Dados</description>
+			</item>
+			<item>
+				<term>CommandText</term>
+				<description>Propriedade da instrução SQL a ser rodada</description>
+			</item>
+			<item>
+				<term>CommandTimeout</term>
+				<description>Propriedade do Timeout de Execução</description>
+			</item>
+			<item>
+				<term>CommandType</term>
+				<description>Propriedade que define o tipo do Comando</description>
+			</item>
+		</list>
+		<seealso cref="P:Consumer.Data.Command.Key"/>
+		<seealso cref="P:Consumer.Data.Command.Provider"/>
+		<seealso cref="P:Consumer.Data.Command.CommandText"/>
+		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
+		<seealso cref="P:Consumer.Data.Command.CommandType"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns>DataTable</returns>
+	<history>
+[humberto]	26/12/2005	Created
+</history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.ReturnDataSet(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna um datatable.<BR/>
+ Para este Método funcionar correramente é preciso que alguns parametros estejam preenchidos corretamente.<BR/>
+ Estes paramtros são preenchidos alimentando as propriedades abaixo. <BR/>
+ Devem ser preenchidas TODAS:
+ <list type="bullet">
+			<item>
+				<term>Key</term>
+				<description>Propriedade da Chave do web.config/app.config setado para a string de conexão</description>
+			</item>
+			<item>
+				<term>ProviderName</term>
+				<description>Propriedade do nome do Provedor de Dados</description>
+			</item>
+			<item>
+				<term>CommandText</term>
+				<description>Propriedade da instrução SQL a ser rodada</description>
+			</item>
+			<item>
+				<term>CommandTimeout</term>
+				<description>Propriedade do Timeout de Execução</description>
+			</item>
+			<item>
+				<term>CommandType</term>
+				<description>Propriedade que define o tipo do Comando</description>
+			</item>
+		</list>
+		<seealso cref="P:Consumer.Data.Command.Key"/>
+		<seealso cref="P:Consumer.Data.Command.Provider"/>
+		<seealso cref="P:Consumer.Data.Command.CommandText"/>
+		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
+		<seealso cref="P:Consumer.Data.Command.CommandType"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns>DataTable</returns>
+	<history>
+[humberto]	26/12/2005	Created
+</history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.ReturnDataView">
+ -----------------------------------------------------------------------------
+ <summary>
+ Funcçao que retorna um objeto dataview.
+ </summary>
+	<returns>Dataview</returns>
+	<seealso cref="M:Consumer.Data.Command.ReturnDataTable(System.String)"/>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.ReturnXML(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa o retorno em XML de um Set de Dados.
+ </summary>
+	<param name="strTableName">Nome da Tabela Principal</param>
+	<returns>String de XML Benm formada (WellFormed)</returns>
+	<remarks>
+		<seealso cref="M:Consumer.Data.Command.ReturnDataSet(System.String)"/>
+		<seealso cref="N:System.Xml"/>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.Execute">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna um datatable.<BR/>
+ Para este Método funcionar correramente é preciso que alguns parametros estejam preenchidos corretamente.<BR/>
+ Estes paramtros são preenchidos alimentando as propriedades abaixo. <BR/>
+ Devem ser preenchidas TODAS:
+ <list type="bullet">
+			<item>
+				<term>Key</term>
+				<description>Propriedade da Chave do web.config/app.config setado para a string de conexão</description>
+			</item>
+			<item>
+				<term>ProviderName</term>
+				<description>Propriedade do nome do Provedor de Dados</description>
+			</item>
+			<item>
+				<term>CommandText</term>
+				<description>Propriedade da instrução SQL a ser rodada</description>
+			</item>
+			<item>
+				<term>CommandTimeout</term>
+				<description>Propriedade do Timeout de Execução</description>
+			</item>
+			<item>
+				<term>CommandType</term>
+				<description>Propriedade que define o tipo do Comando</description>
+			</item>
+		</list>
+		<seealso cref="P:Consumer.Data.Command.Key"/>
+		<seealso cref="P:Consumer.Data.Command.Provider"/>
+		<seealso cref="P:Consumer.Data.Command.CommandText"/>
+		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
+		<seealso cref="P:Consumer.Data.Command.CommandType"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns>DataTable</returns>
+	<history>
+[humberto]	26/12/2005	Created
+</history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.Command.ExecuteQuery">
+	<summary>
+ Exatamente o que faz a funão Execute
+ </summary>
+	<seealso cref="M:Consumer.Data.Command.Execute"/>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Command.ExecuteNonQuery">
+	<summary>
+ Exatamente o que faz a funão Execute
+ </summary>
+	<seealso cref="M:Consumer.Data.Command.Execute"/>
+	<returns>Inteiro</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.Command.ResetCommandTimeout">
+ -----------------------------------------------------------------------------
+ <summary>
+ Este comando ajusta o time out do command/conexão para o tempo de 30 segundos.
+ </summary>
+	<remarks>
+ O Valor inicial de um commandtimeout é de 360 segundos
+ </remarks>
+	<history>
+ 	[humberto]	26/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Data.Provider">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador que serve para simplesmente Escolher que tipo de provider de
+ Banco de Dados que será usado.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	30/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member>
+</members>
+</doc>

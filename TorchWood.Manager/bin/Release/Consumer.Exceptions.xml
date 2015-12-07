@@ -1,0 +1,264 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Consumer.Exceptions
+</name>
+</assembly>
+<members>
+<member name="M:Consumer.Exceptions.Erro.SendErrorMessage(System.Exception,System.String,System.String,System.String,System.String)">
+	<summary>
+ Envia e-mail para a pessoa que é responsavel pelo sistema
+ </summary>
+	<param name="ex">Exceção tratável.</param>
+	<param name="strSenderFrom">De quem.</param>
+	<param name="strSenderTo">Para.</param>
+	<remarks>
+ se não estiver preenchido os optionais, ele envia para os
+ users colocados no web/app config.
+ inexistindo estes parametros, não manda. E não gera erro disto, desvia se o
+ processo, ignorando a exce~ção gerada neste caso
+ </remarks>
+</member><member name="M:Consumer.Exceptions.Erro.WriteEventLog(System.Exception,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que grava erros no event viwer.
+ </summary>
+	<param name="ex">Exceção tratável.</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Erro.GravarErro(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Grava um Arquivo de log de erros da aplicação
+ </summary>
+	<param name="strMensagem">Mensagem a ser logada.</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.GravarErro(System.Exception,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Grava um Arquivo de log de erros da aplicação
+ </summary>
+	<param name="exError">Mensagem a ser logada.Objeto de Exception</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.GravarLog(System.String,System.String,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Grava um Arquivo de log da aplicação
+ </summary>
+	<param name="strMensagem">Mensagem a ser logada.</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<param name="blnSendMail">Se envia ou não e-mail.Opcional, de valor TRUE.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ 	[humberto]	11/11/2005	Alter
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.Gravar(System.String,System.String,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Sub que faz a gravação do Erro de acordo com o parâmetro intTipo.
+ </summary>
+	<param name="strMensagem">Mensagem a ser logada.</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<param name="intTipo">O Parâmetro intTipo alimenta o arquivo de Log ou
+ de Erros conforme as necessidades.
+ intTipo=0 Grava o Erro
+ intTipo=1 Grava o Log
+  </param>
+	<remarks>
+esquema do XML
+<root>
+			<mensagens>
+				<mensagem>mensagem de erro/log</mensagem>
+				<origem>origem do erro/log</origem>
+				<data>data da ocorrencia</data>
+				<hora>hora da ocorrencia</hora>
+			</mensagens>
+		</root>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.CreateXmlFile(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo arquivo de XML no padrão do tratamento de mensagens/erro
+ </summary>
+	<param name="strCaminho">Camibnho do arquivo</param>
+	<returns>Um objeto do Tipo XMLDocument</returns>
+	<remarks>
+esquema do XML
+<root>
+			<mensagens>
+				<mensagem>mensagem de erro/log</mensagem>
+				<origem>origem do erro/log</origem>
+				<data>data da ocorrencia</data>
+				<hora>hora da ocorrencia</hora>
+			</mensagens>
+		</root>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.EnviaMensagem(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Envia mensagem por email do conteudo do erro.
+ </summary>
+	<param name="strMensagem">
+ Mensagem de erro ocorrida. É interessante se houiver formatações(tags)
+ em HTML que é aceito pelo envio de mensagem</param>
+	<returns>booleano, se feito corretamente é true.</returns>
+	<remarks>
+esquema do XML
+<root>
+			<mensagens>
+				<mensagem>mensagem de erro/log</mensagem>
+				<origem>origem do erro/log</origem>
+				<data>data da ocorrencia</data>
+				<hora>hora da ocorrencia</hora>
+			</mensagens>
+		</root>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Exceptions.Erro">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Erro
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe Erro.
+ Esta classe faz um tratamento em especial, ou seja grava em arquivos TXTs
+ a mensagem de erro, ou de um log (trace) para seguir passo a passo um esquema de
+ gravação de mensagens, na aplicação.
+ </summary>
+	<remarks>    
+ No web.config/app.config do seu projeto, deve ter o seguinte key, 
+ dentro da chave AppSettings: ErrorFile e LogFile. E o Values preenchido respectivamente
+ com caminhos válidos de Arquivos XML.
+ Também deve conter a key MailSenders, que conterão os destinatários de envio de e-mail
+ quando ocorrer um erro. Devem estar separados por ponto e virgula os emails.
+ Também deve conter a key SMTPServer, que conterá o servidor de envio de e-mail
+ quando ocorrer um erro. 
+ </remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Treating.RaiseError(System.Exception,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que trata o erro guardando em arquivo txt e, gera novo erro para a camada superior.
+ </summary>
+	<param name="ex">exceção</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Treating.RaiseError(Consumer.Exceptions.CustomerException.dbException,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+	</summary>
+	<param name="ex">Objeto de Exception</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Treating.RaiseError(System.String,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Efetua o Trwods de um erro
+ </summary>
+	<param name="strMensagem">Mensagem de Erro</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Treating.TratarError(System.Exception,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que trata o erro guardando em arquivo txt.
+ </summary>
+	<param name="ex">Objeto de Exception</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+</member><member name="M:Consumer.Exceptions.Treating.TratarError(System.String,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que trata o erro guardando em arquivo txt.
+ </summary>
+	<param name="strMensagem">Mensagem de Errol</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Treating.TratarError(Consumer.Exceptions.CustomerException.dbException,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que trata o erro guardando em arquivo txt.
+ </summary>
+	<param name="ex">Objeto de Exception</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="P:Consumer.Exceptions.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.Exceptions.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.Exceptions.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

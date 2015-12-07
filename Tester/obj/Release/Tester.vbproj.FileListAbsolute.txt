@@ -1,0 +1,180 @@
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Torchwood.Core.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Torchwood.Struct.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Torchwood.Core.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Torchwood.Core.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Torchwood.Struct.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Torchwood.Struct.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\ResolveAssemblyReference.cache
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\SourceGrid2.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\SourceLibrary.dll
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\SourceLibrary.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\SourceGrid2.xml
+F:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\ResolveAssemblyReference.cache
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\ResolveAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+D:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+E:\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbprojResolveAssemblyReference.cache
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+C:\Users\Humberto.Gonçalves.CMA\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbprojResolveAssemblyReference.cache
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+C:\Users\Humberto.Gonçalves.CMA\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbprojResolveAssemblyReference.cache
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+C:\Documentos Humber\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbprojResolveAssemblyReference.cache
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+C:\Users\Beto\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\fatura.mdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe.config
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.exe
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.pdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Tester.xml
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Dimac.JMail.Smtp.dll
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.pdb
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\bin\Release\Consumer.xml
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbprojResolveAssemblyReference.cache
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Form1.resources
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.Resources.resources
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.vbproj.GenerateResource.Cache
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe.licenses
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.exe
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.xml
+C:\Users\BETO E TAIS\Dropbox\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Release\Tester.pdb

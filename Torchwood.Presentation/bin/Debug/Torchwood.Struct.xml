@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Torchwood.Struct
+</name>
+</assembly>
+<members>
+<member name="P:Torchwood.Struct.Loteria.Codigo">
+	<summary>
+ Código da Loteria no Banco de Dados
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.Loteria.QtdeDezenas">
+	<summary>
+ Quantidade de Dezenas totais amostrais para o sorteio
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.Loteria.QtdeMinOccurs">
+	<summary>
+ Quantidade mínima para a premiação
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.Loteria.DezMinima">
+	<summary>
+ número inicial mínimo da dezena
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.Loteria.DezMaxima">
+	<summary>
+ Número final da Dezena
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.Loteria.Descricao">
+	<summary>
+ Nome da Loteria
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.Loteria.Status">
+	<summary>
+ Status da Loteria
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.Loteria.QtdeDezenasTotais">
+	<summary>
+ Quantidade Total de Dezenas
+ </summary>
+	<value>Integer</value>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="P:Torchwood.Struct.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Torchwood.Struct.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Torchwood.Struct.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

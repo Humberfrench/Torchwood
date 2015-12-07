@@ -1,0 +1,9 @@
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\bin\Debug\Torchwood.Struct.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\bin\Debug\Torchwood.Struct.pdb
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\bin\Debug\Torchwood.Struct.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\ResolveAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.Resources.resources
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.vbproj.GenerateResource.Cache
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.dll
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.xml
+D:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.pdb

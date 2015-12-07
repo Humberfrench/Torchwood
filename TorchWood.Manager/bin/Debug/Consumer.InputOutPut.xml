@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Consumer.InputOutPut
+</name>
+</assembly>
+<members>
+<member name="P:Consumer.InputOutPut.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.InputOutPut.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.InputOutPut.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Consumer.InputOutPut.File.ReplaceWordsNoOccurs(System.String,System.String,System.String)">
+	<summary>
+ Executa a substituição de uma palavra pela outra em um arquivo texto.Não retorna contagem de palavras.
+ </summary>
+	<param name="strFileName">Caminho completo do Arquivo.</param>
+	<param name="strSearch">Expressão a ser procurada.</param>
+	<param name="strReplace">Expressão a substituir a procurada.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.InputOutPut.File.ReplaceWordsNoCount(System.String,System.String,System.String)">
+	<summary>
+ Executa a substituição de uma palavra pela outra em um arquivo texto.
+ </summary>
+	<param name="strFileName">Caminho completo do Arquivo. Não retorna o total de palavras</param>
+	<param name="strSearch">Expressão a ser procurada.</param>
+	<param name="strReplace">Expressão a substituir a procurada.</param>
+	<returns>Quantidade de ocorrencias trocadas no primeiro item.</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.InputOutPut.File.ReplaceWords(System.String,System.String,System.String)">
+	<summary>
+ Executa a substituição de uma palavra pela outra em um arquivo texto.
+ </summary>
+	<param name="strFileName">Caminho completo do Arquivo.</param>
+	<param name="strSearch">Expressão a ser procurada.</param>
+	<param name="strReplace">Expressão a substituir a procurada.</param>
+	<returns>Quantidade de ocorrencias trocadas no primeiro item do array e no segundo a quantidade de palavras que o documento contém.</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.InputOutPut.File.ReplaceEngine(System.String,System.String,System.String,System.Int32@,System.Int32)">
+	<summary>
+ Motor de execução das trocas.
+ </summary>
+	<param name="strFile">Arquivo texto em uma string</param>
+	<param name="strSearch">Palavra a ser encontrada</param>
+	<param name="strReplace">Palavra a sera a substituta</param>
+	<param name="intNumOcorrencias">Quantidade de ocorrencias substituidas no documento.</param>
+	<param name="intPalavras">Quantidade de palavras no documento.</param>
+	<returns>O texto trocado</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.InputOutPut.File.ReplaceEspecial(System.String,System.String,System.String,System.String,System.Int32@)">
+	<summary>
+ Faz um replace na palavra contendo caracteres especiais, como: . , ; : ... ! ? e outros
+ </summary>
+	<param name="strWord">Palavra a analisar</param>
+	<param name="strSearch">Palavra a trocar</param>
+	<param name="strReplace">Substituta</param>
+	<param name="strSpecialChar">Caracter especial incluso</param>
+	<param name="intNumOcorrencias">Caso haja ocorrencia, soma mais uma, para totalizar corretamente as trocas</param>
+	<returns>A palavra trocada.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

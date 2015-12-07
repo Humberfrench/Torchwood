@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Torchwood">
+</Property><Property Name="Solution File" Value="C:\Users\Humberto.Gonçalves\Documents\Humberto\Desenvolvimento\Sistemas\TorchWood\Torchwood.sln">
+</Property><Property Name="Date" Value="quarta-feira, 16 de novembro de 2011">
+</Property><Property Name="Time" Value="10:10">
+</Property></Properties><Event ErrorLevel="0" Project="Torchwood.Struct" Source="Torchwood.Struct\Torchwood.Struct.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Torchwood.Struct" Source="Torchwood.Struct\Torchwood.Struct.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Torchwood.Core" Source="Torchwood.Core\Torchwood.Core.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Torchwood.Core" Source="Torchwood.Core\Torchwood.Core.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Consumer" Source="..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Consumer" Source="..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Torchwood.Presentation" Source="Torchwood.Presentation\Torchwood.Presentation.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Torchwood.Presentation" Source="Torchwood.Presentation\Torchwood.Presentation.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TorchWood.Manager" Source="TorchWood.Manager\TorchWood.Manager.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TorchWood.Manager" Source="TorchWood.Manager\TorchWood.Manager.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Tester" Source="Tester\Tester.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Tester" Source="Tester\Tester.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Torchwood.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Torchwood.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Torchwood.Struct" Source="Torchwood.Struct\Torchwood.Struct.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Torchwood.Core" Source="Torchwood.Core\Torchwood.Core.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Consumer" Source="..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Torchwood.Presentation" Source="Torchwood.Presentation\Torchwood.Presentation.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Torchwood.Presentation" Source="Torchwood.Presentation\Torchwood.Presentation.vbproj" Description="References to Microsoft.VisualBasic.PowerPacks.Vs were updated to Microsoft.VisualBasic.PowerPacks.Vs 10.0.">
+</Event><Event ErrorLevel="0" Project="TorchWood.Manager" Source="TorchWood.Manager\TorchWood.Manager.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Tester" Source="Tester\Tester.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Torchwood.Struct.Resources.resources
+obj\Debug\Torchwood.Struct.vbproj.GenerateResource.Cache
+bin\Debug\Torchwood.Struct.dll
+bin\Debug\Torchwood.Struct.pdb
+bin\Debug\Torchwood.Struct.xml
+obj\Debug\Torchwood.Struct.dll
+obj\Debug\Torchwood.Struct.xml
+obj\Debug\Torchwood.Struct.pdb
