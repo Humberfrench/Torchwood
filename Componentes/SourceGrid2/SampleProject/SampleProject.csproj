@@ -1,0 +1,397 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{78F636E8-212A-45C3-B8A8-5C012E6E1AC8}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "SampleProject"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "SampleProject"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "G:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "SourceGrid2"
+                    Project = "{15001AC5-2185-4B39-BF6C-9FCDC39E7376}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "SourceLibrary"
+                    AssemblyName = "SourceLibrary"
+                    HintPath = "..\References\SourceLibrary.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "StartForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "StartForm.resx"
+                    DependentUpon = "StartForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Extensions\Add.ico"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Extensions\ArrowDown.ICO"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Extensions\ArrowUp.ICO"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Extensions\DataColumnDialog.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Extensions\DataColumnDialog.resx"
+                    DependentUpon = "DataColumnDialog.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Extensions\Delete.ICO"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Extensions\GridArray.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Extensions\GridBarChart.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Extensions\GridBarChart.resx"
+                    DependentUpon = "GridBarChart.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Extensions\GridDataTable.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Extensions\ListEditor.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Extensions\ListEditor.resx"
+                    DependentUpon = "ListEditor.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Extensions\Refresh.ico"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Extensions\WorkSheet.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Extensions\WorkSheet.resx"
+                    DependentUpon = "WorkSheet.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\CalcioSmall.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\CellNew.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\FACE00.ICO"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\FACE01.ICO"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\FACE02.ICO"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\FACE04.ICO"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample1.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample1.resx"
+                    DependentUpon = "frmSample1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample10.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample10.resx"
+                    DependentUpon = "frmSample10.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample11.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample11.resx"
+                    DependentUpon = "frmSample11.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample12.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample12.resx"
+                    DependentUpon = "frmSample12.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample13.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample13.resx"
+                    DependentUpon = "frmSample13.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample14.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample14.resx"
+                    DependentUpon = "frmSample14.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample15.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample15.resx"
+                    DependentUpon = "frmSample15.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample16.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample16.resx"
+                    DependentUpon = "frmSample16.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample2.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample2.resx"
+                    DependentUpon = "frmSample2.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample3.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample3.resx"
+                    DependentUpon = "frmSample3.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample4.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample4.resx"
+                    DependentUpon = "frmSample4.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample5.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample5.resx"
+                    DependentUpon = "frmSample5.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample6.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample6.resx"
+                    DependentUpon = "frmSample6.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample7.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample7.resx"
+                    DependentUpon = "frmSample7.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample8.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample8.resx"
+                    DependentUpon = "frmSample8.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\frmSample9.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Samples\frmSample9.resx"
+                    DependentUpon = "frmSample9.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\new.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\SampleData.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Samples\SampleImages.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+
