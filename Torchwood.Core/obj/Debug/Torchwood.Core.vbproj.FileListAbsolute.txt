@@ -93,3 +93,8 @@ C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Debug\Torchwood.Core.vb
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Debug\Torchwood.Core.dll
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Debug\Torchwood.Core.xml
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Core\obj\Debug\Torchwood.Core.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.vbprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.vbproj.ResolveComReference.cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.Resources.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.vbproj.GenerateResource.Cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.xml

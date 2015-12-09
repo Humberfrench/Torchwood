@@ -55,6 +55,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Consumer">
+      <HintPath>..\..\DLLs\Lib\Consumer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -147,10 +150,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj">
-      <Project>{E37AB709-F639-4E14-B5C9-3D569DA9098A}</Project>
-      <Name>Consumer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Torchwood.Struct\Torchwood.Struct.vbproj">
       <Project>{A21285E7-BFBD-46C2-97D2-07B754B97C45}</Project>
       <Name>Torchwood.Struct</Name>

@@ -61,12 +61,15 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Consumer">
+      <HintPath>..\..\DLLs\Lib\Consumer.dll</HintPath>
+    </Reference>
     <Reference Include="Flowsight, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Componentes\Controls.WinForms\Flowsight.dll</HintPath>
     </Reference>
     <Reference Include="SourceGrid">
-      <HintPath>..\..\..\Lib\Componentes\SourceGrid_4_40\SourceGrid\Release\SourceGrid.dll</HintPath>
+      <HintPath>..\DLLs\SourceGrid\Release\SourceGrid.dll</HintPath>
     </Reference>
     <Reference Include="Steepvalley.Windows.Forms, Version=2.0.0.1, Culture=neutral, PublicKeyToken=825f5955c0dc55e8, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -361,10 +364,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj">
-      <Project>{E37AB709-F639-4E14-B5C9-3D569DA9098A}</Project>
-      <Name>Consumer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Torchwood.Core\Torchwood.Core.vbproj">
       <Project>{88011B30-285D-4E13-8112-BB32E57AA60D}</Project>
       <Name>Torchwood.Core</Name>

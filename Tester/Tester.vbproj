@@ -121,12 +121,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj">
-      <Project>{E37AB709-F639-4E14-B5C9-3D569DA9098A}</Project>
-      <Name>Consumer</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

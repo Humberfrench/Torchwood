@@ -43,3 +43,12 @@ C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struc
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.dll
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.xml
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Struct\obj\Debug\Torchwood.Struct.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\bin\Debug\Torchwood.Struct.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\bin\Debug\Torchwood.Struct.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\bin\Debug\Torchwood.Struct.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\obj\Debug\Torchwood.Struct.vbprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\obj\Debug\Torchwood.Struct.Resources.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\obj\Debug\Torchwood.Struct.vbproj.GenerateResource.Cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\obj\Debug\Torchwood.Struct.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\obj\Debug\Torchwood.Struct.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Struct\obj\Debug\Torchwood.Struct.pdb

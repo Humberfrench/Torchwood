@@ -162,3 +162,31 @@ C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Presentation\obj\Debug\Torchwood
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.Resources.resources
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.Teste.resources
 C:\Desenvolvimento\Sistemas\TorchWood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.vbproj.GenerateResource.Cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.vbprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.AboutBoxTorchwood.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.Form1.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FormAtrasos.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FormBestDezenasAtrasos.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FormCadastroResultados.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FormImportacao.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FormMelhoresDezenas.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FormPerformance.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmAnaliseLotoFacil.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmAnaliseMegaSena.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmCadResultados.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmGenerateAllLoteries.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmPerformanceStatists.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmSetPesquisaHistorico.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FrmCombinar.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmErro.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmLoterias.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FrmMaster.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmCockPit.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FrmImporter.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.frmPrincipal.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.FrmResultados.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.Resources.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.SplashScreenTorchwood.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.Teste.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.vbproj.GenerateResource.Cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Presentation\obj\Debug\Torchwood.Presentation.xml

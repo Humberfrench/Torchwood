@@ -199,10 +199,6 @@
     <None Include="Resources\refresh.gif" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Frameworks\Consumer.Tooolkit\Consumer\Consumer.vbproj">
-      <Project>{E37AB709-F639-4E14-B5C9-3D569DA9098A}</Project>
-      <Name>Consumer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Torchwood.Core\Torchwood.Core.vbproj">
       <Project>{88011B30-285D-4E13-8112-BB32E57AA60D}</Project>
       <Name>Torchwood.Core</Name>
