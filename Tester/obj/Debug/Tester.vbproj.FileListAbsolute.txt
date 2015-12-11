@@ -90,3 +90,19 @@ C:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Debug\Tester.exe.licenses
 C:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Debug\Tester.exe
 C:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Debug\Tester.xml
 C:\Desenvolvimento\Sistemas\TorchWood\Tester\obj\Debug\Tester.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.vbprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.Form1.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.Resources.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.vbproj.GenerateResource.Cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.exe.licenses
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\fatura.mdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\Tester.exe.config
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\Tester.exe
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\Tester.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\Tester.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.exe
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\obj\Debug\Tester.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\MaterialSkin.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\Steepvalley.Windows.Forms.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Tester\bin\Debug\Steepvalley.Windows.Forms.Common.dll

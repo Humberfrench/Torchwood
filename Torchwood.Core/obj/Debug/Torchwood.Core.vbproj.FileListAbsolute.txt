@@ -98,3 +98,17 @@ C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchw
 C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.Resources.resources
 C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.vbproj.GenerateResource.Cache
 C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Torchwood.Core.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Torchwood.Core.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Torchwood.Core.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Consumer.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Torchwood.Struct.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Dimac.JMail.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Dimac.JMail.Smtp.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Torchwood.Struct.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Torchwood.Struct.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Consumer.pdb
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\bin\Debug\Consumer.xml
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\Torchwood.Core\obj\Debug\Torchwood.Core.pdb

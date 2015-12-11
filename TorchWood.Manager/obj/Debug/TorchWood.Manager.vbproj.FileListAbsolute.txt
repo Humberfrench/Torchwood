@@ -133,3 +133,13 @@ C:\Desenvolvimento\Sistemas\TorchWood\TorchWood.Manager\obj\Debug\TorchWood.Mana
 C:\Desenvolvimento\Sistemas\TorchWood\TorchWood.Manager\obj\Debug\TorchWood.Manager.xml
 C:\Desenvolvimento\Sistemas\TorchWood\TorchWood.Manager\obj\Debug\TorchWood.Manager.pdb
 D:\Desenvolvimento\Sistemas\TorchWood\TorchWood.Manager\bin\Debug\Steepvalley.Windows.Forms.Common.dll
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.vbprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.frmPrincipal.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.frmCadLoteria.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.frmCombinations.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.frmErro.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.frmGetResults.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.frmStudyStats.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.Resources.resources
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.vbproj.GenerateResource.Cache
+C:\Users\humberto.almeida\Documents\Visual Studio 2015\Projects\Torchwood\TorchWood.Manager\obj\Debug\TorchWood.Manager.xml

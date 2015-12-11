@@ -6,215 +6,223 @@ Consumer
 </name>
 </assembly>
 <members>
-<member name="M:Consumer.Misc.htmlClass.TrataAcentos(System.String)">
-	<summary>
- tratativa de Acentos para HTML
- </summary>
-	<param name="strTexto">STRING</param>
-	<returns>STRING</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.XML.Serialize.Dispose(System.Boolean)">
+<member name="M:Consumer.Mail.Engine.JEMail.#ctor">
  -----------------------------------------------------------------------------
  <summary>
- Função dispose, que destroi o objeto.
+ Construtor da Classe JEMail
  </summary>
-	<param name="Disposable">Se true, o objeto é destruido.</param>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	07/04/2006	Created
+ 	[humberto]	29/12/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Exceptions.Erro.SendErrorMessage(System.Exception,System.String,System.String,System.String,System.String)">
-	<summary>
- Envia e-mail para a pessoa que é responsavel pelo sistema
+</member><member name="M:Consumer.Mail.Engine.JEMail.#ctor(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe JEMail
  </summary>
-	<param name="ex">Exceção tratável.</param>
-	<param name="strSenderFrom">De quem.</param>
-	<param name="strSenderTo">Para.</param>
+	<param name="strkey">Chave encontrada no web.config</param>
 	<remarks>
- se não estiver preenchido os optionais, ele envia para os
- users colocados no web/app config.
- inexistindo estes parametros, não manda. E não gera erro disto, desvia se o
- processo, ignorando a exce~ção gerada neste caso
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.JEMail.Send(Consumer.Mail.Structs.JMensagem)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que envia o email.
+ </summary>
+	<param name="objMensagem">Objeto do Tipo JMensagem. Formatada para enviar emails</param>
+	<returns>Booleano de acordo com o sucesso do envio</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.JEMail.Send(Consumer.Mail.Structs.JMensagem,System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que envia o email.
+ </summary>
+	<param name="objMensagem">Objeto do Tipo JMensagem. Formatada para enviar emails</param>
+	<param name="strLogin">Login do Usuário que enviará o e-mail.</param>
+	<param name="strSenha">Senha do Usuário que enviará o e-mail.</param>
+	<returns>Booleano de acordo com o sucesso do envio</returns>
+	<remarks>
+ É necessário neste overload, a passagem do login e senha. Alguns servidores pedem
+ que tenha login e senha, para evitar o envio de emails anonimos. Por exemplo o Exchange Server.
  </remarks>
-</member><member name="M:Consumer.Exceptions.Erro.WriteEventLog(System.Exception,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
-	<summary>
- Classe que grava erros no event viwer.
- </summary>
-	<param name="ex">Exceção tratável.</param>
-	<param name="EventName">Nome do Evento</param>
-	<param name="EventSource">Source do Evento</param>
-	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
-	<param name="intEventID">Id do Evento</param>
-	<param name="shtCategory">Categoria do Evento.</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Exceptions.Erro.GravarErro(System.String,System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Grava um Arquivo de log de erros da aplicação
- </summary>
-	<param name="strMensagem">Mensagem a ser logada.</param>
-	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
-	<remarks>
-	</remarks>
 	<history>
- 	[humberto]	8/8/2005	Created
+ 	[humberto]	29/12/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Exceptions.Erro.GravarErro(System.Exception,System.String)">
+</member><member name="P:Consumer.Mail.Engine.JEMail.Key">
  -----------------------------------------------------------------------------
  <summary>
- Grava um Arquivo de log de erros da aplicação
+ Esta propriedade é alimentada inidialmente pela string "MailServer".
+ Pode ser alterada a cada instancia da classe, para caso de haver basede dados
+ diferentes.
  </summary>
-	<param name="exError">Mensagem a ser logada.Objeto de Exception</param>
-	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<value>String contendo o key, do web.config para a conexao.</value>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	8/8/2005	Created
+ 	[humberto]	10/8/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Exceptions.Erro.GravarLog(System.String,System.String,System.Boolean)">
+</member><member name="P:Consumer.Mail.Engine.JEMail.Server">
  -----------------------------------------------------------------------------
  <summary>
- Grava um Arquivo de log da aplicação
+ Nome do Servidor de E-Mail
  </summary>
-	<param name="strMensagem">Mensagem a ser logada.</param>
-	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
-	<param name="blnSendMail">Se envia ou não e-mail.Opcional, de valor TRUE.</param>
+	<value>String</value>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	8/8/2005	Created
- 	[humberto]	11/11/2005	Alter
+ 	[humberto]	29/12/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Exceptions.Erro.Gravar(System.String,System.String,System.Int32)">
+</member><member name="P:Consumer.Mail.Engine.JEMail.Domain">
  -----------------------------------------------------------------------------
  <summary>
- Sub que faz a gravação do Erro de acordo com o parâmetro intTipo.
+ Propriedade Domain - Guarda o nome do domínio da Rede, caso HAJA
  </summary>
-	<param name="strMensagem">Mensagem a ser logada.</param>
-	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
-	<param name="intTipo">O Parâmetro intTipo alimenta o arquivo de Log ou
- de Erros conforme as necessidades.
- intTipo=0 Grava o Erro
- intTipo=1 Grava o Log
-  </param>
+	<value>String</value>
 	<remarks>
-esquema do XML
-<root>
-			<mensagens>
-				<mensagem>mensagem de erro/log</mensagem>
-				<origem>origem do erro/log</origem>
-				<data>data da ocorrencia</data>
-				<hora>hora da ocorrencia</hora>
-			</mensagens>
-		</root>
 	</remarks>
 	<history>
- 	[humberto]	8/8/2005	Created
+ 	[humberto]	20/1/2006	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Exceptions.Erro.CreateXmlFile(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Cria um novo arquivo de XML no padrão do tratamento de mensagens/erro
- </summary>
-	<param name="strCaminho">Camibnho do arquivo</param>
-	<returns>Um objeto do Tipo XMLDocument</returns>
-	<remarks>
-esquema do XML
-<root>
-			<mensagens>
-				<mensagem>mensagem de erro/log</mensagem>
-				<origem>origem do erro/log</origem>
-				<data>data da ocorrencia</data>
-				<hora>hora da ocorrencia</hora>
-			</mensagens>
-		</root>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Exceptions.Erro.EnviaMensagem(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Envia mensagem por email do conteudo do erro.
- </summary>
-	<param name="strMensagem">
- Mensagem de erro ocorrida. É interessante se houiver formatações(tags)
- em HTML que é aceito pelo envio de mensagem</param>
-	<returns>booleano, se feito corretamente é true.</returns>
-	<remarks>
-esquema do XML
-<root>
-			<mensagens>
-				<mensagem>mensagem de erro/log</mensagem>
-				<origem>origem do erro/log</origem>
-				<data>data da ocorrencia</data>
-				<hora>hora da ocorrencia</hora>
-			</mensagens>
-		</root>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.Exceptions.Erro">
+</member><member name="T:Consumer.Mail.Engine.JEMail">
  -----------------------------------------------------------------------------
  Project	 : Provider
- Class	 : Erro
+ Class	 : Mail.JEMail
  
  -----------------------------------------------------------------------------
  <summary>
- Classe Erro.
- Esta classe faz um tratamento em especial, ou seja grava em arquivos TXTs
- a mensagem de erro, ou de um log (trace) para seguir passo a passo um esquema de
- gravação de mensagens, na aplicação.
+ Classe que envia e-mails usando a tecnologia do JMail.
  </summary>
-	<remarks>    
- No web.config/app.config do seu projeto, deve ter o seguinte key, 
- dentro da chave AppSettings: ErrorFile e LogFile. E o Values preenchido respectivamente
- com caminhos válidos de Arquivos XML.
- Também deve conter a key MailSenders, que conterão os destinatários de envio de e-mail
- quando ocorrer um erro. Devem estar separados por ponto e virgula os emails.
- Também deve conter a key SMTPServer, que conterá o servidor de envio de e-mail
- quando ocorrer um erro. 
- </remarks>
+	<remarks>
+	</remarks>
 	<history>
- 	[humberto]	8/8/2005	Created
+ 	[humberto]	26/9/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Security.Hash.ConvertHash(System.String)">
+</member><member name="M:Consumer.Math.Basic.Fatorial(System.Double)">
 	<summary>
- Cria um Hash de uma string
+ Cálculo de Fatorial n!
  </summary>
-	<param name="strValor">Valor, string a ser convertido para um hash</param>
-	<returns>String contendo o hash desejjadi</returns>
-	<remarks></remarks>
-</member><member name="T:Consumer.Security.Hash">
+	<param name="Number">Número a ser calculado o fatorial</param>
+	<returns>O resultado do fatorial</returns>
+	<remarks>
+ Atenção: n! = 1 X 2 X 3 X 4 ... X n
+ </remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double)">
 	<summary>
- Classe de Hash de Senhas
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples.Sem repetições de itens.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<returns>Quantidade de Permutações</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com um item repetido.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com dois itens repetidos.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<param name="intItemB">Qtde de Repetições do segundo item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
+ Há aqui somente o cálculo de permutações simples, com três itens repetidos.
+ </summary>
+	<param name="intQtItens">Quantidade de Itens Permutados</param>
+	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<param name="intItemB">Qtde de Repetições do segundo item</param>
+	<param name="intItemC">Qtde de Repetições do terceiro item</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Arranjos(System.Double,System.Double)">
+	<summary>
+ função de calculo de arranjos
+ </summary>
+	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
+	<param name="intTaxaK">Qtde de Itens a combinar</param>
+	<returns>Qtde de Arranjos possiveis</returns>
+	<remarks>
+ Fórmula de A(n,k) = n!/(n-k)!
+ </remarks>
+</member><member name="M:Consumer.Math.Basic.Combinacao(System.Double,System.Double)">
+	<summary>
+ Calcula as combinações
+ </summary>
+	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
+	<param name="intTaxaK">Qtde de Itens a combinar</param>
+	<returns>Combinações totais</returns>
+	<remarks>
+ Fórmula de C(n,k) = n!/k!(n-k)!
+ </remarks>
+</member><member name="M:Consumer.Math.Basic.VerificaFatorial(System.Double)">
+	<summary>
+ Verificação de fatorial. Ou seja verifica se o número é negativo ou não.
+ </summary>
+	<param name="intNumber">Número a ser calculado o fatorial</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Basic.Equacao2G(System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+	<summary>
+ Resolvendo uma equação do segundo grau
+ </summary>
+	<param name="aNumber">coeficiente a, que na equação aparece multiplicando a variável x de segundo grau</param>
+	<param name="bNumber">coeficiente a, que na equação aparece multiplicando a variável x de primeiro grau</param>
+	<param name="cNumber">coeficiente a, que na equação aparece independente</param>
+	<param name="x1Number">Primeira Raiz</param>
+	<param name="x2Number">Segunda Raiz</param>
+	<returns>Verdadeiro ou Falso</returns>
+	<remarks></remarks>
+</member><member name="T:Consumer.Math.Basic">
+	<summary>
+ Classe de cálculos Matemáticos Básicos.
+ </summary>
+	<remarks>
+ Contas simples como dados de equações do segundo grau, probabilidades, fatoriais, e outrros  
+ </remarks>
+</member><member name="M:Consumer.Data.Command.#ctor">
+	<summary>
+ Construtor do Command
  </summary>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.#ctor(System.String)">
+</member><member name="M:Consumer.Data.Command.#ctor(System.String)">
 	<summary>
  Construtor do Command
  </summary>
 	<param name="strKey">Key da String de Conexão</param>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.#ctor(System.String,System.Data.CommandType,System.String)">
+</member><member name="M:Consumer.Data.Command.#ctor(System.String,System.Data.CommandType,System.String)">
 	<summary>
  Construtor do Command
  </summary>
@@ -222,12 +230,12 @@ esquema do XML
 	<param name="cmdType">Tipo de Command, se executa uma Stored Procedure ou SQL Statment</param>
 	<param name="strKey">Chave do Config</param>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.#ctor">
+</member><member name="M:Consumer.Data.Command.BuildCommand">
 	<summary>
  Construtor do Command - Generic.
  </summary>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.ValidateCommand">
+</member><member name="M:Consumer.Data.Command.ValidateCommand">
  -----------------------------------------------------------------------------
  <summary>
  Esta Sub executa a verificação dos parametros, se estão preenchidos<BR/>
@@ -268,23 +276,7 @@ esquema do XML
 	</remarks>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Data.TransactCommand.BeginTransaction">
-	<summary>
- Inicia a Transação.
- Cria a instancia da mesma e a inicia.
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.CommitTransaction">
-	<summary>
- Efetua o commit da transação.
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.RollBackTransaction">
-	<summary>
- Efetua o roolback da transação.
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.CreateParameter">
+</member><member name="M:Consumer.Data.Command.CreateParameter">
  -----------------------------------------------------------------------------
  <summary>
  Cria um novo parametro.
@@ -310,7 +302,7 @@ esquema do XML
 	</remarks>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Data.TransactCommand.CreateParameter(System.String,System.Data.DbType,System.Int32,System.Object)">
+</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Data.DbType,System.Int32,System.Object)">
  -----------------------------------------------------------------------------
  <summary>
  Cria um novo parametro para ser usado e adiciona ao command atual
@@ -323,7 +315,7 @@ esquema do XML
 	</remarks>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Data.TransactCommand.GetDataTable(System.String)">
+</member><member name="M:Consumer.Data.Command.GetDataTable(System.String)">
  -----------------------------------------------------------------------------
  <summary>
  Retorna um datatable.<BR/>
@@ -351,7 +343,7 @@ esquema do XML
 	<returns>DataTable</returns>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Data.TransactCommand.GetDataSet(System.String)">
+</member><member name="M:Consumer.Data.Command.GetDataSet(System.String)">
  -----------------------------------------------------------------------------
  <summary>
  Retorna um datatable.<BR/>
@@ -378,44 +370,44 @@ esquema do XML
 	<returns>DataSet</returns>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Data.TransactCommand.GetDataReader">
+</member><member name="M:Consumer.Data.Command.GetDataReader">
 	<summary>
- Obtem um datareader, CONECTADO
+ Obtem um datareader, DESCONECTADO
  </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.ExecuteNonQuery">
+</member><member name="M:Consumer.Data.Command.ExecuteNonQuery">
 	<summary>
  Executa uma query
  </summary>
 	<returns>Integer</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.Execute">
+</member><member name="M:Consumer.Data.Command.Execute">
 	<summary>
  Executa uma query
  </summary>
 	<returns>Integer</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.ExecuteScalar">
+</member><member name="M:Consumer.Data.Command.ExecuteScalar">
 	<summary>
  Executa uma query
  </summary>
 	<returns>Integer</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.GetSchema(System.String)">
+</member><member name="M:Consumer.Data.Command.GetSchema(System.String)">
 	<summary>
  Obtem um Schema do Banco
  </summary>
 	<param name="strCollectionName">O nome do Schema a retornar</param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.GetSchema">
+</member><member name="M:Consumer.Data.Command.GetSchema">
 	<summary>
  Obtem um Schema do Banco
  </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Data.TransactCommand.ResetCommandTimeout">
+</member><member name="M:Consumer.Data.Command.ResetCommandTimeout">
  -----------------------------------------------------------------------------
  <summary>
  Este comando ajusta o time out do command/conexão para o tempo de 30 segundos.
@@ -425,28 +417,14 @@ esquema do XML
  </remarks>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Data.TransactCommand.Transaction">
-	<summary>
- Transação
- </summary>
-	<value>DbTransaction</value>
-	<returns>DbTransaction</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Data.TransactCommand.Connection">
-	<summary>
- Conexão do Banco
- </summary>
-	<value>DbConnection</value>
-	<returns>DbConnection</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Data.TransactCommand.Prepared">
+</member><member name="P:Consumer.Data.Command.Prepared">
 	<summary>
  Torna ou não um command preparado
  </summary>
 	<value>Boolean</value>
 	<returns>Boolean</returns>
 	<remarks></remarks>
-</member><member name="P:Consumer.Data.TransactCommand.Key">
+</member><member name="P:Consumer.Data.Command.Key">
  -----------------------------------------------------------------------------
  <summary>
  Key que ao ser preenchida permite buscar a string de conexão com o banco de dados.
@@ -459,7 +437,7 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Data.TransactCommand.CommandText">
+</member><member name="P:Consumer.Data.Command.CommandText">
  -----------------------------------------------------------------------------
  <summary>
  Instrução de SQL para ser executada. <BR/>
@@ -473,14 +451,14 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Data.TransactCommand.CommandTextObject">
+</member><member name="P:Consumer.Data.Command.CommandTextObject">
 	<summary>
  Command Text, setável dentro de uma StringBuilder
  </summary>
 	<value>StringBuilder</value>
 	<returns>StringBuilder</returns>
 	<remarks></remarks>
-</member><member name="P:Consumer.Data.TransactCommand.CommandTimeout">
+</member><member name="P:Consumer.Data.Command.CommandTimeout">
  -----------------------------------------------------------------------------
  <summary>
  Tempo Limite de espera para execução de um comando. A unidade de tempo é em segundos.
@@ -493,7 +471,7 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Data.TransactCommand.CommandType">
+</member><member name="P:Consumer.Data.Command.CommandType">
  -----------------------------------------------------------------------------
  <summary>
  Enumerado especificando o tipo de commando
@@ -509,7 +487,7 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Data.TransactCommand.Parameters">
+</member><member name="P:Consumer.Data.Command.Parameters">
  -----------------------------------------------------------------------------
  <summary>
  Coleção de objetos Parameter. Serve para guardar parametros para execução de uma query.
@@ -519,736 +497,6 @@ esquema do XML
 	</remarks>
 	<history>
  	[humberto]	07/04/2006	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.DecryptNumber(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Função que faz a decriptografia de números
- </summary>
-	<param name="strTexto">Texto contendo os números criptografados</param>
-	<returns>Inteiro</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.DecryptQueryString(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Funçao que faz a decriptografia de querystring.
- </summary>
-	<param name="strTexto">Texto a ser Decriptografado</param>
-	<returns>Texto Original</returns>
-	<remarks>
- Usado para retirar da querystring o valor.
- </remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.Decrypt(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Decriptografia normal do texto
- </summary>
-	<param name="strTexto">Valor criptografado</param>
-	<returns>String, original.</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.DecryptString(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Decriptografa String
- </summary>
-	<param name="strTexto">Texto a ser decriptografado</param>
-	<returns>String, original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.EncryptNumber(System.Int32)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de um número
- </summary>
-	<param name="auxNumero">Número a ser criptografado</param>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.EncryptQueryString(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de um querystring
- </summary>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.Encrypt(System.String,System.Boolean)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de um texto comum
- </summary>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Encript.EncryptString(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de uma string
- </summary>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.Security.Encript">
- -----------------------------------------------------------------------------
- Project	 : Provider
- Class	 : Engine.Security.EncriptData
- 
- -----------------------------------------------------------------------------
- <summary>
- EncriptData - Classe que executa a criptografia de dados de forma simples.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/10/2008	Updated
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Structs.Classe.#ctor">
-	<summary>
- Construtor do Objeto
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Structs.Classe.#ctor(System.String,System.String,System.String,Consumer.EscopoType,Consumer.ClassAttributes)">
-	<summary>
- Construtor do Objeto
- </summary>
-	<param name="pStrClassName">Nome da Classe</param>
-	<param name="pStrInherits">Nome da Herança</param>
-	<param name="pStrImplements">Nome da Implementação</param>
-	<param name="pIntEscopo">Tipo de Escopo</param>
-	<param name="PIntClassAttr">Atributo da Classe</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Structs.Classe.Dispose">
-	<summary>
- Dispose the Class
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Structs.Classe.Dispose(System.Boolean)">
-	<summary>
- Dispose the Class
- </summary>
-	<param name="disposing">Se True, efetua o Dispode</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Structs.Classe.Finalize">
-	<summary>
- Dispose the Class
- </summary>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.ClassName">
-	<summary>
- Nome da Classe
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.NameSpace">
-	<summary>
- Namespace a qual ela pertence
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Inherits">
-	<summary>
- Classe que ela Herda
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Implements">
-	<summary>
- Interface que ela implementa
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Escopo">
-	<summary>
- Tipo do Escopo da Classe
- </summary>
-	<value>Enumerador</value>
-	<returns>Enumerador</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.ClassAttr">
-	<summary>
- Atributo da Classe
- </summary>
-	<value>Enumerador</value>
-	<returns>Enumerador</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.IsPartial">
-	<summary>
- Se a declaração Partial estará presente
- </summary>
-	<value>Boolean</value>
-	<returns>Boolean</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.IdentificadorCollection">
-	<summary>
- Colunas identificadoreas - Variáveis de Memória presente na classe
- </summary>
-	<value>Lista de Identificadores</value>
-	<returns>Lista de Identificadores</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.IdentificadorObject">
-	<summary>
- Identificador de Objeto
- </summary>
-	<value>StringBuilder</value>
-	<returns>StringBuilder</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Identificador">
-	<summary>
- Nome do Identificador
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.MethodsCollection">
-	<summary>
- Coleção de Métodos
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.MethodsObject">
-	<summary>
- Objetos de Métodos
- </summary>
-	<value>StringBuilder</value>
-	<returns>StringBuilder</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Methods">
-	<summary>
- Métodos
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.PropertiesCollection">
-	<summary>
- Coleção de Propriedades
- </summary>
-	<value></value>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.PropertiesObject">
-	<summary>
- Objetos de Propriedades
- </summary>
-	<value>StringBuilder</value>
-	<returns>StringBuilder</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Properties">
-	<summary>
- Propriedades
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.EventsObject">
-	<summary>
- Objetos de Evento
- </summary>
-	<value>StringBuilder</value>
-	<returns>StringBuilder</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Events">
-	<summary>
- Evento
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.InterfacesCollection">
-	<summary>
- Coleção de Interfaces
- </summary>
-	<value>Lista de Métodos</value>
-	<returns>Lista de Métodos</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.InterfacesObject">
-	<summary>
- Objetos de Interface
- </summary>
-	<value>StringBuilder</value>
-	<returns>StringBuilder</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Classe.Interfaces">
-	<summary>
- Interfaces
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="T:Consumer.Structs.Classe">
-	<summary>
- Estrutura de Criação de Objeto de Classe
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Structs.File.#ctor">
-	<summary>
- Construtor da Classe
- </summary>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.File.Path">
-	<summary>
- Caminho do Arquivo
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.File.FileName">
-	<summary>
- Nome do Arquivo
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.File.FileExtension">
-	<summary>
- Extensão do Arquivo
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.File.Tamanho">
-	<summary>
- Tamanho do Arquivo
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.File.Type">
-	<summary>
- Tipo do Arquivo
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.File.Lines">
-	<summary>
- Linhas do Arquivo
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.File.Data">
-	<summary>
- Caminho do Arquivo
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="T:Consumer.Structs.File">
-	<summary>
- Classe de Arquivos
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Security.EncriptData.DecNumero(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Função que faz a decriptografia de números
- </summary>
-	<param name="strTexto">Texto contendo os números criptografados</param>
-	<returns>Inteiro</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.EncriptData.DecQueryStr(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Funçao que faz a decriptografia de querystring.
- </summary>
-	<param name="strTexto">Texto a ser Decriptografado</param>
-	<returns>Texto Original</returns>
-	<remarks>
- Usado para retirar da querystring o valor.
- </remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.EncriptData.Decripta(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Decriptografia normal do texto
- </summary>
-	<param name="strTexto">Valor criptografado</param>
-	<returns>String, original.</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.EncriptData.DecString(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Decriptografa String
- </summary>
-	<param name="strTexto">Texto a ser decriptografado</param>
-	<returns>String, original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.EncriptData.EncNumero(System.Int32)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de um número
- </summary>
-	<param name="auxNumero">Número a ser criptografado</param>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.EncriptData.EncQueryStr(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de um querystring
- </summary>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.EncriptData.Encripta(System.String,System.Boolean)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de um texto comum
- </summary>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.EncriptData.EncString(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Executa a criptografia de uma string
- </summary>
-	<returns>Uma String criptografada equivalente ao original</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.Security.EncriptData">
- -----------------------------------------------------------------------------
- Project	 : Provider
- Class	 : Engine.Security.EncriptData
- 
- -----------------------------------------------------------------------------
- <summary>
- EncriptData - Classe que executa a criptografia de dados de forma simples.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.arrDe">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Objeto com que renderiza o endereço de envio da mensagem
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.arrPara">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Objeto com conjunto de endereços.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.arrCopia">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Objeto com conjunto de endereços. Para Cópia da Mensagem.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.arrBCC">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Objeto com conjunto de endereços. Para Cópia Oculta da Mensagem.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.intMailType">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Tipo do formato do E-mail
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.intPrioridade">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Prioridade da mensagem
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.strSubject">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Assunto da mensagem.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Structs.JMensagem.strMessage">
- -----------------------------------------------------------------------------
- <summary>
- Variável particular. Conteudo da mensagem
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Mail.Structs.JMensagem.#ctor(System.String,System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Construtor.
- Nesta Classe, não existe forma de overloads para este construtor, é obrigatório
- a presenlça do email e do nome de quem vai mandar a mensagem
- </summary>
-	<param name="strMail">Email de envio</param>
-	<param name="strName">Nome do Email</param>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.Prioridade">
- -----------------------------------------------------------------------------
- <summary>
- Prioridade da mensagem
- </summary>
-	<value>PriorType. Integer</value>
-	<remarks>
-		<seealso cref="T:Consumer.Mail.PriorType"/>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.Type">
- -----------------------------------------------------------------------------
- <summary>
- Tipo de Email. Tipo do formato
- </summary>
-	<value>MailType. Integer</value>
-	<remarks>
-		<seealso cref="T:Consumer.Mail.MailType"/>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.De">
- -----------------------------------------------------------------------------
- <summary>
- E-Mail de Pessoa que está enviando a mensagem.
- </summary>
-	<value>Objeto do Tipo Adress</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.Para">
- -----------------------------------------------------------------------------
- <summary>
- Conjunto de objetos do Tipo Adress, para renderizar para quem vai a mensagem.
- </summary>
-	<value>Objeto Tipo AddressList</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.Copia">
- -----------------------------------------------------------------------------
- <summary>
- Conjunto de objetos do Tipo Adress, para renderizar para quem vai a mensagem.
- </summary>
-	<value>Objeto Tipo AddressList</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.BCC">
- -----------------------------------------------------------------------------
- <summary>
- Destinatários de Cópia Oculta
- </summary>
-	<value>Objeto Tipo Adress List</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.Assunto">
- -----------------------------------------------------------------------------
- <summary>
- Assunto da Mensagem
- </summary>
-	<value>String</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Structs.JMensagem.Mensagem">
- -----------------------------------------------------------------------------
- <summary>
- Mensagem . Conteudo da mensagem a ser enviada, em HTML ou Texto
- </summary>
-	<value>String</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.Mail.Structs.JMensagem">
- -----------------------------------------------------------------------------
- Project	 : Provider
- Class	 : Mail.MessageJ
- 
- -----------------------------------------------------------------------------
- <summary>
- Model Mensagem
- Contém Propriedades para uso de envio de mensagens via JMail.
- </summary>
-	<remarks>
- Está sendo usada a versão free do JMail.
- </remarks>
-	<history>
- 	[humberto]	23/9/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
@@ -1607,774 +855,6 @@ esquema do XML
 	</remarks>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Math.Stats.Probabilidade.CalculoProbabilidade(System.Double,System.Double)">
-	<summary>
- Calcula a probabilidade de uma amostragem.
- </summary>
-	<param name="dblEvento">Quantidade de Itens ocorridos</param>
-	<param name="dblUniversoAmostral">Quantidade Total de Eventos</param>
-	<returns>Probabilidade, em decimal.</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Math.Stats.Probabilidade.CalculoProbabilidadePerc(System.Double,System.Double)">
-	<summary>
- Calcula a probabilidade de uma amostragem. Retorna o valor em percentual.
- </summary>
-	<param name="dblEvento">Quantidade de Itens ocorridos</param>
-	<param name="dblUniversoAmostral">Quantidade Total de Eventos</param>
-	<returns>Probabilidade, em decimal.</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Exceptions.Treating.RaiseError(System.Exception,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
-	<summary>
- Classe que trata o erro guardando em arquivo txt e, gera novo erro para a camada superior.
- </summary>
-	<param name="ex">exceção</param>
-	<param name="strOrigem">origem, método do erro</param>
-	<param name="EventName">Nome do Evento</param>
-	<param name="EventSource">Source do Evento</param>
-	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
-	<param name="intEventID">Id do Evento</param>
-	<param name="shtCategory">Categoria do Evento.</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Exceptions.Treating.RaiseError(System.String,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
-	<summary>
- Efetua o Trwods de um erro
- </summary>
-	<param name="strMensagem">Mensagem de Erro</param>
-	<param name="strOrigem">origem, método do erro</param>
-	<param name="EventName">Nome do Evento</param>
-	<param name="EventSource">Source do Evento</param>
-	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
-	<param name="intEventID">Id do Evento</param>
-	<param name="shtCategory">Categoria do Evento.</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Exceptions.Treating.TratarError(System.Exception,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
-	<summary>
- Classe que trata o erro guardando em arquivo txt.
- </summary>
-	<param name="ex">Objeto de Exception</param>
-	<param name="strOrigem">origem, método do erro</param>
-	<param name="EventName">Nome do Evento</param>
-	<param name="EventSource">Source do Evento</param>
-	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
-	<param name="intEventID">Id do Evento</param>
-	<param name="shtCategory">Categoria do Evento.</param>
-</member><member name="M:Consumer.Exceptions.Treating.TratarError(System.String,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
-	<summary>
- Classe que trata o erro guardando em arquivo txt.
- </summary>
-	<param name="strMensagem">Mensagem de Errol</param>
-	<param name="strOrigem">origem, método do erro</param>
-	<param name="EventName">Nome do Evento</param>
-	<param name="EventSource">Source do Evento</param>
-	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
-	<param name="intEventID">Id do Evento</param>
-	<param name="shtCategory">Categoria do Evento.</param>
-	<remarks></remarks>
-</member><member name="F:Consumer.Mail.Engine.EMail.strMailServer">
- -----------------------------------------------------------------------------
- <summary>
- Identificador do nome do Servidor
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.Mail.Engine.EMail.strKey">
- -----------------------------------------------------------------------------
- <summary>
- Itentificador da Chave, no web.config/app.config contendo a chave que terá a string com os dados do servidor.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Mail.Engine.EMail.#ctor">
- -----------------------------------------------------------------------------
- <summary>
- Construtor do objeto. Cria uma nova instancia para objeto de envio de mensagem.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Mail.Engine.EMail.#ctor(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Construtor do objeto. Cria uma nova instancia para objeto de envio de mensagem.
- </summary>
-	<param name="strkey">Chave para a busca do nome do servidor.</param>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Mail.Engine.EMail.Send(Consumer.Mail.Structs.Mensagem,System.Boolean,System.String,System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Envia a mensagem de email, para os destinatários desejados.
- </summary>
-	<param name="objMensagem">Objeto contendo uma mensagem para ser enviada</param>
-	<returns></returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Engine.EMail.Key">
- -----------------------------------------------------------------------------
- <summary>
- Esta propriedade é alimentada inidialmente pela string "MailServer".
- Pode ser alterada a cada instancia da classe, para caso de haver basede dados
- diferentes.
- </summary>
-	<value>String contendo o key, do web.config para a conexao.</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	10/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Engine.EMail.Server">
- -----------------------------------------------------------------------------
- <summary>
- Nome do Servidor de E-Mails
- </summary>
-	<value>String</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Engine.EMail.Domain">
- -----------------------------------------------------------------------------
- <summary>
- Propriedade Domain - Guarda o nome do domínio da Rede, caso HAJA
- </summary>
-	<value>String</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	20/1/2006	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Mail.Engine.EMail.ConvertToSenders(System.Collections.Generic.List{System.String})">
- -----------------------------------------------------------------------------
- <summary>
- Conversor de ArrayList para Um string que contenha todos os destinatários separados por ";"
- </summary>
-	<param name="arrSenders">Objeto Array List.</param>
-	<returns>String</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.Mail.Engine.EMail">
- -----------------------------------------------------------------------------
- Project	 : Provider
- Class	 : Mail.EMail
- 
- -----------------------------------------------------------------------------
- <summary>
- Classe De Envio de mensagens com o uso do CDO.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Math.Juros.Mensagem">
-	<summary>
- Retorna a mensagem de algum método. 
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.Compress.ZipHelper.#ctor">
-	<summary>
- Default constructor.
- </summary>
-</member><member name="M:Consumer.File.Compress.ZipHelper.AddFilesToZip(System.String,System.String,System.String,System.Boolean,System.String)">
-	<summary>
- Adds files to a zip file.
- </summary>
-	<param name="zipFilename">Name of the zip file. If it does not exist, it will be created. If it exists, it will be updated.</param>
-	<param name="sourceFolder">Name of the folder from which to add files.</param>
-	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
-	<param name="recursive">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
-	<param name="password">Specifies the password to be used for the zip file.  If blank, don't use a password</param>
-	<returns>True if successfull</returns>
-</member><member name="M:Consumer.File.Compress.ZipHelper.ExtractFilesFromZip(System.String,System.String,System.String)">
-	<summary>
- Extract files from a zip file, preserving the structure
- </summary>
-	<param name="zipFilename">Name of the zip file</param>
-	<param name="destFolder">Name of the folder to extract to</param>
-	<param name="password">Password for the zip file.  If blank there is no password.</param>
-	<returns>True if successfull</returns>
-</member><member name="M:Consumer.File.Compress.ZipHelper._AddFilesToZip(System.String,System.String,System.String,System.Boolean,System.String)">
-	<summary>
- Adds files to a zip file.
- </summary>
-	<param name="zipFilename">Name of the zip file. If it does not exist, it will be created. If it exists, it will be updated.</param>
-	<param name="sourceFolder">Name of the folder from which to add files.</param>
-	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
-	<param name="recursive">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
-	<param name="password">Specifies the password to be used for the zip file.  If blank, don't use a password</param>
-</member><member name="M:Consumer.File.Compress.ZipHelper.ZipDirectory(ICSharpCode.SharpZipLib.Zip.ZipInputStream,System.String,System.String,ICSharpCode.SharpZipLib.Zip.ZipOutputStream,System.Boolean)">
-	<summary>
- Add directory to open archive.
- </summary>
-	<param name="zipInputStream">Specifies input stream of the zip file for the update strategy.</param>
-	<param name="sourceFolder">Name of the folder from which to add files.</param>
-	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
-	<param name="zipOutputStream">Specifies output stream to archive data.</param>
-	<param name="processSubDirs">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
-</member><member name="M:Consumer.File.Compress.ZipHelper.ZipFile(System.String,System.String,ICSharpCode.SharpZipLib.Zip.ZipOutputStream)">
-	<summary>
- Add file to open archive.
- </summary>
-	<param name="sourceFolder">Name of the folder from which to add files.</param>
-	<param name="fileName">Name of the file to add</param>
-	<param name="zipOutputStream">Specifies output stream to archive data.</param>
-</member><member name="M:Consumer.File.Compress.ZipHelper.MakePathRelative(System.String,System.String)">
-	<summary>
- Transform file path from full path to relative.
- </summary>
-	<param name="baseFolder">Name of the folder that will be cut from path</param>
-	<param name="path">File full path that you need to make relative.</param>
-	<returns>Relative path to file (from base folder) or full path if the file is not belong to <paramref name="baseFolder"/></returns>
-</member><member name="M:Consumer.File.Compress.ZipHelper.AddDataToZip(ICSharpCode.SharpZipLib.Zip.ZipOutputStream,ICSharpCode.SharpZipLib.Zip.ZipEntry,System.IO.Stream)">
-	<summary>
- Add data from stream to open archive.
- </summary>
-	<param name="zipOutputStream">Specifies output stream to archive data.</param>
-	<param name="zipEntry">Describe the data that will be added to archive.</param>
-	<param name="dataStream">Specifies the data that will be added to archive</param>
-</member><member name="M:Consumer.File.Compress.ZipHelper.PatchKnownProblems(System.String)">
-	<summary>
- Patches known problems in file path that incorrectly processed by SharpZipLib.
- </summary>
-	<param name="fileName">The name of the file</param>
-	<returns>Patched file name</returns>
-</member><member name="M:Consumer.File.Compress.ZipHelper.GetListOfFilesToZip(System.String,System.String,System.Boolean)">
-	<summary>
- Returns the list of files that must be added to archive.
- </summary>
-	<param name="sourceFolder">Name of the folder from which to add files.</param>
-	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
-	<param name="processSubDirsRecursively">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
-	<returns>The list of file names that must be added to archive.</returns>
-</member><member name="M:Consumer.File.Compress.ZipHelper._ExtractFilesFromZip(System.String,System.String,System.String,System.Boolean)">
-	<summary>
- Extract files from a zip file, preserving the structure
- </summary>
-	<param name="zipFilename">Name of the zip file</param>
-	<param name="destFolder">Name of the folder to extract to</param>
-	<param name="password">Password for the zip file.  If blank there is no password.</param>
-	<param name="overwrite">Specify the action for existing files in the <paramref name="destFolder"/> during extract process.</param>
-</member><member name="M:Consumer.File.Compress.ZipHelper.SaveFile(System.IO.Stream,System.String,System.Int64)">
-	<summary>
- Saves file from stream to disk.
- </summary>
-	<param name="stream">Specify the stream to save on disk</param>
-	<param name="fullName">Specify the filename for correspondent <paramref name="stream"/>.</param>
-	<param name="uncompressedSize">The size of the stream.</param>
-</member><member name="T:Consumer.File.Compress.ZipHelper">
-	<summary>
- This class represents a Zip archive.  You can ask for the contained
- entries, or get an uncompressed file for a file entry.  
- </summary>
-</member><member name="M:Consumer.Data.Command.#ctor">
-	<summary>
- Construtor do Command
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.#ctor(System.String)">
-	<summary>
- Construtor do Command
- </summary>
-	<param name="strKey">Key da String de Conexão</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.#ctor(System.String,System.Data.CommandType,System.String)">
-	<summary>
- Construtor do Command
- </summary>
-	<param name="cmdText">Comando a ser executado</param>
-	<param name="cmdType">Tipo de Command, se executa uma Stored Procedure ou SQL Statment</param>
-	<param name="strKey">Chave do Config</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.BuildCommand">
-	<summary>
- Construtor do Command - Generic.
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.ValidateCommand">
- -----------------------------------------------------------------------------
- <summary>
- Esta Sub executa a verificação dos parametros, se estão preenchidos<BR/>
- Estes paramtros são preenchidos alimentando as propriedades abaixo.<BR/> 
- Devem ser preenchidas TODAS:
- <list type="bullet">
-			<item>
-				<description>Propriedade Key</description>
-			</item>
-			<item>
-				<description>Propriedade CommandText</description>
-			</item>
-			<item>
-				<description>Propriedade CommandType</description>
-			</item>
-		</list>
-		<seealso cref="P:Consumer.Data.Command.Key"/>
-		<seealso cref="P:Consumer.Data.Command.CommandText"/>
-		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
-		<seealso cref="P:Consumer.Data.Command.CommandType"/>
-		<seealso cref="M:Consumer.Data.Command.GetDataTable(System.String)"/>
-		<seealso cref="M:Consumer.Data.Command.GetDataSet(System.String)"/>
-		<seealso cref="M:Consumer.Data.Command.GetDataReader"/>
-		<seealso cref="M:Consumer.Data.Command.Execute"/>
-		<seealso cref="M:Consumer.Data.Command.ExecuteScalar"/>
-		<seealso cref="M:Consumer.Data.Command.ExecuteNonQuery"/>
-	</summary>
-	<remarks>
- Na verificação, caos não exista o dado preenchido é gerado um erro e este tratado nas funções
- <list type="bullet">
-			<item>
-				<description>ReturnDataSet</description>
-			</item>
-			<item>
-				<description>ReturnDataTable</description>
-			</item>
-		</list>
-	</remarks>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Data.Command.CreateParameter">
- -----------------------------------------------------------------------------
- <summary>
- Cria um novo parametro.
- Pode se criar um parametro de duas formas conforme exemplo
- <example>
-			<code>
- 'Como criar parametro - forma 1:
- Dim parData as new Parameter
- <BR/>
- 'Como criar parametro - forma 2, identico a forma 1:
- Dim parData as Parameter
- parData = new Parameter
- <BR/>
- 'Como criar parametro - forma 3:
- dim parData as Parameter
- dim cmdData as new Command
- parData = cmdData.CreateParameter
- </code>
-		</example>
-	</summary>
-	<returns>Um objeto do tipo Parameter</returns>
-	<remarks>
-	</remarks>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Data.Command.CreateParameter(System.String,System.Data.DbType,System.Int32,System.Object)">
- -----------------------------------------------------------------------------
- <summary>
- Cria um novo parametro para ser usado e adiciona ao command atual
- </summary>
-	<param name="Name">nome do Parametro. Tipo String</param>
-	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
-	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
-	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
-	<remarks>
-	</remarks>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Data.Command.GetDataTable(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Retorna um datatable.<BR/>
- Para este Método funcionar correramente é preciso que alguns parametros estejam preenchidos corretamente.<BR/>
- Estes paramtros são preenchidos alimentando as propriedades abaixo. <BR/>
- Devem ser preenchidas TODAS:
- <list type="bullet">
-			<item>
-				<term>Key</term>
-				<description>Propriedade da Chave do web.config/app.config setado para a string de conexão</description>
-			</item>
-			<item>
-				<term>CommandText</term>
-				<description>Propriedade da instrução SQL a ser rodada</description>
-			</item>
-		</list>
-		<seealso cref="P:Consumer.Data.Command.Key"/>
-		<seealso cref="P:Consumer.Data.Command.CommandText"/>
-		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
-		<seealso cref="P:Consumer.Data.Command.CommandType"/>
-	</summary>
-	<param name="strTableName">Nome da Tabela, opcional</param>
-	<remarks>
-	</remarks>
-	<returns>DataTable</returns>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Data.Command.GetDataSet(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Retorna um datatable.<BR/>
- Para este Método funcionar correramente é preciso que alguns parametros estejam preenchidos corretamente.<BR/>
- Estes paramtros são preenchidos alimentando as propriedades abaixo. <BR/>
- Devem ser preenchidas TODAS:
- <list type="bullet">
-			<item>
-				<term>Key</term>
-				<description>Propriedade da Chave do web.config/app.config setado para a string de conexão</description>
-			</item>
-			<item>
-				<term>CommandText</term>
-				<description>Propriedade da instrução SQL a ser rodada</description>
-			</item>
-		</list>
-		<seealso cref="P:Consumer.Data.Command.Key"/>
-		<seealso cref="P:Consumer.Data.Command.CommandText"/>
-		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
-		<seealso cref="P:Consumer.Data.Command.CommandType"/>
-	</summary>
-	<remarks>
-	</remarks>
-	<returns>DataSet</returns>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Data.Command.GetDataReader">
-	<summary>
- Obtem um datareader, DESCONECTADO
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.ExecuteNonQuery">
-	<summary>
- Executa uma query
- </summary>
-	<returns>Integer</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.Execute">
-	<summary>
- Executa uma query
- </summary>
-	<returns>Integer</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.ExecuteScalar">
-	<summary>
- Executa uma query
- </summary>
-	<returns>Integer</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.GetSchema(System.String)">
-	<summary>
- Obtem um Schema do Banco
- </summary>
-	<param name="strCollectionName">O nome do Schema a retornar</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.GetSchema">
-	<summary>
- Obtem um Schema do Banco
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Data.Command.ResetCommandTimeout">
- -----------------------------------------------------------------------------
- <summary>
- Este comando ajusta o time out do command/conexão para o tempo de 30 segundos.
- </summary>
-	<remarks>
- O Valor inicial de um commandtimeout é de 360 segundos
- </remarks>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Data.Command.Prepared">
-	<summary>
- Torna ou não um command preparado
- </summary>
-	<value>Boolean</value>
-	<returns>Boolean</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Data.Command.Key">
- -----------------------------------------------------------------------------
- <summary>
- Key que ao ser preenchida permite buscar a string de conexão com o banco de dados.
- </summary>
-	<value>String</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	07/04/2006	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Data.Command.CommandText">
- -----------------------------------------------------------------------------
- <summary>
- Instrução de SQL para ser executada. <BR/>
- Pode ser uma prodedure ou uma instrução normal de SQL
- </summary>
-	<value>String</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	07/04/2006	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Data.Command.CommandTextObject">
-	<summary>
- Command Text, setável dentro de uma StringBuilder
- </summary>
-	<value>StringBuilder</value>
-	<returns>StringBuilder</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Data.Command.CommandTimeout">
- -----------------------------------------------------------------------------
- <summary>
- Tempo Limite de espera para execução de um comando. A unidade de tempo é em segundos.
- </summary>
-	<value>Inteiro. Representa o tempo em segundos</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	07/04/2006	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Data.Command.CommandType">
- -----------------------------------------------------------------------------
- <summary>
- Enumerado especificando o tipo de commando
- Para melhor informação veja em <seealso cref="T:System.Data.CommandType">System.Data.CommandType</seealso>
-	</summary>
-	<value>Tipo Inteiro, para o numerador System.Data.CommandType</value>
-	<remarks>
- Renderiza um enumerador vindo de System.Data.CommandType. Qualquer alteração na origem afeta
- esta classe, de forma transparente, sem ocasionar quebras de compatibilidade internas.
- </remarks>
-	<history>
- 	[humberto]	07/04/2006	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Data.Command.Parameters">
- -----------------------------------------------------------------------------
- <summary>
- Coleção de objetos Parameter. Serve para guardar parametros para execução de uma query.
- </summary>
-	<value>Parameter</value>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	07/04/2006	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.ElimineAcentos(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Função que eliminaacentos da criptografia
- </summary>
-	<param name="strTexto">Texto a ser criptografado</param>
-	<returns>Texto Desacntuado</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.Criptografa(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Função Que Criptografa os dados e retorna uma string codificada.
- </summary>
-	<param name="strValor">Valor a Ser Criptografado</param>
-	<returns>Uma String codificada</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.DeCriptografa(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Função Que Decriptografa os dados e retorna uma string decodificada.
- </summary>
-	<param name="strValor">Valor a Ser Decriptografado</param>
-	<returns>Uma String decodificada</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.Convert(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Convert. Converte uma string para um caracter codificado em um array
- </summary>
-	<param name="strConvert">Valor a ser convertido</param>
-	<returns>String Convertida</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.Invert(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Invert. Converte uma string para um caracter codificado em um array. 
- Traz de volta o caracter ja anteriormente codificado.
- </summary>
-	<param name="strConvert">Valor a ser convertido</param>
-	<returns>String Convertida</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.LoadConstantes">
- -----------------------------------------------------------------------------
- <summary>
- Constantes de Conversão por Números
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.LoadConstantesSymbols">
- -----------------------------------------------------------------------------
- <summary>
- Constantes de Conversão por Simbolos
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.UnLoadConstantes">
- -----------------------------------------------------------------------------
- <summary>
- Limpa as contantes de Conversão
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.Finalize">
- -----------------------------------------------------------------------------
- <summary>
- Destrutor da Classe Security
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.SecurityAlternate.#ctor(Consumer.Security.SecurityAlternate.TypeCripto)">
- -----------------------------------------------------------------------------
- <summary>
- Construtor da Classe Security.
- </summary>
-	<param name="intType">Tipo. Se 1 é simbolos e se 2 é numeros.</param>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	8/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.Security.SecurityAlternate">
- -----------------------------------------------------------------------------
- 
- -----------------------------------------------------------------------------
- <summary>
- Classe Security. Permite Criptografia de Dados. Forma bem simples e primária
- Devolvendo números vindos de um dicionário.
- </summary>
-	<remarks>
- Não usar esta classe. Não será oferecido suporte a seus métodos, dar preferência
- ao uso da Classe EncriptData.
- </remarks>
-	<history>
- 	[humberto]	25/8/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Security.Senhas.GeraRandomico(System.Int32)">
- -----------------------------------------------------------------------------
- <summary>
- Gerador de Senha Randômico
- </summary>
-	<param name="intQtChars">Quantidade de caracteres que a senha conterá</param>
-	<returns>Senha Randômica</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	21/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.Security.Senhas">
- -----------------------------------------------------------------------------
- Project	 : Provider
- Class	 : Security.Senhas
- 
- -----------------------------------------------------------------------------
- <summary>
- Classe Senhas: Classe Utilitária do Namespace Security que 
- Gera dados para senhas randomicas
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	21/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
 </member><member name="M:Consumer.Math.Stats.Combinatory.Fatorial(System.Double)">
 	<summary>
  Cálculo de Fatorial n!
@@ -2447,6 +927,65 @@ esquema do XML
  Verificação de fatorial. Ou seja verifica se o número é negativo ou não.
  </summary>
 	<param name="intNumber">Número a ser calculado o fatorial</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Structs.File.#ctor">
+	<summary>
+ Construtor da Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.File.Path">
+	<summary>
+ Caminho do Arquivo
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.File.FileName">
+	<summary>
+ Nome do Arquivo
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.File.FileExtension">
+	<summary>
+ Extensão do Arquivo
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.File.Tamanho">
+	<summary>
+ Tamanho do Arquivo
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.File.Type">
+	<summary>
+ Tipo do Arquivo
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.File.Lines">
+	<summary>
+ Linhas do Arquivo
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.File.Data">
+	<summary>
+ Caminho do Arquivo
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="T:Consumer.Structs.File">
+	<summary>
+ Classe de Arquivos
+ </summary>
 	<remarks></remarks>
 </member><member name="F:Consumer.Mail.Structs.Mensagem.strDe">
  -----------------------------------------------------------------------------
@@ -2676,124 +1215,28 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String)">
+</member><member name="M:Consumer.File.Compress.IZip.AddFilesToZip(System.String,System.String,System.String,System.Boolean,System.String)">
 	<summary>
- Cria XML Comment para Subs que não passam parametros, e Classes
+ Adds files to a zip file.
  </summary>
-	<param name="strSumary"></param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.Collections.ArrayList,System.String)">
+	<param name="zipFilename">Name of the zip file. If it does not exist, it will be created. If it exists, it will be updated.</param>
+	<param name="sourceFolder">Name of the folder from which to add files.</param>
+	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
+	<param name="recursive">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
+	<param name="password">Specifies the password to be used for the zip file.  If blank, don't use a password</param>
+	<returns>True if successfull</returns>
+</member><member name="M:Consumer.File.Compress.IZip.ExtractFilesFromZip(System.String,System.String,System.String)">
 	<summary>
- Gera o comentário XML no Gerador de Classe
+ Extract files from a zip file, preserving the structure
  </summary>
-	<param name="strSumary">Sumario, descrição do método, classe, variável ou objeto</param>
-	<param name="arrParName">ArrayList contendo todos os pararametros.</param>
-	<param name="strReturns">Valor que Vai ser colocado na tag "Return"</param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.String)">
+	<param name="zipFilename">Name of the zip file</param>
+	<param name="destFolder">Name of the folder to extract to</param>
+	<param name="password">Password for the zip file.  If blank there is no password.</param>
+	<returns>True if successfull</returns>
+</member><member name="T:Consumer.File.Compress.IZip">
 	<summary>
- Gera o comentário XML no Gerador de Classe. Válido para Métodos 
+ Interface IZip
  </summary>
-	<param name="strSumary">Sumario, descrição do método, classe, variável ou objeto</param>
-	<param name="arrParName">ArrayList contendo todos os pararametros.</param>
-	<param name="arrParText">Descrição do Parametro.</param>
-	<param name="strReturns">Valor que Vai ser colocado na tag "Return"</param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.String,System.String)">
-	<summary>
- Gera o comentário XML no Gerador de Classe. Exclusivo para propriedades Normais
- </summary>
-	<param name="strSumary">Sumário do XML</param>
-	<param name="strValue">Valor</param>
-	<param name="strReturns">Valor do Retorno.Datatype.</param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.String,Consumer.PropertyType)">
-	<summary>
- Gera o comentário XML no Gerador de Classe. Exclusivo para propriedades Write-Only e ou Read-Only
- </summary>
-	<param name="strSumary">Sumário do XML</param>
-	<param name="strValue">Valor</param>
-	<param name="intProperty">Tipo de Propriedade. Deve ser Read-Only ou Write-Only.</param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.ClassGenerator.GenericCreator.VerificaName(System.String@)">
-	<summary>
- Verifica a existência de palavras Chaves como nome de propriedades e ou Métodos e trata-os como diferente
- </summary>
-	<param name="strName">Nome do objeto</param>
-	<remarks></remarks>
-</member><member name="T:Consumer.ClassGenerator.GenericCreator">
-	<summary>
- Classe que cria XML de Comentario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.InOut.File.ReplaceWordsNoOccurs(System.String,System.String,System.String)">
-	<summary>
- Executa a substituição de uma palavra pela outra em um arquivo texto.Não retorna contagem de palavras.
- </summary>
-	<param name="strFileName">Caminho completo do Arquivo.</param>
-	<param name="strSearch">Expressão a ser procurada.</param>
-	<param name="strReplace">Expressão a substituir a procurada.</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.InOut.File.ReplaceWordsNoCount(System.String,System.String,System.String)">
-	<summary>
- Executa a substituição de uma palavra pela outra em um arquivo texto.
- </summary>
-	<param name="strFileName">Caminho completo do Arquivo. Não retorna o total de palavras</param>
-	<param name="strSearch">Expressão a ser procurada.</param>
-	<param name="strReplace">Expressão a substituir a procurada.</param>
-	<returns>Quantidade de ocorrencias trocadas no primeiro item.</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.InOut.File.ReplaceWords(System.String,System.String,System.String)">
-	<summary>
- Executa a substituição de uma palavra pela outra em um arquivo texto.
- </summary>
-	<param name="strFileName">Caminho completo do Arquivo.</param>
-	<param name="strSearch">Expressão a ser procurada.</param>
-	<param name="strReplace">Expressão a substituir a procurada.</param>
-	<returns>Quantidade de ocorrencias trocadas no primeiro item do array e no segundo a quantidade de palavras que o documento contém.</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.InOut.File.ReplaceEngine(System.String,System.String,System.String,System.Int32@,System.Int32)">
-	<summary>
- Motor de execução das trocas.
- </summary>
-	<param name="strFile">Arquivo texto em uma string</param>
-	<param name="strSearch">Palavra a ser encontrada</param>
-	<param name="strReplace">Palavra a sera a substituta</param>
-	<param name="intNumOcorrencias">Quantidade de ocorrencias substituidas no documento.</param>
-	<param name="intPalavras">Quantidade de palavras no documento.</param>
-	<returns>O texto trocado</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.InOut.File.ReplaceEspecial(System.String,System.String,System.String,System.String,System.Int32@)">
-	<summary>
- Faz um replace na palavra contendo caracteres especiais, como: . , ; : ... ! ? e outros
- </summary>
-	<param name="strWord">Palavra a analisar</param>
-	<param name="strSearch">Palavra a trocar</param>
-	<param name="strReplace">Substituta</param>
-	<param name="strSpecialChar">Caracter especial incluso</param>
-	<param name="intNumOcorrencias">Caso haja ocorrencia, soma mais uma, para totalizar corretamente as trocas</param>
-	<returns>A palavra trocada.</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.InOut.File.Read(System.String)">
-	<summary>
- Efetua a Leitura de umarquivo
- </summary>
-	<param name="strFilename">Nome do Arquivo, caminho completo</param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.File.InOut.File.Save(System.String,System.String,System.Boolean)">
-	<summary>
- Salva um arquivo
- </summary>
-	<param name="strFilename">Nome do Arquivo</param>
-	<param name="strFile">Conteúdo do Arquivo</param>
-	<param name="blnAppend">Se true, o arquivoi existe e efetuamos um append no arquivo. Se não, é criado um novo</param>
-	<returns>Booleano</returns>
 	<remarks></remarks>
 </member><member name="F:Consumer.Mail.MailType.Text">
  -----------------------------------------------------------------------------
@@ -2915,105 +1358,1261 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Math.Basic.Fatorial(System.Double)">
+</member><member name="P:Consumer.Structs.Juros.Codigo">
 	<summary>
- Cálculo de Fatorial n!
+ Código do Calculo Gravado em tabela.
  </summary>
-	<param name="Number">Número a ser calculado o fatorial</param>
-	<returns>O resultado do fatorial</returns>
-	<remarks>
- Atenção: n! = 1 X 2 X 3 X 4 ... X n
- </remarks>
-</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double)">
-	<summary>
- Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
- Há aqui somente o cálculo de permutações simples.Sem repetições de itens.
- </summary>
-	<param name="intQtItens">Quantidade de Itens Permutados</param>
-	<returns>Quantidade de Permutações</returns>
+	<value>Integer</value>
+	<returns>Integer</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double)">
+</member><member name="P:Consumer.Structs.Juros.Nome">
 	<summary>
- Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
- Há aqui somente o cálculo de permutações simples, com um item repetido.
+ Descrição do Calculo - Nome do Calculo gravado na tabela.
  </summary>
-	<param name="intQtItens">Quantidade de Itens Permutados</param>
-	<param name="intItemA">Qtde de Repetições do primeiro item</param>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Juros.Principal">
+	<summary>
+ Valor Principal da Dívida
+ </summary>
+	<value>Double</value>
+	<returns>Double</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Erro.SendErrorMessage(System.Exception,System.String,System.String,System.String,System.String)">
+	<summary>
+ Envia e-mail para a pessoa que é responsavel pelo sistema
+ </summary>
+	<param name="ex">Exceção tratável.</param>
+	<param name="strSenderFrom">De quem.</param>
+	<param name="strSenderTo">Para.</param>
+	<remarks>
+ se não estiver preenchido os optionais, ele envia para os
+ users colocados no web/app config.
+ inexistindo estes parametros, não manda. E não gera erro disto, desvia se o
+ processo, ignorando a exce~ção gerada neste caso
+ </remarks>
+</member><member name="M:Consumer.Exceptions.Erro.WriteEventLog(System.Exception,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que grava erros no event viwer.
+ </summary>
+	<param name="ex">Exceção tratável.</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Erro.GravarErro(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Grava um Arquivo de log de erros da aplicação
+ </summary>
+	<param name="strMensagem">Mensagem a ser logada.</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.GravarErro(System.Exception,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Grava um Arquivo de log de erros da aplicação
+ </summary>
+	<param name="exError">Mensagem a ser logada.Objeto de Exception</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.GravarLog(System.String,System.String,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Grava um Arquivo de log da aplicação
+ </summary>
+	<param name="strMensagem">Mensagem a ser logada.</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<param name="blnSendMail">Se envia ou não e-mail.Opcional, de valor TRUE.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ 	[humberto]	11/11/2005	Alter
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.Gravar(System.String,System.String,System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Sub que faz a gravação do Erro de acordo com o parâmetro intTipo.
+ </summary>
+	<param name="strMensagem">Mensagem a ser logada.</param>
+	<param name="strOrigem">Origem do erro ou da mensagem a ser logada.</param>
+	<param name="intTipo">O Parâmetro intTipo alimenta o arquivo de Log ou
+ de Erros conforme as necessidades.
+ intTipo=0 Grava o Erro
+ intTipo=1 Grava o Log
+  </param>
+	<remarks>
+esquema do XML
+<root>
+			<mensagens>
+				<mensagem>mensagem de erro/log</mensagem>
+				<origem>origem do erro/log</origem>
+				<data>data da ocorrencia</data>
+				<hora>hora da ocorrencia</hora>
+			</mensagens>
+		</root>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.CreateXmlFile(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo arquivo de XML no padrão do tratamento de mensagens/erro
+ </summary>
+	<param name="strCaminho">Camibnho do arquivo</param>
+	<returns>Um objeto do Tipo XMLDocument</returns>
+	<remarks>
+esquema do XML
+<root>
+			<mensagens>
+				<mensagem>mensagem de erro/log</mensagem>
+				<origem>origem do erro/log</origem>
+				<data>data da ocorrencia</data>
+				<hora>hora da ocorrencia</hora>
+			</mensagens>
+		</root>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Erro.EnviaMensagem(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Envia mensagem por email do conteudo do erro.
+ </summary>
+	<param name="strMensagem">
+ Mensagem de erro ocorrida. É interessante se houiver formatações(tags)
+ em HTML que é aceito pelo envio de mensagem</param>
+	<returns>booleano, se feito corretamente é true.</returns>
+	<remarks>
+esquema do XML
+<root>
+			<mensagens>
+				<mensagem>mensagem de erro/log</mensagem>
+				<origem>origem do erro/log</origem>
+				<data>data da ocorrencia</data>
+				<hora>hora da ocorrencia</hora>
+			</mensagens>
+		</root>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Exceptions.Erro">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Erro
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe Erro.
+ Esta classe faz um tratamento em especial, ou seja grava em arquivos TXTs
+ a mensagem de erro, ou de um log (trace) para seguir passo a passo um esquema de
+ gravação de mensagens, na aplicação.
+ </summary>
+	<remarks>    
+ No web.config/app.config do seu projeto, deve ter o seguinte key, 
+ dentro da chave AppSettings: ErrorFile e LogFile. E o Values preenchido respectivamente
+ com caminhos válidos de Arquivos XML.
+ Também deve conter a key MailSenders, que conterão os destinatários de envio de e-mail
+ quando ocorrer um erro. Devem estar separados por ponto e virgula os emails.
+ Também deve conter a key SMTPServer, que conterá o servidor de envio de e-mail
+ quando ocorrer um erro. 
+ </remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Math.JurosCalc">
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe de Juros.
+ Classe que Calcula os Financiamentos Desejados
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[halmeida]	21/6/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.ObjectType.XML">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Representante para o XML Texto
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.ObjectType.XMLDocument">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Representante para o System.XML.XMLDocument
+ <seealso cref="T:System.Xml.XmlDocument"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.ObjectType.DataTable">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Reprentativo do Datatable
+ <seealso cref="T:System.Data.DataTable"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.ObjectType.DataSet">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Reprentativo do DataSet
+ <seealso cref="T:System.Data.DataSet"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.ObjectType.DataView">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerador Reprentativo do DataView
+ <seealso cref="T:System.Data.DataView"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.ObjectType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Dados que representará a forma do objeto que está sendo cacheado.
+ Existe uma propriedade que deve ser setada antes de guardar em cache o objeto.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	28/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.ElimineAcentos(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que eliminaacentos da criptografia
+ </summary>
+	<param name="strTexto">Texto a ser criptografado</param>
+	<returns>Texto Desacntuado</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.Criptografa(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função Que Criptografa os dados e retorna uma string codificada.
+ </summary>
+	<param name="strValor">Valor a Ser Criptografado</param>
+	<returns>Uma String codificada</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.DeCriptografa(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função Que Decriptografa os dados e retorna uma string decodificada.
+ </summary>
+	<param name="strValor">Valor a Ser Decriptografado</param>
+	<returns>Uma String decodificada</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.Convert(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Convert. Converte uma string para um caracter codificado em um array
+ </summary>
+	<param name="strConvert">Valor a ser convertido</param>
+	<returns>String Convertida</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.Invert(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Invert. Converte uma string para um caracter codificado em um array. 
+ Traz de volta o caracter ja anteriormente codificado.
+ </summary>
+	<param name="strConvert">Valor a ser convertido</param>
+	<returns>String Convertida</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.LoadConstantes">
+ -----------------------------------------------------------------------------
+ <summary>
+ Constantes de Conversão por Números
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.LoadConstantesSymbols">
+ -----------------------------------------------------------------------------
+ <summary>
+ Constantes de Conversão por Simbolos
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.UnLoadConstantes">
+ -----------------------------------------------------------------------------
+ <summary>
+ Limpa as contantes de Conversão
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.Finalize">
+ -----------------------------------------------------------------------------
+ <summary>
+ Destrutor da Classe Security
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.SecurityAlternate.#ctor(Consumer.Security.SecurityAlternate.TypeCripto)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor da Classe Security.
+ </summary>
+	<param name="intType">Tipo. Se 1 é simbolos e se 2 é numeros.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	8/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Security.SecurityAlternate">
+ -----------------------------------------------------------------------------
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe Security. Permite Criptografia de Dados. Forma bem simples e primária
+ Devolvendo números vindos de um dicionário.
+ </summary>
+	<remarks>
+ Não usar esta classe. Não será oferecido suporte a seus métodos, dar preferência
+ ao uso da Classe EncriptData.
+ </remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Math.Stats.Probabilidade.CalculoProbabilidade(System.Double,System.Double)">
+	<summary>
+ Calcula a probabilidade de uma amostragem.
+ </summary>
+	<param name="dblEvento">Quantidade de Itens ocorridos</param>
+	<param name="dblUniversoAmostral">Quantidade Total de Eventos</param>
+	<returns>Probabilidade, em decimal.</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Stats.Probabilidade.CalculoProbabilidadePerc(System.Double,System.Double)">
+	<summary>
+ Calcula a probabilidade de uma amostragem. Retorna o valor em percentual.
+ </summary>
+	<param name="dblEvento">Quantidade de Itens ocorridos</param>
+	<param name="dblUniversoAmostral">Quantidade Total de Eventos</param>
+	<returns>Probabilidade, em decimal.</returns>
+	<remarks></remarks>
+</member><member name="F:Consumer.Mail.Structs.JMensagem.arrDe">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com que renderiza o endereço de envio da mensagem
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.arrPara">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com conjunto de endereços.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.arrCopia">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com conjunto de endereços. Para Cópia da Mensagem.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.arrBCC">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Objeto com conjunto de endereços. Para Cópia Oculta da Mensagem.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.intMailType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Tipo do formato do E-mail
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.intPrioridade">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Prioridade da mensagem
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.strSubject">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Assunto da mensagem.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="F:Consumer.Mail.Structs.JMensagem.strMessage">
+ -----------------------------------------------------------------------------
+ <summary>
+ Variável particular. Conteudo da mensagem
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Structs.JMensagem.#ctor(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor.
+ Nesta Classe, não existe forma de overloads para este construtor, é obrigatório
+ a presenlça do email e do nome de quem vai mandar a mensagem
+ </summary>
+	<param name="strMail">Email de envio</param>
+	<param name="strName">Nome do Email</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Prioridade">
+ -----------------------------------------------------------------------------
+ <summary>
+ Prioridade da mensagem
+ </summary>
+	<value>PriorType. Integer</value>
+	<remarks>
+		<seealso cref="T:Consumer.Mail.PriorType"/>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Type">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tipo de Email. Tipo do formato
+ </summary>
+	<value>MailType. Integer</value>
+	<remarks>
+		<seealso cref="T:Consumer.Mail.MailType"/>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.De">
+ -----------------------------------------------------------------------------
+ <summary>
+ E-Mail de Pessoa que está enviando a mensagem.
+ </summary>
+	<value>Objeto do Tipo Adress</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Para">
+ -----------------------------------------------------------------------------
+ <summary>
+ Conjunto de objetos do Tipo Adress, para renderizar para quem vai a mensagem.
+ </summary>
+	<value>Objeto Tipo AddressList</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Copia">
+ -----------------------------------------------------------------------------
+ <summary>
+ Conjunto de objetos do Tipo Adress, para renderizar para quem vai a mensagem.
+ </summary>
+	<value>Objeto Tipo AddressList</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.BCC">
+ -----------------------------------------------------------------------------
+ <summary>
+ Destinatários de Cópia Oculta
+ </summary>
+	<value>Objeto Tipo Adress List</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Assunto">
+ -----------------------------------------------------------------------------
+ <summary>
+ Assunto da Mensagem
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Mail.Structs.JMensagem.Mensagem">
+ -----------------------------------------------------------------------------
+ <summary>
+ Mensagem . Conteudo da mensagem a ser enviada, em HTML ou Texto
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.Structs.JMensagem">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Mail.MessageJ
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Model Mensagem
+ Contém Propriedades para uso de envio de mensagens via JMail.
+ </summary>
+	<remarks>
+ Está sendo usada a versão free do JMail.
+ </remarks>
+	<history>
+ 	[humberto]	23/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Exceptions.Treating.RaiseError(System.Exception,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que trata o erro guardando em arquivo txt e, gera novo erro para a camada superior.
+ </summary>
+	<param name="ex">exceção</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Treating.RaiseError(System.String,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Efetua o Trwods de um erro
+ </summary>
+	<param name="strMensagem">Mensagem de Erro</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Exceptions.Treating.TratarError(System.Exception,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que trata o erro guardando em arquivo txt.
+ </summary>
+	<param name="ex">Objeto de Exception</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+</member><member name="M:Consumer.Exceptions.Treating.TratarError(System.String,System.String,System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)">
+	<summary>
+ Classe que trata o erro guardando em arquivo txt.
+ </summary>
+	<param name="strMensagem">Mensagem de Errol</param>
+	<param name="strOrigem">origem, método do erro</param>
+	<param name="EventName">Nome do Evento</param>
+	<param name="EventSource">Source do Evento</param>
+	<param name="EventType">Tipo de Evento. Seta para warning, ou erro.</param>
+	<param name="intEventID">Id do Evento</param>
+	<param name="shtCategory">Categoria do Evento.</param>
+	<remarks></remarks>
+</member><member name="P:Consumer.Math.Juros.Mensagem">
+	<summary>
+ Retorna a mensagem de algum método. 
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Security.Encript.DecryptNumber(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que faz a decriptografia de números
+ </summary>
+	<param name="strTexto">Texto contendo os números criptografados</param>
+	<returns>Inteiro</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.Encript.DecryptQueryString(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Funçao que faz a decriptografia de querystring.
+ </summary>
+	<param name="strTexto">Texto a ser Decriptografado</param>
+	<returns>Texto Original</returns>
+	<remarks>
+ Usado para retirar da querystring o valor.
+ </remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.Encript.Decrypt(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Decriptografia normal do texto
+ </summary>
+	<param name="strTexto">Valor criptografado</param>
+	<returns>String, original.</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.Encript.DecryptString(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Decriptografa String
+ </summary>
+	<param name="strTexto">Texto a ser decriptografado</param>
+	<returns>String, original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.Encript.EncryptNumber(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de um número
+ </summary>
+	<param name="auxNumero">Número a ser criptografado</param>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.Encript.EncryptQueryString(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de um querystring
+ </summary>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.Encript.Encrypt(System.String,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de um texto comum
+ </summary>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.Encript.EncryptString(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de uma string
+ </summary>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Security.Encript">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Engine.Security.EncriptData
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ EncriptData - Classe que executa a criptografia de dados de forma simples.
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/10/2008	Updated
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.TransactCommand.#ctor(System.String)">
+	<summary>
+ Construtor do Command
+ </summary>
+	<param name="strKey">Key da String de Conexão</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.#ctor(System.String,System.Data.CommandType,System.String)">
+	<summary>
+ Construtor do Command
+ </summary>
+	<param name="cmdText">Comando a ser executado</param>
+	<param name="cmdType">Tipo de Command, se executa uma Stored Procedure ou SQL Statment</param>
+	<param name="strKey">Chave do Config</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.#ctor">
+	<summary>
+ Construtor do Command - Generic.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.ValidateCommand">
+ -----------------------------------------------------------------------------
+ <summary>
+ Esta Sub executa a verificação dos parametros, se estão preenchidos<BR/>
+ Estes paramtros são preenchidos alimentando as propriedades abaixo.<BR/> 
+ Devem ser preenchidas TODAS:
+ <list type="bullet">
+			<item>
+				<description>Propriedade Key</description>
+			</item>
+			<item>
+				<description>Propriedade CommandText</description>
+			</item>
+			<item>
+				<description>Propriedade CommandType</description>
+			</item>
+		</list>
+		<seealso cref="P:Consumer.Data.Command.Key"/>
+		<seealso cref="P:Consumer.Data.Command.CommandText"/>
+		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
+		<seealso cref="P:Consumer.Data.Command.CommandType"/>
+		<seealso cref="M:Consumer.Data.Command.GetDataTable(System.String)"/>
+		<seealso cref="M:Consumer.Data.Command.GetDataSet(System.String)"/>
+		<seealso cref="M:Consumer.Data.Command.GetDataReader"/>
+		<seealso cref="M:Consumer.Data.Command.Execute"/>
+		<seealso cref="M:Consumer.Data.Command.ExecuteScalar"/>
+		<seealso cref="M:Consumer.Data.Command.ExecuteNonQuery"/>
+	</summary>
+	<remarks>
+ Na verificação, caos não exista o dado preenchido é gerado um erro e este tratado nas funções
+ <list type="bullet">
+			<item>
+				<description>ReturnDataSet</description>
+			</item>
+			<item>
+				<description>ReturnDataTable</description>
+			</item>
+		</list>
+	</remarks>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.TransactCommand.BeginTransaction">
+	<summary>
+ Inicia a Transação.
+ Cria a instancia da mesma e a inicia.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.CommitTransaction">
+	<summary>
+ Efetua o commit da transação.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.RollBackTransaction">
+	<summary>
+ Efetua o roolback da transação.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.CreateParameter">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro.
+ Pode se criar um parametro de duas formas conforme exemplo
+ <example>
+			<code>
+ 'Como criar parametro - forma 1:
+ Dim parData as new Parameter
+ <BR/>
+ 'Como criar parametro - forma 2, identico a forma 1:
+ Dim parData as Parameter
+ parData = new Parameter
+ <BR/>
+ 'Como criar parametro - forma 3:
+ dim parData as Parameter
+ dim cmdData as new Command
+ parData = cmdData.CreateParameter
+ </code>
+		</example>
+	</summary>
+	<returns>Um objeto do tipo Parameter</returns>
+	<remarks>
+	</remarks>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.TransactCommand.CreateParameter(System.String,System.Data.DbType,System.Int32,System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Cria um novo parametro para ser usado e adiciona ao command atual
+ </summary>
+	<param name="Name">nome do Parametro. Tipo String</param>
+	<param name="Value">Valor que o parametro recebe. Tipo Objeto.</param>
+	<param name="Type">Tipo do Parametro. Tipo de dado, proveniente de enumerador</param>
+	<param name="Size">Tamanho do Parametro. Para Strings, o tamanho do char/varchar</param>
+	<remarks>
+	</remarks>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.TransactCommand.GetDataTable(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna um datatable.<BR/>
+ Para este Método funcionar correramente é preciso que alguns parametros estejam preenchidos corretamente.<BR/>
+ Estes paramtros são preenchidos alimentando as propriedades abaixo. <BR/>
+ Devem ser preenchidas TODAS:
+ <list type="bullet">
+			<item>
+				<term>Key</term>
+				<description>Propriedade da Chave do web.config/app.config setado para a string de conexão</description>
+			</item>
+			<item>
+				<term>CommandText</term>
+				<description>Propriedade da instrução SQL a ser rodada</description>
+			</item>
+		</list>
+		<seealso cref="P:Consumer.Data.Command.Key"/>
+		<seealso cref="P:Consumer.Data.Command.CommandText"/>
+		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
+		<seealso cref="P:Consumer.Data.Command.CommandType"/>
+	</summary>
+	<param name="strTableName">Nome da Tabela, opcional</param>
+	<remarks>
+	</remarks>
+	<returns>DataTable</returns>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.TransactCommand.GetDataSet(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retorna um datatable.<BR/>
+ Para este Método funcionar correramente é preciso que alguns parametros estejam preenchidos corretamente.<BR/>
+ Estes paramtros são preenchidos alimentando as propriedades abaixo. <BR/>
+ Devem ser preenchidas TODAS:
+ <list type="bullet">
+			<item>
+				<term>Key</term>
+				<description>Propriedade da Chave do web.config/app.config setado para a string de conexão</description>
+			</item>
+			<item>
+				<term>CommandText</term>
+				<description>Propriedade da instrução SQL a ser rodada</description>
+			</item>
+		</list>
+		<seealso cref="P:Consumer.Data.Command.Key"/>
+		<seealso cref="P:Consumer.Data.Command.CommandText"/>
+		<seealso cref="P:Consumer.Data.Command.CommandTimeout"/>
+		<seealso cref="P:Consumer.Data.Command.CommandType"/>
+	</summary>
+	<remarks>
+	</remarks>
+	<returns>DataSet</returns>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Data.TransactCommand.GetDataReader">
+	<summary>
+ Obtem um datareader, CONECTADO
+ </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double,System.Double)">
+</member><member name="M:Consumer.Data.TransactCommand.ExecuteNonQuery">
 	<summary>
- Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
- Há aqui somente o cálculo de permutações simples, com dois itens repetidos.
+ Executa uma query
  </summary>
-	<param name="intQtItens">Quantidade de Itens Permutados</param>
-	<param name="intItemA">Qtde de Repetições do primeiro item</param>
-	<param name="intItemB">Qtde de Repetições do segundo item</param>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.Execute">
+	<summary>
+ Executa uma query
+ </summary>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.ExecuteScalar">
+	<summary>
+ Executa uma query
+ </summary>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.TransactCommand.GetSchema(System.String)">
+	<summary>
+ Obtem um Schema do Banco
+ </summary>
+	<param name="strCollectionName">O nome do Schema a retornar</param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Math.Basic.Permutacao(System.Double,System.Double,System.Double,System.Double)">
+</member><member name="M:Consumer.Data.TransactCommand.GetSchema">
 	<summary>
- Permutações, quantidade de permutações possiveis pela quantidade de itens dada.
- Há aqui somente o cálculo de permutações simples, com três itens repetidos.
+ Obtem um Schema do Banco
  </summary>
-	<param name="intQtItens">Quantidade de Itens Permutados</param>
-	<param name="intItemA">Qtde de Repetições do primeiro item</param>
-	<param name="intItemB">Qtde de Repetições do segundo item</param>
-	<param name="intItemC">Qtde de Repetições do terceiro item</param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Math.Basic.Arranjos(System.Double,System.Double)">
-	<summary>
- função de calculo de arranjos
- </summary>
-	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
-	<param name="intTaxaK">Qtde de Itens a combinar</param>
-	<returns>Qtde de Arranjos possiveis</returns>
-	<remarks>
- Fórmula de A(n,k) = n!/(n-k)!
- </remarks>
-</member><member name="M:Consumer.Math.Basic.Combinacao(System.Double,System.Double)">
-	<summary>
- Calcula as combinações
- </summary>
-	<param name="intTaxaN">Valor de N - Qtde Total dos itens</param>
-	<param name="intTaxaK">Qtde de Itens a combinar</param>
-	<returns>Combinações totais</returns>
-	<remarks>
- Fórmula de C(n,k) = n!/k!(n-k)!
- </remarks>
-</member><member name="M:Consumer.Math.Basic.VerificaFatorial(System.Double)">
-	<summary>
- Verificação de fatorial. Ou seja verifica se o número é negativo ou não.
- </summary>
-	<param name="intNumber">Número a ser calculado o fatorial</param>
-	<remarks></remarks>
-</member><member name="M:Consumer.Math.Basic.Equacao2G(System.Double,System.Double,System.Double,System.Double@,System.Double@)">
-	<summary>
- Resolvendo uma equação do segundo grau
- </summary>
-	<param name="aNumber">coeficiente a, que na equação aparece multiplicando a variável x de segundo grau</param>
-	<param name="bNumber">coeficiente a, que na equação aparece multiplicando a variável x de primeiro grau</param>
-	<param name="cNumber">coeficiente a, que na equação aparece independente</param>
-	<param name="x1Number">Primeira Raiz</param>
-	<param name="x2Number">Segunda Raiz</param>
-	<returns>Verdadeiro ou Falso</returns>
-	<remarks></remarks>
-</member><member name="T:Consumer.Math.Basic">
-	<summary>
- Classe de cálculos Matemáticos Básicos.
+</member><member name="M:Consumer.Data.TransactCommand.ResetCommandTimeout">
+ -----------------------------------------------------------------------------
+ <summary>
+ Este comando ajusta o time out do command/conexão para o tempo de 30 segundos.
  </summary>
 	<remarks>
- Contas simples como dados de equações do segundo grau, probabilidades, fatoriais, e outrros  
+ O Valor inicial de um commandtimeout é de 360 segundos
  </remarks>
-</member><member name="M:Consumer.Math.Numbers.Numeros.DeterminaTriangulares(System.Int32)">
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.TransactCommand.Transaction">
 	<summary>
- Determina os números triangulares, até a faixa desejada
+ Transação
  </summary>
-	<param name="intMaxValue">Número triangular Máximo.</param>
-	<returns>Lista dos Números.</returns>
+	<value>DbTransaction</value>
+	<returns>DbTransaction</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.File.Compress.IZip.AddFilesToZip(System.String,System.String,System.String,System.Boolean,System.String)">
+</member><member name="P:Consumer.Data.TransactCommand.Connection">
+	<summary>
+ Conexão do Banco
+ </summary>
+	<value>DbConnection</value>
+	<returns>DbConnection</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.TransactCommand.Prepared">
+	<summary>
+ Torna ou não um command preparado
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.TransactCommand.Key">
+ -----------------------------------------------------------------------------
+ <summary>
+ Key que ao ser preenchida permite buscar a string de conexão com o banco de dados.
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.TransactCommand.CommandText">
+ -----------------------------------------------------------------------------
+ <summary>
+ Instrução de SQL para ser executada. <BR/>
+ Pode ser uma prodedure ou uma instrução normal de SQL
+ </summary>
+	<value>String</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.TransactCommand.CommandTextObject">
+	<summary>
+ Command Text, setável dentro de uma StringBuilder
+ </summary>
+	<value>StringBuilder</value>
+	<returns>StringBuilder</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Data.TransactCommand.CommandTimeout">
+ -----------------------------------------------------------------------------
+ <summary>
+ Tempo Limite de espera para execução de um comando. A unidade de tempo é em segundos.
+ </summary>
+	<value>Inteiro. Representa o tempo em segundos</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.TransactCommand.CommandType">
+ -----------------------------------------------------------------------------
+ <summary>
+ Enumerado especificando o tipo de commando
+ Para melhor informação veja em <seealso cref="T:System.Data.CommandType">System.Data.CommandType</seealso>
+	</summary>
+	<value>Tipo Inteiro, para o numerador System.Data.CommandType</value>
+	<remarks>
+ Renderiza um enumerador vindo de System.Data.CommandType. Qualquer alteração na origem afeta
+ esta classe, de forma transparente, sem ocasionar quebras de compatibilidade internas.
+ </remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Consumer.Data.TransactCommand.Parameters">
+ -----------------------------------------------------------------------------
+ <summary>
+ Coleção de objetos Parameter. Serve para guardar parametros para execução de uma query.
+ </summary>
+	<value>Parameter</value>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String)">
+	<summary>
+ Cria XML Comment para Subs que não passam parametros, e Classes
+ </summary>
+	<param name="strSumary"></param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.Collections.ArrayList,System.String)">
+	<summary>
+ Gera o comentário XML no Gerador de Classe
+ </summary>
+	<param name="strSumary">Sumario, descrição do método, classe, variável ou objeto</param>
+	<param name="arrParName">ArrayList contendo todos os pararametros.</param>
+	<param name="strReturns">Valor que Vai ser colocado na tag "Return"</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.String)">
+	<summary>
+ Gera o comentário XML no Gerador de Classe. Válido para Métodos 
+ </summary>
+	<param name="strSumary">Sumario, descrição do método, classe, variável ou objeto</param>
+	<param name="arrParName">ArrayList contendo todos os pararametros.</param>
+	<param name="arrParText">Descrição do Parametro.</param>
+	<param name="strReturns">Valor que Vai ser colocado na tag "Return"</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.String,System.String)">
+	<summary>
+ Gera o comentário XML no Gerador de Classe. Exclusivo para propriedades Normais
+ </summary>
+	<param name="strSumary">Sumário do XML</param>
+	<param name="strValue">Valor</param>
+	<param name="strReturns">Valor do Retorno.Datatype.</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.ClassGenerator.GenericCreator.XMLComment(System.String,System.String,Consumer.PropertyType)">
+	<summary>
+ Gera o comentário XML no Gerador de Classe. Exclusivo para propriedades Write-Only e ou Read-Only
+ </summary>
+	<param name="strSumary">Sumário do XML</param>
+	<param name="strValue">Valor</param>
+	<param name="intProperty">Tipo de Propriedade. Deve ser Read-Only ou Write-Only.</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.ClassGenerator.GenericCreator.VerificaName(System.String@)">
+	<summary>
+ Verifica a existência de palavras Chaves como nome de propriedades e ou Métodos e trata-os como diferente
+ </summary>
+	<param name="strName">Nome do objeto</param>
+	<remarks></remarks>
+</member><member name="T:Consumer.ClassGenerator.GenericCreator">
+	<summary>
+ Classe que cria XML de Comentario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Data.XML.Serialize.Dispose(System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função dispose, que destroi o objeto.
+ </summary>
+	<param name="Disposable">Se true, o objeto é destruido.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	07/04/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Misc.tableClass.RenderTableLines(System.Collections.Generic.List{System.Collections.ArrayList})">
+	<summary>
+ Renderiza as linhas de uma tabela. apenas TRs e TDs
+ </summary>
+	<param name="arrTableList">AArraylist contendo os cabeçalho e os dados</param>
+	<remarks>É impoortante lembrar que será considerado os headers, como o primeiro item do arraylist.</remarks>
+</member><member name="M:Consumer.File.Compress.ZipHelper.#ctor">
+	<summary>
+ Default constructor.
+ </summary>
+</member><member name="M:Consumer.File.Compress.ZipHelper.AddFilesToZip(System.String,System.String,System.String,System.Boolean,System.String)">
 	<summary>
  Adds files to a zip file.
  </summary>
@@ -3023,7 +2622,7 @@ esquema do XML
 	<param name="recursive">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
 	<param name="password">Specifies the password to be used for the zip file.  If blank, don't use a password</param>
 	<returns>True if successfull</returns>
-</member><member name="M:Consumer.File.Compress.IZip.ExtractFilesFromZip(System.String,System.String,System.String)">
+</member><member name="M:Consumer.File.Compress.ZipHelper.ExtractFilesFromZip(System.String,System.String,System.String)">
 	<summary>
  Extract files from a zip file, preserving the structure
  </summary>
@@ -3031,11 +2630,129 @@ esquema do XML
 	<param name="destFolder">Name of the folder to extract to</param>
 	<param name="password">Password for the zip file.  If blank there is no password.</param>
 	<returns>True if successfull</returns>
-</member><member name="T:Consumer.File.Compress.IZip">
+</member><member name="M:Consumer.File.Compress.ZipHelper._AddFilesToZip(System.String,System.String,System.String,System.Boolean,System.String)">
 	<summary>
- Interface IZip
+ Adds files to a zip file.
+ </summary>
+	<param name="zipFilename">Name of the zip file. If it does not exist, it will be created. If it exists, it will be updated.</param>
+	<param name="sourceFolder">Name of the folder from which to add files.</param>
+	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
+	<param name="recursive">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
+	<param name="password">Specifies the password to be used for the zip file.  If blank, don't use a password</param>
+</member><member name="M:Consumer.File.Compress.ZipHelper.ZipDirectory(ICSharpCode.SharpZipLib.Zip.ZipInputStream,System.String,System.String,ICSharpCode.SharpZipLib.Zip.ZipOutputStream,System.Boolean)">
+	<summary>
+ Add directory to open archive.
+ </summary>
+	<param name="zipInputStream">Specifies input stream of the zip file for the update strategy.</param>
+	<param name="sourceFolder">Name of the folder from which to add files.</param>
+	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
+	<param name="zipOutputStream">Specifies output stream to archive data.</param>
+	<param name="processSubDirs">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
+</member><member name="M:Consumer.File.Compress.ZipHelper.ZipFile(System.String,System.String,ICSharpCode.SharpZipLib.Zip.ZipOutputStream)">
+	<summary>
+ Add file to open archive.
+ </summary>
+	<param name="sourceFolder">Name of the folder from which to add files.</param>
+	<param name="fileName">Name of the file to add</param>
+	<param name="zipOutputStream">Specifies output stream to archive data.</param>
+</member><member name="M:Consumer.File.Compress.ZipHelper.MakePathRelative(System.String,System.String)">
+	<summary>
+ Transform file path from full path to relative.
+ </summary>
+	<param name="baseFolder">Name of the folder that will be cut from path</param>
+	<param name="path">File full path that you need to make relative.</param>
+	<returns>Relative path to file (from base folder) or full path if the file is not belong to <paramref name="baseFolder"/></returns>
+</member><member name="M:Consumer.File.Compress.ZipHelper.AddDataToZip(ICSharpCode.SharpZipLib.Zip.ZipOutputStream,ICSharpCode.SharpZipLib.Zip.ZipEntry,System.IO.Stream)">
+	<summary>
+ Add data from stream to open archive.
+ </summary>
+	<param name="zipOutputStream">Specifies output stream to archive data.</param>
+	<param name="zipEntry">Describe the data that will be added to archive.</param>
+	<param name="dataStream">Specifies the data that will be added to archive</param>
+</member><member name="M:Consumer.File.Compress.ZipHelper.PatchKnownProblems(System.String)">
+	<summary>
+ Patches known problems in file path that incorrectly processed by SharpZipLib.
+ </summary>
+	<param name="fileName">The name of the file</param>
+	<returns>Patched file name</returns>
+</member><member name="M:Consumer.File.Compress.ZipHelper.GetListOfFilesToZip(System.String,System.String,System.Boolean)">
+	<summary>
+ Returns the list of files that must be added to archive.
+ </summary>
+	<param name="sourceFolder">Name of the folder from which to add files.</param>
+	<param name="fileMask">Name of the file to add to the zip file. Can include wildcards.</param>
+	<param name="processSubDirsRecursively">Specifies if the files in the sub-folders of <paramref name="sourceFolder"/> should also be added.</param>
+	<returns>The list of file names that must be added to archive.</returns>
+</member><member name="M:Consumer.File.Compress.ZipHelper._ExtractFilesFromZip(System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Extract files from a zip file, preserving the structure
+ </summary>
+	<param name="zipFilename">Name of the zip file</param>
+	<param name="destFolder">Name of the folder to extract to</param>
+	<param name="password">Password for the zip file.  If blank there is no password.</param>
+	<param name="overwrite">Specify the action for existing files in the <paramref name="destFolder"/> during extract process.</param>
+</member><member name="M:Consumer.File.Compress.ZipHelper.SaveFile(System.IO.Stream,System.String,System.Int64)">
+	<summary>
+ Saves file from stream to disk.
+ </summary>
+	<param name="stream">Specify the stream to save on disk</param>
+	<param name="fullName">Specify the filename for correspondent <paramref name="stream"/>.</param>
+	<param name="uncompressedSize">The size of the stream.</param>
+</member><member name="T:Consumer.File.Compress.ZipHelper">
+	<summary>
+ This class represents a Zip archive.  You can ask for the contained
+ entries, or get an uncompressed file for a file entry.  
+ </summary>
+</member><member name="M:Consumer.Misc.htmlClass.TrataAcentos(System.String)">
+	<summary>
+ tratativa de Acentos para HTML
+ </summary>
+	<param name="strTexto">STRING</param>
+	<returns>STRING</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Security.Hash.ConvertHash(System.String)">
+	<summary>
+ Cria um Hash de uma string
+ </summary>
+	<param name="strValor">Valor, string a ser convertido para um hash</param>
+	<returns>String contendo o hash desejjadi</returns>
+	<remarks></remarks>
+</member><member name="T:Consumer.Security.Hash">
+	<summary>
+ Classe de Hash de Senhas
  </summary>
 	<remarks></remarks>
+</member><member name="M:Consumer.Security.Senhas.GeraRandomico(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Gerador de Senha Randômico
+ </summary>
+	<param name="intQtChars">Quantidade de caracteres que a senha conterá</param>
+	<returns>Senha Randômica</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	21/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Security.Senhas">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Security.Senhas
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ Classe Senhas: Classe Utilitária do Namespace Security que 
+ Gera dados para senhas randomicas
+ </summary>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	21/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
 </member><member name="M:Consumer.ClassGenerator.MemberCreate.CreateIDisposable">
 	<summary>
  Cria uma interface IDisposable
@@ -3060,104 +2777,185 @@ esquema do XML
  </summary>
 	<returns>String: Código fonte de ICollection</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Strings.StringsTreating.ContaPalavras(System.String)">
+</member><member name="M:Consumer.File.InOut.File.ReplaceWordsNoOccurs(System.String,System.String,System.String)">
 	<summary>
- Efetua a contagem de palavras em uma frase/texto
+ Executa a substituição de uma palavra pela outra em um arquivo texto.Não retorna contagem de palavras.
  </summary>
-	<param name="strFrase">Frase/texto</param>
-	<returns>Quantidade de palavras</returns>
+	<param name="strFileName">Caminho completo do Arquivo.</param>
+	<param name="strSearch">Expressão a ser procurada.</param>
+	<param name="strReplace">Expressão a substituir a procurada.</param>
 	<remarks></remarks>
-</member><member name="M:Consumer.Strings.StringsTreating.FirstMaiuscula(System.String)">
+</member><member name="M:Consumer.File.InOut.File.ReplaceWordsNoCount(System.String,System.String,System.String)">
 	<summary>
- Formata o texto com a primeira letra maiuscula
+ Executa a substituição de uma palavra pela outra em um arquivo texto.
  </summary>
-	<param name="strValor">Texto a ser formatado</param>
-	<returns>Texto formatado</returns>
+	<param name="strFileName">Caminho completo do Arquivo. Não retorna o total de palavras</param>
+	<param name="strSearch">Expressão a ser procurada.</param>
+	<param name="strReplace">Expressão a substituir a procurada.</param>
+	<returns>Quantidade de ocorrencias trocadas no primeiro item.</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Strings.StringsTreating.TransformToArrayList(System.String)">
+</member><member name="M:Consumer.File.InOut.File.ReplaceWords(System.String,System.String,System.String)">
 	<summary>
- Obtem um texto com ";"como separador e transforma em arraylist
+ Executa a substituição de uma palavra pela outra em um arquivo texto.
  </summary>
-	<param name="strTexto">Texto</param>
-	<returns>Arraylist</returns>
+	<param name="strFileName">Caminho completo do Arquivo.</param>
+	<param name="strSearch">Expressão a ser procurada.</param>
+	<param name="strReplace">Expressão a substituir a procurada.</param>
+	<returns>Quantidade de ocorrencias trocadas no primeiro item do array e no segundo a quantidade de palavras que o documento contém.</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Strings.StringsTreating.TransformToArrayList(System.String,System.Char)">
+</member><member name="M:Consumer.File.InOut.File.ReplaceEngine(System.String,System.String,System.String,System.Int32@,System.Int32)">
 	<summary>
- Obtem um texto com ";"como separador e transforma em arraylist
+ Motor de execução das trocas.
  </summary>
-	<param name="strTexto">Texto</param>
-	<param name="charSeparator">Caracter separador</param>
-	<returns>Arraylist</returns>
+	<param name="strFile">Arquivo texto em uma string</param>
+	<param name="strSearch">Palavra a ser encontrada</param>
+	<param name="strReplace">Palavra a sera a substituta</param>
+	<param name="intNumOcorrencias">Quantidade de ocorrencias substituidas no documento.</param>
+	<param name="intPalavras">Quantidade de palavras no documento.</param>
+	<returns>O texto trocado</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Strings.StringsTreating.TransformToArrayList(System.String[])">
+</member><member name="M:Consumer.File.InOut.File.ReplaceEspecial(System.String,System.String,System.String,System.String,System.Int32@)">
 	<summary>
- Efetuaa transformação de um Array, para um tipo ArrayList
+ Faz um replace na palavra contendo caracteres especiais, como: . , ; : ... ! ? e outros
  </summary>
-	<param name="strTexto">array de string</param>
-	<returns>ArrayList</returns>
+	<param name="strWord">Palavra a analisar</param>
+	<param name="strSearch">Palavra a trocar</param>
+	<param name="strReplace">Substituta</param>
+	<param name="strSpecialChar">Caracter especial incluso</param>
+	<param name="intNumOcorrencias">Caso haja ocorrencia, soma mais uma, para totalizar corretamente as trocas</param>
+	<returns>A palavra trocada.</returns>
 	<remarks></remarks>
-</member><member name="M:Consumer.Strings.StringsTreating.FormatFromXML(System.String)">
+</member><member name="M:Consumer.File.InOut.File.Read(System.String)">
+	<summary>
+ Efetua a Leitura de umarquivo
+ </summary>
+	<param name="strFilename">Nome do Arquivo, caminho completo</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.File.InOut.File.Save(System.String,System.String,System.Boolean)">
+	<summary>
+ Salva um arquivo
+ </summary>
+	<param name="strFilename">Nome do Arquivo</param>
+	<param name="strFile">Conteúdo do Arquivo</param>
+	<param name="blnAppend">Se true, o arquivoi existe e efetuamos um append no arquivo. Se não, é criado um novo</param>
+	<returns>Booleano</returns>
+	<remarks></remarks>
+</member><member name="T:Consumer.Misc.Util.ComparacaoHoras">
  -----------------------------------------------------------------------------
  <summary>
- Funçao que troca os símbolos de tags por colchetes e as aspas duplas por simbologia de $.
+ Enumerardor de Horas
  </summary>
-	<returns>String</returns>
 	<remarks>
- Impotante para gravar dados em banco, que não aceita certos caracteres.
- </remarks>
+	</remarks>
 	<history>
- 	[humberto]	6/2/2006	Created
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+ 
+
+</member><member name="M:Consumer.Misc.Util.ValidaMes(System.Int16,System.Int16,System.Int16)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que faz a validação do Mês
+ </summary>
+	<param name="intmes">mês a ser validado</param>
+	<param name="intdia">dia a ser validado</param>
+	<param name="intano">ano a ser validado</param>
+	<returns>Retorna um booleano indicando a veracidade da Data. True=Data válida, False=Data Inválida.</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Strings.StringsTreating.FormatToXML(System.String)">
+</member><member name="M:Consumer.Misc.Util.VerificaHora(System.String)">
  -----------------------------------------------------------------------------
  <summary>
- Função inversa, que devolve o aspecto de XML formatado corretamente.
+ Efetua a verficação da hora.
  </summary>
-	<param name="strXML"></param>
+	<param name="inthora">String, contendo a Hora</param>
 	<returns></returns>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	6/2/2006	Created
+ 	[humberto]	14/9/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Structs.Juros.Codigo">
-	<summary>
- Código do Calculo Gravado em tabela.
- </summary>
-	<value>Integer</value>
-	<returns>Integer</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Juros.Nome">
-	<summary>
- Descrição do Calculo - Nome do Calculo gravado na tabela.
- </summary>
-	<value>String</value>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="P:Consumer.Structs.Juros.Principal">
-	<summary>
- Valor Principal da Dívida
- </summary>
-	<value>Double</value>
-	<returns>Double</returns>
-	<remarks></remarks>
-</member><member name="T:Consumer.Math.JurosCalc">
+</member><member name="M:Consumer.Misc.Util.ValidaCPF(System.String)">
  -----------------------------------------------------------------------------
  <summary>
- Classe de Juros.
- Classe que Calcula os Financiamentos Desejados
+ Validador de CPF. Efetua os cálculos validando de acordo com o mósulo 11.
  </summary>
+	<param name="strCPF">String Contendo o CPF</param>
+	<returns>Verdadeiro ou falso de acordo com a validade do valor</returns>
 	<remarks>
 	</remarks>
 	<history>
- 	[halmeida]	21/6/2005	Created
+ 	[humberto]	14/9/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
+</member><member name="M:Consumer.Misc.Util.ValidaCNPJ(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Validador de CNPJ. Efetua os cálculos validando de acordo com o mósulo 11.
+ </summary>
+	<param name="strCGC">String Contendo o CNPJ</param>
+	<returns>Verdadeiro ou falso de acordo com a validade do valor</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+ 
+
+</member><member name="M:Consumer.Misc.Util.GravaArquivo(System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função específica para gravação de arquivos. Os arquvos estão em formato texto.
+ </summary>
+	<param name="nomeArq">Nome do Arquivo</param>
+	<param name="conteudo">Conteudo do Arquivo Texto</param>
+	<returns>Verdadeiro ou falso de acordo com o sucesso da operação.</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	14/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+ 
+
+</member><member name="M:Consumer.Misc.Util.GeraInStrings(System.Collections.Generic.List{System.String})">
+	<summary>
+ Função geradora de Strings de "IN" para SQL
+ </summary>
+	<param name="strValues">Lista de Strings</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Misc.Util.GeraInStrings(System.Collections.Generic.List{System.Int32})">
+	<summary>
+ Função geradora de Strings de "IN" para SQL
+ </summary>
+	<param name="intValues">Lista de Números, inteiros</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Misc.Util.GetGuid">
+	<summary>
+ Cria um guid.
+ </summary>
+	<returns>string, formato guid</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Math.Numbers.Numeros.DeterminaTriangulares(System.Int32)">
+	<summary>
+ Determina os números triangulares, até a faixa desejada
+ </summary>
+	<param name="intMaxValue">Número triangular Máximo.</param>
+	<returns>Lista dos Números.</returns>
+	<remarks></remarks>
 </member><member name="M:Consumer.Security.ConnectionString.#ctor">
 	<summary>
  Construtor padrão
@@ -3290,80 +3088,376 @@ esquema do XML
 	<value>String</value>
 	<returns>String</returns>
 	<remarks></remarks>
-</member><member name="F:Consumer.ObjectType.XML">
+</member><member name="M:Consumer.Strings.StringsTreating.ContaPalavras(System.String)">
+	<summary>
+ Efetua a contagem de palavras em uma frase/texto
+ </summary>
+	<param name="strFrase">Frase/texto</param>
+	<returns>Quantidade de palavras</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Strings.StringsTreating.FirstMaiuscula(System.String)">
+	<summary>
+ Formata o texto com a primeira letra maiuscula
+ </summary>
+	<param name="strValor">Texto a ser formatado</param>
+	<returns>Texto formatado</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Strings.StringsTreating.TransformToArrayList(System.String)">
+	<summary>
+ Obtem um texto com ";"como separador e transforma em arraylist
+ </summary>
+	<param name="strTexto">Texto</param>
+	<returns>Arraylist</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Strings.StringsTreating.TransformToArrayList(System.String,System.Char)">
+	<summary>
+ Obtem um texto com ";"como separador e transforma em arraylist
+ </summary>
+	<param name="strTexto">Texto</param>
+	<param name="charSeparator">Caracter separador</param>
+	<returns>Arraylist</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Strings.StringsTreating.TransformToArrayList(System.String[])">
+	<summary>
+ Efetuaa transformação de um Array, para um tipo ArrayList
+ </summary>
+	<param name="strTexto">array de string</param>
+	<returns>ArrayList</returns>
+	<remarks></remarks>
+</member><member name="M:Consumer.Strings.StringsTreating.FormatFromXML(System.String)">
  -----------------------------------------------------------------------------
  <summary>
- Enumerador Representante para o XML Texto
+ Funçao que troca os símbolos de tags por colchetes e as aspas duplas por simbologia de $.
+ </summary>
+	<returns>String</returns>
+	<remarks>
+ Impotante para gravar dados em banco, que não aceita certos caracteres.
+ </remarks>
+	<history>
+ 	[humberto]	6/2/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Strings.StringsTreating.FormatToXML(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função inversa, que devolve o aspecto de XML formatado corretamente.
+ </summary>
+	<param name="strXML"></param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	6/2/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Structs.Classe.#ctor">
+	<summary>
+ Construtor do Objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Structs.Classe.#ctor(System.String,System.String,System.String,Consumer.EscopoType,Consumer.ClassAttributes)">
+	<summary>
+ Construtor do Objeto
+ </summary>
+	<param name="pStrClassName">Nome da Classe</param>
+	<param name="pStrInherits">Nome da Herança</param>
+	<param name="pStrImplements">Nome da Implementação</param>
+	<param name="pIntEscopo">Tipo de Escopo</param>
+	<param name="PIntClassAttr">Atributo da Classe</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Structs.Classe.Dispose">
+	<summary>
+ Dispose the Class
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Structs.Classe.Dispose(System.Boolean)">
+	<summary>
+ Dispose the Class
+ </summary>
+	<param name="disposing">Se True, efetua o Dispode</param>
+	<remarks></remarks>
+</member><member name="M:Consumer.Structs.Classe.Finalize">
+	<summary>
+ Dispose the Class
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.ClassName">
+	<summary>
+ Nome da Classe
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.NameSpace">
+	<summary>
+ Namespace a qual ela pertence
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Inherits">
+	<summary>
+ Classe que ela Herda
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Implements">
+	<summary>
+ Interface que ela implementa
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Escopo">
+	<summary>
+ Tipo do Escopo da Classe
+ </summary>
+	<value>Enumerador</value>
+	<returns>Enumerador</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.ClassAttr">
+	<summary>
+ Atributo da Classe
+ </summary>
+	<value>Enumerador</value>
+	<returns>Enumerador</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.IsPartial">
+	<summary>
+ Se a declaração Partial estará presente
+ </summary>
+	<value>Boolean</value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.IdentificadorCollection">
+	<summary>
+ Colunas identificadoreas - Variáveis de Memória presente na classe
+ </summary>
+	<value>Lista de Identificadores</value>
+	<returns>Lista de Identificadores</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.IdentificadorObject">
+	<summary>
+ Identificador de Objeto
+ </summary>
+	<value>StringBuilder</value>
+	<returns>StringBuilder</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Identificador">
+	<summary>
+ Nome do Identificador
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.MethodsCollection">
+	<summary>
+ Coleção de Métodos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.MethodsObject">
+	<summary>
+ Objetos de Métodos
+ </summary>
+	<value>StringBuilder</value>
+	<returns>StringBuilder</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Methods">
+	<summary>
+ Métodos
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.PropertiesCollection">
+	<summary>
+ Coleção de Propriedades
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.PropertiesObject">
+	<summary>
+ Objetos de Propriedades
+ </summary>
+	<value>StringBuilder</value>
+	<returns>StringBuilder</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Properties">
+	<summary>
+ Propriedades
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.EventsObject">
+	<summary>
+ Objetos de Evento
+ </summary>
+	<value>StringBuilder</value>
+	<returns>StringBuilder</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Events">
+	<summary>
+ Evento
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.InterfacesCollection">
+	<summary>
+ Coleção de Interfaces
+ </summary>
+	<value>Lista de Métodos</value>
+	<returns>Lista de Métodos</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.InterfacesObject">
+	<summary>
+ Objetos de Interface
+ </summary>
+	<value>StringBuilder</value>
+	<returns>StringBuilder</returns>
+	<remarks></remarks>
+</member><member name="P:Consumer.Structs.Classe.Interfaces">
+	<summary>
+ Interfaces
+ </summary>
+	<value>String</value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="T:Consumer.Structs.Classe">
+	<summary>
+ Estrutura de Criação de Objeto de Classe
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Consumer.Security.EncriptData.DecNumero(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Função que faz a decriptografia de números
+ </summary>
+	<param name="strTexto">Texto contendo os números criptografados</param>
+	<returns>Inteiro</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.EncriptData.DecQueryStr(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Funçao que faz a decriptografia de querystring.
+ </summary>
+	<param name="strTexto">Texto a ser Decriptografado</param>
+	<returns>Texto Original</returns>
+	<remarks>
+ Usado para retirar da querystring o valor.
+ </remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.EncriptData.Decripta(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Decriptografia normal do texto
+ </summary>
+	<param name="strTexto">Valor criptografado</param>
+	<returns>String, original.</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.EncriptData.DecString(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Decriptografa String
+ </summary>
+	<param name="strTexto">Texto a ser decriptografado</param>
+	<returns>String, original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.EncriptData.EncNumero(System.Int32)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de um número
+ </summary>
+	<param name="auxNumero">Número a ser criptografado</param>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.EncriptData.EncQueryStr(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de um querystring
+ </summary>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.EncriptData.Encripta(System.String,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de um texto comum
+ </summary>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Security.EncriptData.EncString(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Executa a criptografia de uma string
+ </summary>
+	<returns>Uma String criptografada equivalente ao original</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	25/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Security.EncriptData">
+ -----------------------------------------------------------------------------
+ Project	 : Provider
+ Class	 : Engine.Security.EncriptData
+ 
+ -----------------------------------------------------------------------------
+ <summary>
+ EncriptData - Classe que executa a criptografia de dados de forma simples.
  </summary>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	28/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.ObjectType.XMLDocument">
- -----------------------------------------------------------------------------
- <summary>
- Enumerador Representante para o System.XML.XMLDocument
- <seealso cref="T:System.Xml.XmlDocument"/>
-	</summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	28/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.ObjectType.DataTable">
- -----------------------------------------------------------------------------
- <summary>
- Enumerador Reprentativo do Datatable
- <seealso cref="T:System.Data.DataTable"/>
-	</summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	28/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.ObjectType.DataSet">
- -----------------------------------------------------------------------------
- <summary>
- Enumerador Reprentativo do DataSet
- <seealso cref="T:System.Data.DataSet"/>
-	</summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	28/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="F:Consumer.ObjectType.DataView">
- -----------------------------------------------------------------------------
- <summary>
- Enumerador Reprentativo do DataView
- <seealso cref="T:System.Data.DataView"/>
-	</summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	28/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="T:Consumer.ObjectType">
- -----------------------------------------------------------------------------
- <summary>
- Tipo de Dados que representará a forma do objeto que está sendo cacheado.
- Existe uma propriedade que deve ser setada antes de guardar em cache o objeto.
- </summary>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	28/12/2005	Created
+ 	[humberto]	25/8/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
@@ -3434,172 +3528,70 @@ esquema do XML
  Fecha a Conexão
  </summary>
 	<remarks></remarks>
-</member><member name="T:Consumer.Misc.Util.ComparacaoHoras">
+</member><member name="F:Consumer.Mail.Engine.EMail.strMailServer">
  -----------------------------------------------------------------------------
  <summary>
- Enumerardor de Horas
+ Identificador do nome do Servidor
  </summary>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	14/9/2005	Created
+ 	[humberto]	29/12/2005	Created
  </history>
  -----------------------------------------------------------------------------
- 
 
-</member><member name="M:Consumer.Misc.Util.ValidaMes(System.Int16,System.Int16,System.Int16)">
+</member><member name="F:Consumer.Mail.Engine.EMail.strKey">
  -----------------------------------------------------------------------------
  <summary>
- Função que faz a validação do Mês
+ Itentificador da Chave, no web.config/app.config contendo a chave que terá a string com os dados do servidor.
  </summary>
-	<param name="intmes">mês a ser validado</param>
-	<param name="intdia">dia a ser validado</param>
-	<param name="intano">ano a ser validado</param>
-	<returns>Retorna um booleano indicando a veracidade da Data. True=Data válida, False=Data Inválida.</returns>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	14/9/2005	Created
+ 	[humberto]	29/12/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Misc.Util.VerificaHora(System.String)">
+</member><member name="M:Consumer.Mail.Engine.EMail.#ctor">
  -----------------------------------------------------------------------------
  <summary>
- Efetua a verficação da hora.
+ Construtor do objeto. Cria uma nova instancia para objeto de envio de mensagem.
  </summary>
-	<param name="inthora">String, contendo a Hora</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.EMail.#ctor(System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Construtor do objeto. Cria uma nova instancia para objeto de envio de mensagem.
+ </summary>
+	<param name="strkey">Chave para a busca do nome do servidor.</param>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Consumer.Mail.Engine.EMail.Send(Consumer.Mail.Structs.Mensagem,System.Boolean,System.String,System.String)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Envia a mensagem de email, para os destinatários desejados.
+ </summary>
+	<param name="objMensagem">Objeto contendo uma mensagem para ser enviada</param>
 	<returns></returns>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	14/9/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Misc.Util.ValidaCPF(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Validador de CPF. Efetua os cálculos validando de acordo com o mósulo 11.
- </summary>
-	<param name="strCPF">String Contendo o CPF</param>
-	<returns>Verdadeiro ou falso de acordo com a validade do valor</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	14/9/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Misc.Util.ValidaCNPJ(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Validador de CNPJ. Efetua os cálculos validando de acordo com o mósulo 11.
- </summary>
-	<param name="strCGC">String Contendo o CNPJ</param>
-	<returns>Verdadeiro ou falso de acordo com a validade do valor</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	14/9/2005	Created
- </history>
- -----------------------------------------------------------------------------
- 
-
-</member><member name="M:Consumer.Misc.Util.GravaArquivo(System.String,System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Função específica para gravação de arquivos. Os arquvos estão em formato texto.
- </summary>
-	<param name="nomeArq">Nome do Arquivo</param>
-	<param name="conteudo">Conteudo do Arquivo Texto</param>
-	<returns>Verdadeiro ou falso de acordo com o sucesso da operação.</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	14/9/2005	Created
- </history>
- -----------------------------------------------------------------------------
- 
-
-</member><member name="M:Consumer.Misc.Util.GeraInStrings(System.Collections.Generic.List{System.String})">
-	<summary>
- Função geradora de Strings de "IN" para SQL
- </summary>
-	<param name="strValues">Lista de Strings</param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Misc.Util.GeraInStrings(System.Collections.Generic.List{System.Int32})">
-	<summary>
- Função geradora de Strings de "IN" para SQL
- </summary>
-	<param name="intValues">Lista de Números, inteiros</param>
-	<returns>String</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Misc.Util.GetGuid">
-	<summary>
- Cria um guid.
- </summary>
-	<returns>string, formato guid</returns>
-	<remarks></remarks>
-</member><member name="M:Consumer.Mail.Engine.JEMail.#ctor">
- -----------------------------------------------------------------------------
- <summary>
- Construtor da Classe JEMail
- </summary>
-	<remarks>
-	</remarks>
-	<history>
  	[humberto]	29/12/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Mail.Engine.JEMail.#ctor(System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Construtor da Classe JEMail
- </summary>
-	<param name="strkey">Chave encontrada no web.config</param>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Mail.Engine.JEMail.Send(Consumer.Mail.Structs.JMensagem)">
- -----------------------------------------------------------------------------
- <summary>
- Função que envia o email.
- </summary>
-	<param name="objMensagem">Objeto do Tipo JMensagem. Formatada para enviar emails</param>
-	<returns>Booleano de acordo com o sucesso do envio</returns>
-	<remarks>
-	</remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="M:Consumer.Mail.Engine.JEMail.Send(Consumer.Mail.Structs.JMensagem,System.String,System.String)">
- -----------------------------------------------------------------------------
- <summary>
- Função que envia o email.
- </summary>
-	<param name="objMensagem">Objeto do Tipo JMensagem. Formatada para enviar emails</param>
-	<param name="strLogin">Login do Usuário que enviará o e-mail.</param>
-	<param name="strSenha">Senha do Usuário que enviará o e-mail.</param>
-	<returns>Booleano de acordo com o sucesso do envio</returns>
-	<remarks>
- É necessário neste overload, a passagem do login e senha. Alguns servidores pedem
- que tenha login e senha, para evitar o envio de emails anonimos. Por exemplo o Exchange Server.
- </remarks>
-	<history>
- 	[humberto]	29/12/2005	Created
- </history>
- -----------------------------------------------------------------------------
-
-</member><member name="P:Consumer.Mail.Engine.JEMail.Key">
+</member><member name="P:Consumer.Mail.Engine.EMail.Key">
  -----------------------------------------------------------------------------
  <summary>
  Esta propriedade é alimentada inidialmente pela string "MailServer".
@@ -3614,10 +3606,10 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Mail.Engine.JEMail.Server">
+</member><member name="P:Consumer.Mail.Engine.EMail.Server">
  -----------------------------------------------------------------------------
  <summary>
- Nome do Servidor de E-Mail
+ Nome do Servidor de E-Mails
  </summary>
 	<value>String</value>
 	<remarks>
@@ -3627,7 +3619,7 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="P:Consumer.Mail.Engine.JEMail.Domain">
+</member><member name="P:Consumer.Mail.Engine.EMail.Domain">
  -----------------------------------------------------------------------------
  <summary>
  Propriedade Domain - Guarda o nome do domínio da Rede, caso HAJA
@@ -3640,28 +3632,49 @@ esquema do XML
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="T:Consumer.Mail.Engine.JEMail">
+</member><member name="M:Consumer.Mail.Engine.EMail.ConvertToSenders(System.Collections.Generic.List{System.String})">
+ -----------------------------------------------------------------------------
+ <summary>
+ Conversor de ArrayList para Um string que contenha todos os destinatários separados por ";"
+ </summary>
+	<param name="arrSenders">Objeto Array List.</param>
+	<returns>String</returns>
+	<remarks>
+	</remarks>
+	<history>
+ 	[humberto]	29/12/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Consumer.Mail.Engine.EMail">
  -----------------------------------------------------------------------------
  Project	 : Provider
- Class	 : Mail.JEMail
+ Class	 : Mail.EMail
  
  -----------------------------------------------------------------------------
  <summary>
- Classe que envia e-mails usando a tecnologia do JMail.
+ Classe De Envio de mensagens com o uso do CDO.
  </summary>
 	<remarks>
 	</remarks>
 	<history>
- 	[humberto]	26/9/2005	Created
+ 	[humberto]	29/12/2005	Created
  </history>
  -----------------------------------------------------------------------------
 
-</member><member name="M:Consumer.Misc.tableClass.RenderTableLines(System.Collections.Generic.List{System.Collections.ArrayList})">
+</member><member name="P:Consumer.My.Resources.Resources.ResourceManager">
 	<summary>
- Renderiza as linhas de uma tabela. apenas TRs e TDs
- </summary>
-	<param name="arrTableList">AArraylist contendo os cabeçalho e os dados</param>
-	<remarks>É impoortante lembrar que será considerado os headers, como o primeiro item do arraylist.</remarks>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Consumer.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Consumer.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member>
 </members>
 </doc>

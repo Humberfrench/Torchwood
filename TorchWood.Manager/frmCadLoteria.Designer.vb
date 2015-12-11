@@ -25,14 +25,14 @@ Partial Class frmCadLoteria
         Me.ddlLoterias = New System.Windows.Forms.ComboBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
-        Me.btnAjeitarDados = New Flowsight.Windows.Forms.CrystalButton
-        Me.btnFechar = New Flowsight.Windows.Forms.CrystalButton
+        Me.btnAjeitarDados = New System.Windows.Forms.Button
+        Me.btnFechar = New System.Windows.Forms.Button
         Me.Label4 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
-        Me.btnGravaLoteria = New Flowsight.Windows.Forms.CrystalButton
+        Me.btnGravaLoteria = New System.Windows.Forms.Button
         Me.ddlTime = New System.Windows.Forms.ComboBox
         Me.Label5 = New System.Windows.Forms.Label
-        Me.btnNovo = New Flowsight.Windows.Forms.CrystalButton
+        Me.btnNovo = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'txtDezenas
@@ -207,8 +207,8 @@ Partial Class frmCadLoteria
 
     End Sub
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents btnFechar As Flowsight.Windows.Forms.CrystalButton
-    Friend WithEvents btnGravaLoteria As Flowsight.Windows.Forms.CrystalButton
+    Friend WithEvents btnFechar As System.Windows.Forms.Button
+    Friend WithEvents btnGravaLoteria As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
@@ -216,8 +216,8 @@ Partial Class frmCadLoteria
     Friend WithEvents txtDtConcurso As System.Windows.Forms.TextBox
     Friend WithEvents txtConcurso As System.Windows.Forms.TextBox
     Friend WithEvents txtDezenas As System.Windows.Forms.TextBox
-    Friend WithEvents btnAjeitarDados As Flowsight.Windows.Forms.CrystalButton
+    Friend WithEvents btnAjeitarDados As System.Windows.Forms.Button
     Friend WithEvents ddlTime As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents btnNovo As Flowsight.Windows.Forms.CrystalButton
+    Friend WithEvents btnNovo As System.Windows.Forms.Button
 End Class

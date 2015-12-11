@@ -64,9 +64,12 @@
     <Reference Include="Consumer">
       <HintPath>..\..\DLLs\Lib\Consumer.dll</HintPath>
     </Reference>
-    <Reference Include="Flowsight, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Componentes\Controls.WinForms\Flowsight.dll</HintPath>
+    <Reference Include="Flowsight">
+      <HintPath>..\..\DLLs\Lib\Flowsight.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SourceGrid">
       <HintPath>..\DLLs\SourceGrid\Release\SourceGrid.dll</HintPath>
@@ -382,6 +385,7 @@
     <Content Include="Images\5.GIF" />
     <Content Include="Images\6.GIF" />
     <None Include="Images\Torchwood01.jpg" />
+    <None Include="packages.config" />
     <None Include="Resources\vector.png" />
     <None Include="Resources\chart_pie.png" />
     <None Include="Resources\databases.png" />

@@ -57,21 +57,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Ascend.NET Project\Ascend.NET Windows Forms Controls\version 1.0.0.6\Ascend.Windows.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="ExtendedDotNET.Controls, Version=1.0.2125.33876, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Controls.WinForm\ExtendedDotNET.Controls.dll</HintPath>
+    <Reference Include="Consumer">
+      <HintPath>..\..\DLLs\Lib\Consumer.dll</HintPath>
     </Reference>
-    <Reference Include="Flowsight, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Controls.WinForm\Flowsight.dll</HintPath>
+    <Reference Include="ExtendedDotNET.Controls">
+      <HintPath>..\..\DLLs\Lib\ExtendedDotNET.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Steepvalley.Windows.Forms, Version=2.0.0.1, Culture=neutral, PublicKeyToken=825f5955c0dc55e8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Controls.WinForm\Steepvalley.Windows.Forms.dll</HintPath>
+    <Reference Include="Flowsight">
+      <HintPath>..\..\DLLs\Lib\Flowsight.dll</HintPath>
     </Reference>
-    <Reference Include="Steepvalley.Windows.Forms.APIEnhanced, Version=2.0.0.1, Culture=neutral, PublicKeyToken=825f5955c0dc55e8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Controls.WinForm\Steepvalley.Windows.Forms.APIEnhanced.dll</HintPath>
+    <Reference Include="Steepvalley.Windows.Forms">
+      <HintPath>..\..\DLLs\Lib\Steepvalley.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -199,16 +195,6 @@
     <None Include="Resources\refresh.gif" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Torchwood.Core\Torchwood.Core.vbproj">
-      <Project>{88011B30-285D-4E13-8112-BB32E57AA60D}</Project>
-      <Name>Torchwood.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Torchwood.Struct\Torchwood.Struct.vbproj">
-      <Project>{A21285E7-BFBD-46C2-97D2-07B754B97C45}</Project>
-      <Name>Torchwood.Struct</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework Client Profile</ProductName>
@@ -234,6 +220,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Torchwood.Core\Torchwood.Core.vbproj">
+      <Project>{88011b30-285d-4e13-8112-bb32e57aa60d}</Project>
+      <Name>Torchwood.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Torchwood.Struct\Torchwood.Struct.vbproj">
+      <Project>{a21285e7-bfbd-46c2-97d2-07b754b97c45}</Project>
+      <Name>Torchwood.Struct</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
